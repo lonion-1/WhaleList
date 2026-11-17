@@ -36,9 +36,9 @@ jobs:
                   "min_domains": 50000,
                   "sources": [
                       # (nama, url, format) -> format: abp | hosts | domains
-                      ("HaGeZi Pro", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("HaGeZi Pop-Up Ads", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Pro", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt", "abp"),
+                      ("HaGeZi Pop-Up Ads", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt", "abp"),
+                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),
                   ],
               },
               {
@@ -46,9 +46,9 @@ jobs:
                   "title": "EazyLife Security - Anti-Phishing, Fake & Malware",
                   "min_domains": 5000,
                   "sources": [
-                      ("HaGeZi Fake", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains"),  # ← isi url ini dengan url yang aku berikan
-                      ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Fake", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt", "abp"),
+                      ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains"),
+                      ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts"),
                   ],
               },
               {
@@ -56,13 +56,13 @@ jobs:
                   "title": "EazyLife Router & Smart TV - Lightweight & Telemetry Blocker",
                   "min_domains": 10000,
                   "sources": [
-                      ("HaGeZi Light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("HaGeZi Native LG webOS", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.lgwebos.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("HaGeZi Native Roku", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.roku.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
-                      ("HaGeZi Native Amazon", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.amazon.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt", "abp"),
+                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),
+                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),
+                      ("HaGeZi Native LG webOS", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.lgwebos.txt", "abp"),
+                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),
+                      ("HaGeZi Native Roku", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.roku.txt", "abp"),
+                      ("HaGeZi Native Amazon", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.amazon.txt", "abp"),
                   ],
               },
           ]
