@@ -1,1 +1,7 @@
+! Title: EazyLife - All-in-One Clean Blocklist
+! Maintainer: EazyWhale
+! Version: 2026.11.17.1638
+! Total Unique Domains: 0
+! Sources: easyBlock (Family) + HaGeZi Light + ABPindo + NoCoin
+! --------------------------------------------------
 
