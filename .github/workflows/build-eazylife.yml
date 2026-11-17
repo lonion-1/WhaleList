@@ -26,24 +26,45 @@ jobs:
           import re, sys, time, datetime, urllib.request
           from pathlib import Path
 
-          OUT = Path("EazyLife.txt")
-          ALLOW = Path("Allowlist.txt")   # opsional: 1 domain per baris
-          MIN_DOMAINS = 20000             # pengaman: kalau lebih sedikit, build dibatalkan
+          ALLOW = Path("Allowlist.txt")  # opsional: 1 domain per baris
 
-          # (nama, url, format) -> format: abp | hosts | domains
-          SOURCES = [
-              ("HaGeZi Pro", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt", "abp"),
-              ("HaGeZi Pop-Up Ads", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt", "abp"),
-              ("HaGeZi Fake", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt", "abp"),
-              ("AdGuard DNS", "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt", "abp"),
-              ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),
-              ("EasyPrivacy", "https://easylist.to/easylist/easyprivacy.txt", "abp"),
-              ("NoCoin", "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt", "abp"),
-              ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains"),
-              ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts"),
-              # Opsional, hapus tanda # kalau mau lebih agresif / lebih besar:
-              # ("HaGeZi TIF", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt", "abp"),
-              # ("StevenBlack", "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts", "hosts"),
+          # Konfigurasi 3 file tujuan beserta sumber URL masing-masing
+          TARGETS = [
+              {
+                  "file": "EazyLife-Core.txt",
+                  "title": "EazyLife Core - Daily Ad & Tracker Blocklist",
+                  "min_domains": 50000,
+                  "sources": [
+                      # (nama, url, format) -> format: abp | hosts | domains
+                      ("HaGeZi Pro", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Pop-Up Ads", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                  ],
+              },
+              {
+                  "file": "EazyLife-Security.txt",
+                  "title": "EazyLife Security - Anti-Phishing, Fake & Malware",
+                  "min_domains": 5000,
+                  "sources": [
+                      ("HaGeZi Fake", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains"),  # ← isi url ini dengan url yang aku berikan
+                      ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts"),  # ← isi url ini dengan url yang aku berikan
+                  ],
+              },
+              {
+                  "file": "EazyLife-RouterTV.txt",
+                  "title": "EazyLife Router & Smart TV - Lightweight & Telemetry Blocker",
+                  "min_domains": 10000,
+                  "sources": [
+                      ("HaGeZi Light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Native LG webOS", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.lgwebos.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Native Roku", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.roku.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                      ("HaGeZi Native Amazon", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.amazon.txt", "abp"),  # ← isi url ini dengan url yang aku berikan
+                  ],
+              },
           ]
 
           # Opsi aturan yang aman diubah jadi blokir DNS penuh
@@ -76,80 +97,96 @@ jobs:
           def fetch(url, tries=3):
               for i in range(tries):
                   try:
-                      req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-Builder/1.0"})
+                      req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-Builder/2.0"})
                       with urllib.request.urlopen(req, timeout=60) as r:
                           return r.read().decode("utf-8", errors="ignore").splitlines()
                   except Exception as e:
-                      print(f"  percobaan {i + 1}/{tries} gagal: {e}")
+                      print(f"    percobaan {i + 1}/{tries} gagal: {e}")
                       time.sleep(3 * (i + 1))
               return None
 
-          domains = set()
-          berhasil = []
-
-          for nama, url, fmt in SOURCES:
-              print(f"Tarik: {nama}")
-              baris = fetch(url)
-              if baris is None:
-                  print(f"  LEWATI {nama}")
-                  continue
-              sebelum = len(domains)
-              parse = PARSER[fmt]
-              for b in baris:
-                  s = b.strip().lower()
-                  if not s or s[0] in "!#[" or s.startswith("@@"):
-                      continue
-                  d = parse(s)
-                  if d:
-                      domains.add(d)
-              print(f"  +{len(domains) - sebelum} domain baru")
-              berhasil.append(nama)
-
-          # Allowlist opsional
+          # Muat Allowlist sekali untuk dipakai ke semua file
+          izin = set()
           if ALLOW.exists():
-              izin = {l.strip().lower() for l in ALLOW.read_text(encoding="utf-8").splitlines()
-                      if l.strip() and not l.lstrip().startswith(("!", "#"))}
-              domains -= izin
-              print(f"Allowlist: {len(izin)} domain dikecualikan")
+              izin = {
+                  l.strip().lower()
+                  for l in ALLOW.read_text(encoding="utf-8").splitlines()
+                  if l.strip() and not l.lstrip().startswith(("!", "#"))
+              }
+              print(f"Allowlist aktif: {len(izin)} domain dikecualikan\n")
 
-          if not berhasil or len(domains) < MIN_DOMAINS:
-              sys.exit(f"GAGAL: hanya {len(domains)} domain dari {len(berhasil)} sumber. File lama dibiarkan.")
+          ada_gagal = False
 
-          # Eliminasi subdomain jika domain induk sudah ada
-          hasil = []
-          for d in sorted(domains):
-              bagian = d.split(".")
-              if any(".".join(bagian[i:]) in domains for i in range(1, len(bagian) - 1)):
+          for target in TARGETS:
+              out_path = Path(target["file"])
+              print(f"=== Membangun {out_path.name} ===")
+              domains = set()
+              berhasil = []
+
+              for nama, url, fmt in target["sources"]:
+                  print(f"  Tarik: {nama}")
+                  baris = fetch(url)
+                  if baris is None:
+                      print(f"    LEWATI {nama}")
+                      continue
+                  sebelum = len(domains)
+                  parse = PARSER[fmt]
+                  for b in baris:
+                      s = b.strip().lower()
+                      if not s or s[0] in "!#[" or s.startswith("@@"):
+                          continue
+                      d = parse(s)
+                      if d:
+                          domains.add(d)
+                  print(f"    +{len(domains) - sebelum} domain baru")
+                  berhasil.append(nama)
+
+              if izin:
+                  domains -= izin
+
+              if not berhasil or len(domains) < target["min_domains"]:
+                  print(f"  GAGAL {out_path.name}: hanya {len(domains)} domain dari {len(berhasil)} sumber. File lama dibiarkan.\n")
+                  ada_gagal = True
                   continue
-              hasil.append(d)
 
-          aturan = [f"||{d}^" for d in hasil]
+              # Eliminasi subdomain jika domain induk sudah ada
+              hasil = []
+              for d in sorted(domains):
+                  bagian = d.split(".")
+                  if any(".".join(bagian[i:]) in domains for i in range(1, len(bagian) - 1)):
+                      continue
+                  hasil.append(d)
 
-          # Jangan tulis ulang kalau isi aturan tidak berubah (hindari commit sia-sia)
-          if OUT.exists():
-              lama = [l for l in OUT.read_text(encoding="utf-8").splitlines() if l and not l.startswith("!")]
-              if lama == aturan:
-                  print("Tidak ada perubahan aturan.")
-                  sys.exit(0)
+              aturan = [f"||{d}^" for d in hasil]
 
-          waktu = datetime.datetime.now(datetime.timezone.utc).strftime("%Y.%m.%d.%H%M")
-          header = [
-              "! Title: EazyLife - All-in-One Clean Blocklist",
-              "! Maintainer: EazyWhale",
-              f"! Version: {waktu}",
-              "! Expires: 1 day",
-              f"! Total Unique Domains: {len(hasil)}",
-              f"! Sources: {', '.join(berhasil)}",
-              "! --------------------------------------------------",
-              "",
-          ]
-          OUT.write_text("\n".join(header + aturan) + "\n", encoding="utf-8")
-          print(f"Selesai: {len(hasil)} domain dari {len(berhasil)} sumber.")
+              # Jangan tulis ulang kalau isi aturan tidak berubah (hindari commit sia-sia)
+              if out_path.exists():
+                  lama = [l for l in out_path.read_text(encoding="utf-8").splitlines() if l and not l.startswith("!")]
+                  if lama == aturan:
+                      print(f"  Tidak ada perubahan aturan untuk {out_path.name}.\n")
+                      continue
+
+              waktu = datetime.datetime.now(datetime.timezone.utc).strftime("%Y.%m.%d.%H%M")
+              header = [
+                  f"! Title: {target['title']}",
+                  "! Maintainer: EazyWhale",
+                  f"! Version: {waktu}",
+                  "! Expires: 1 day",
+                  f"! Total Unique Domains: {len(hasil)}",
+                  f"! Sources: {', '.join(berhasil)}",
+                  "! --------------------------------------------------",
+                  "",
+              ]
+              out_path.write_text("\n".join(header + aturan) + "\n", encoding="utf-8")
+              print(f"  Selesai {out_path.name}: {len(hasil)} domain dari {len(berhasil)} sumber.\n")
+
+          if ada_gagal:
+              sys.exit(1)
           PY
 
-      - name: Simpan EazyLife.txt ke repo WhaleList
+      - name: Simpan semua file ke repo WhaleList
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add EazyLife.txt
-          git diff --staged --quiet || (git commit -m "chore: update EazyLife list" && git push)
+          git add EazyLife-Core.txt EazyLife-Security.txt EazyLife-RouterTV.txt # ← ganti ini ke file tujuan.
+          git diff --staged --quiet || (git commit -m "chore: update EazyLife lists" && git push)
