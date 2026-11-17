@@ -21,11 +21,10 @@ jobs:
           import urllib.request, datetime
 
           sumber_url = [
-              "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/annoyances.txt",
+              "https://githubusercontent.com",
+              "https://raw.githubusercontent.com/the-advoid/ad-void/main/AdVoid.Lite.txt",
               "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/nocoin.txt",
-              "https://raw.githubusercontent.com/the-advoid/ad-void/main/AdVoid.Lite.txt"
-              "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt"
-              "https://raw.githubusercontent.com/brave/adblock-lists/master/brave-lists/brave-social.txt"
+              "https://githubusercontent.com"
           ]
 
           domain_unik = set()
@@ -71,7 +70,6 @@ jobs:
               "! Maintainer: EazyWhale",
               f"! Version: {waktu}",
               f"! Total Unique Domains: {len(hasil_bersih)}",
-              "! Sources: EazyWhale/easyBlock + HaGeZi Light + ABPindo + NoCoin",
               "! --------------------------------------------------",
               ""
           ]
@@ -83,6 +81,6 @@ jobs:
       - name: Simpan EazyLife.txt ke repo WhaleList
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@://github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add EazyLife.txt
           git diff --staged --quiet || (git commit -m "chore: update EazyLife list" && git push)
