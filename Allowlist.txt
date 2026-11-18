@@ -1,0 +1,4 @@
+! Title: EazyLife Allowlist
+! Description: Daftar pengecualian domain (false-positive) yang tidak akan ikut diblokir.
+! Format: Satu domain per baris (contoh: contohdomain.com)
+! --------------------------------------------------
