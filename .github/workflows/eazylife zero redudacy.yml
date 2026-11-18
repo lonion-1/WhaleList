@@ -136,7 +136,7 @@ jobs:
                       ("HaGeZi NSFW", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt", "abp"),  # ← bisa diubah
                   ],
               },
-         ]         
+          ]         
 
           # Opsi aturan yang aman diubah jadi blokir DNS penuh
           OPSI_AMAN = {"third-party", "3p", "important", "all", "popup"}
