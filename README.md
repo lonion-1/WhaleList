@@ -30,9 +30,21 @@ Gunakan daftar utama ini sebagai fondasi pemblokiran di DNS blocker pilihanmu:
 | **EazyLife Core** | HP, Tablet, Laptop | Iklan harian, *pop-up*, pelacak (*trackers*), & iklan lokal Indonesia. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Core.txt` |
 | **EazyLife Security** | Semua Perangkat | Anti-*phishing*, toko online palsu (*scam*), & penyebar *malware*. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Security.txt` |
 | **EazyLife Router & TV** | Router & Smart TV | Super ringan untuk RAM terbatas + blokir telemetri & iklan Smart TV. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-RouterTV.txt` |
-| **EazyWhale Isekai Wall** | - | Gabungan daftar kurasi komunitas/keluarga Indonesia + filter judi global untuk melempar situs judol ke *isekai*. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-IsekaiWall.txt` |
-| **EazyLife NSFW** *(Opsional Keluarga)* | - | Pemblokir situs dewasa (18+) terpisah untuk profil ramah anak & keluarga. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-NSFW.txt` |
 
+---
+
+## 🛡️ Daftar Spesial, Keluarga & Power User
+
+Pilih daftar tambahan berikut sesuai kebutuhan spesifik jaringan atau aktivitasmu:
+
+| Daftar | Target Penggunaan | Fokus Utama | Tautan Langganan (*Raw URL*) |
+| :--- | :--- | :--- | :--- |
+| **EazyLife Family** | Router Wi-Fi Keluarga | Paket komplet 1-klik: iklan ringan, *scam/malware*, anti-judol, & blokir konten dewasa. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Family.txt` |
+| **EazyLife Anti-Bypass** | Router & DNS Kontrol | Memblokir server *Encrypted DNS* (DoH), VPN, & proxy publik agar aturan DNS tidak diakali. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-AntiBypass.txt` |
+| **EazyLife Max** | *Power User* | Perlindungan agresif (*Pro++* + *Threat Intelligence Feeds*) untuk sapu bersih telemetri & ancaman siber. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Max.txt` |
+| **EazyLife Focus** | Kerja & Belajar | Memblokir media sosial populer untuk mengurangi distraksi (*digital detox*). | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Focus.txt` |
+| **EazyLife Isekai Wall** | Semua Perangkat | Pemblokiran khusus situs perjudian (*anti-gambling*). | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-IsekaiWall.txt` |
+| **EazyLife NSFW** | Semua Perangkat | Pemblokiran khusus konten dewasa (opsional). | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-NSFW.txt` |
 
 ---
 
@@ -48,6 +60,10 @@ Ingin privasi lebih ketat tanpa membebani perangkat dengan aturan yang tidak rel
 | **Xiaomi** | Xiaomi, Redmi, POCO & Mi TV | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Xiaomi.txt` |
 | **Oppo & Realme** | HP Oppo & Realme | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Oppo-Realme.txt` |
 | **Vivo** | HP Vivo & iQOO | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Vivo.txt` |
+| **Huawei** | HP/Tablet Huawei & HarmonyOS | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Huawei.txt` |
+| **Amazon** | Fire TV, Kindle, & Echo | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Amazon.txt` |
+| **LG webOS** | LG Smart TV | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/LG-webOS.txt` |
+| **Roku** | Perangkat Streaming Roku | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Roku.txt` |
 
 ---
 
@@ -156,3 +172,4 @@ Seluruh daftar ini dapat berjalan berkat kontribusi luar biasa dari para pengelo
 * [ABPindo (Indonesian Adblock Rules)](https://github.com/ABPindo/indonesianadblockrules)
 * [Phishing Army](https://phishing.army/)
 * [URLhaus by abuse.ch](https://urlhaus.abuse.ch/)
+* [StevenBlack's Hosts](https://github.com/StevenBlack/hosts)
