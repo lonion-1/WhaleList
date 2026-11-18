@@ -1,7 +1,7 @@
 ! Title: EazyLife Security - Anti-Phishing, Fake & Malware
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.0908
+! Version: 2026.11.18.0956
 ! Expires: 1 day
 ! Total Unique Domains: 143274
 ! Sources: HaGeZi Fake, Phishing Army
@@ -20251,7 +20251,6 @@
 ||bizboombroonline-magazasi.com^
 ||bizcox.net^
 ||bizepcks.store^
-||bizglobeinvest.com^
 ||bizhive.buzz^
 ||bizjar.com^
 ||biznayygatrifurcating.info^
@@ -65347,6 +65346,7 @@
 ||joramikut.com^
 ||jorassicfruit.com^
 ||jorathiameli.xyz^
+||jordan-1s.com^
 ||jordan-shoes.us.com^
 ||jordan1.uk.com^
 ||jordanat.at^
