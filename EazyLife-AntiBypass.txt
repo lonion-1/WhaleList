@@ -1,9 +1,9 @@
 ! Title: EazyLife Anti-Bypass - Encrypted DNS (DoH), VPN & Proxy Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.1459
+! Version: 2026.11.18.1720
 ! Expires: 1 day
-! Total Unique Domains: 16636
+! Total Unique Domains: 16631
 ! Sources: HaGeZi DoH/VPN/Proxy Bypass
 ! --------------------------------------------------
 
@@ -8445,7 +8445,6 @@
 ||how.prep.topmoto.pl^
 ||howdy.id^
 ||howo.pages.dev^
-||howto.klinikkenoj.dk^
 ||howvpn.help^
 ||hoxx.net^
 ||hp72ipg3.com^
@@ -9708,7 +9707,6 @@
 ||l0gwz0ku.com^
 ||l4bor.com^
 ||la-doh.stuptech.com^
-||la-vacca.klinikkenoj.dk^
 ||lablancer.com^
 ||labubudubaichocolatephonk.joe.dj^
 ||lacertilian.karrozzin.cloud-ip.cc^
@@ -10972,7 +10970,6 @@
 ||nirboredom.klinikkenoj.dk^
 ||nirbytes.com^
 ||nirglint.klinikkenoj.dk^
-||nirselenite.klinikkenoj.dk^
 ||nitter.ujwie.co^
 ||njal.la^
 ||njtzzrvg0lwj3bsn.info^
@@ -13051,7 +13048,6 @@
 ||search-apis.com^
 ||search.azbusclub.org^
 ||searchsafe.com^
-||seb-likes-men.klinikkenoj.dk^
 ||sec-tunnel.com^
 ||sec.iamninja.ru^
 ||secretbrowser.net^
@@ -14230,7 +14226,6 @@
 ||tommattinglyda.site^
 ||tond.strobox.info^
 ||tonvpn.com^
-||toocoolforschool.donhoo.com^
 ||toolara.net^
 ||toolcio.com^
 ||tools.development.sanluix.org^
