@@ -132,19 +132,38 @@ Klik bagian di bawah untuk melihat detail fungsi dan sumber hulu (*upstream*) da
 <summary><b>4. Rincian Daftar Modular per Brand (<code>brands/</code>)</b></summary>
 <br>
 
-* **Sumber:** Menggunakan kurasi *Native Trackers* dari **HaGeZi** (`native.apple`, `native.winoffice`, `native.samsung`, `native.xiaomi`, `native.oppo-realme`, `native.vivo`).
+* **Sumber:** Menggunakan kurasi *Native Trackers* dari **HaGeZi** (`native.apple`, `native.winoffice`, `native.samsung`, `native.xiaomi`, `native.oppo-realme`, `native.vivo`, `native.huawei`, `native.amazon`, `native.lgwebos`, `native.roku`).
 * **Memblokir:** *Endpoint* pengumpulan data diagnostik, pelacakan aktivitas sistem bawaan pabrikan, serta iklan tersembunyi di antarmuka sistem operasi tanpa memutus layanan inti (seperti pembaruan sistem/OTA, App Store, atau sinkronisasi cloud).
 
 </details>
 
 <details>
-<summary><b>4. EazyWhale Isekai Wall & EazyLife NSFW (Anti-Judol & Filter Keluarga)</b></summary>
+<summary><b>5. EazyWhale Isekai Wall & EazyLife NSFW (Anti-Judol & Filter Keluarga)</b></summary>
 
 * **EazyWhale Isekai Wall** (`EazyLife-IsekaiWall.txt`):
   * **EazyWhale Isekai Wall (Original):** domain judi online lokal & regional hasil kurasi organik jangka panjang untuk menutup celah domain judol yang terus berganti alamat.
   * **HaGeZi Gambling:** Daftar pemblokir situs perjudian global yang diperbarui secara berkala.
 * **EazyLife NSFW** (`EazyLife-NSFW.txt`):
   * **HaGeZi NSFW:** Daftar situs konten dewasa (18+) yang dipisahkan secara khusus agar pengguna bebas memilih apakah ingin mengaktifkannya atau tidak.
+</details>
+
+<details>
+<summary><b>6. Rincian Paket Spesial, Keluarga & Power User</b></summary>
+<br>
+
+* **EazyLife Family (`EazyLife-Family.txt`):**
+  * **Sumber:** Gabungan `HaGeZi Light`, `ABPindo`, `HaGeZi Fake`, `Phishing Army`, `URLhaus`, `HaGeZi Gambling`, dan `HaGeZi NSFW`.
+  * **Memblokir:** Iklan dasar, situs penipuan/malware, judi online, hingga konten dewasa dalam satu tautan praktis untuk router Wi-Fi rumah.
+* **EazyLife Anti-Bypass (`EazyLife-AntiBypass.txt`):**
+  * **Sumber:** `HaGeZi Encrypted DNS/VPN/Proxy Bypass` (`doh-vpn-proxy-bypass.txt`).
+  * **Memblokir:** Server *DNS-over-HTTPS* (DoH), *DNS-over-TLS* (DoT), serta layanan VPN dan proxy publik agar pengaturan DNS router tidak dapat dilewati oleh aplikasi atau browser.
+* **EazyLife Max (`EazyLife-Max.txt`):**
+  * **Sumber:** `HaGeZi Pro++` (`pro.plus.txt`), `HaGeZi Pop-Up Ads`, `ABPindo`, dan `HaGeZi Threat Intelligence Feeds` (`tif.txt`).
+  * **Memblokir:** Perlindungan agresif terhadap iklan, telemetri mendalam, dan infrastruktur ancaman siber aktif (C2 server, botnet, *cryptojacking*).
+* **EazyLife Focus (`EazyLife-Focus.txt`):**
+  * **Sumber:** `StevenBlack Social` (`alternates/social-only`).
+  * **Memblokir:** Domain jejaring sosial populer untuk membantu menjaga fokus saat bekerja atau belajar (*digital detox*).
+
 </details>
 
 ---
@@ -160,7 +179,7 @@ Klik bagian di bawah untuk melihat detail fungsi dan sumber hulu (*upstream*) da
 
 Proyek ini menggunakan pembagian lisensi sebagai berikut:
 * **Daftar Blocklist (`EazyLife-*.txt`):** Dilisensikan di bawah **[GNU GPL v3.0](LICENSE)** atau mengikuti ketentuan lisensi dari sumber hulu.
-* **Skrip Otomatisasi (`scripts/` & `.github/`):** Murni karya mandiri dan dilisensikan di bawah **[MIT License](scripts/LICENSE)**.
+* **Skrip Otomatisasi (`scripts/` & `.github/`):** Murni karya mandiri dan dilisensikan di bawah **[MIT License]**.
 
 ---
 
