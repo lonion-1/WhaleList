@@ -338,6 +338,18 @@ jobs:
               out_path.write_text("\n".join(header + aturan) + "\n", encoding="utf-8")
               print(f"  Selesai {target['file']}: {len(hasil)} domain dari {len(berhasil)} sumber.\n")
 
+                  # Update otomatis statistik jumlah domain di README.md
+          readme_path = Path("README.md")
+          if readme_path.exists():
+              teks_readme = readme_path.read_text(encoding="utf-8")
+              for target in TARGETS:
+                  f_out = Path(target["file"])
+                  if f_out.exists():
+                      jml = sum(1 for l in f_out.read_text(encoding="utf-8").splitlines() if l.startswith("||"))
+                      pola = rf"(<!-- COUNT:{re.escape(target['file'])} -->).*?(<!-- /COUNT -->)"
+                      teks_readme = re.sub(pola, rf"\g<1>{jml:,}\g<2>", teks_readme)
+              readme_path.write_text(teks_readme, encoding="utf-8")
+              
           if ada_gagal:
               sys.exit(1)
           PY
