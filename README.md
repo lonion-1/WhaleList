@@ -30,8 +30,8 @@ Gunakan daftar utama ini sebagai fondasi pemblokiran di DNS blocker pilihanmu:
 | **EazyLife Core** | HP, Tablet, Laptop | Iklan harian, *pop-up*, pelacak (*trackers*), & iklan lokal Indonesia. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Core.txt` |
 | **EazyLife Security** | Semua Perangkat | Anti-*phishing*, toko online palsu (*scam*), & penyebar *malware*. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Security.txt` |
 | **EazyLife Router & TV** | Router & Smart TV | Super ringan untuk RAM terbatas + blokir telemetri & iklan Smart TV. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-RouterTV.txt` |
-| **EazyWhale Isekai Wall** |  | Gabungan daftar kurasi komunitas/keluarga Indonesia + filter judi global untuk melempar situs judol ke *isekai*. |  | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-IsekaiWall.txt` |
-| **EazyLife NSFW** *(Opsional Keluarga)* | Pemblokir situs dewasa (18+) terpisah untuk profil ramah anak & keluarga. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-NSFW.txt` |
+| **EazyWhale Isekai Wall** | - | Gabungan daftar kurasi komunitas/keluarga Indonesia + filter judi global untuk melempar situs judol ke *isekai*. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-IsekaiWall.txt` |
+| **EazyLife NSFW** *(Opsional Keluarga)* | - | Pemblokir situs dewasa (18+) terpisah untuk profil ramah anak & keluarga. | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-NSFW.txt` |
 
 
 ---
