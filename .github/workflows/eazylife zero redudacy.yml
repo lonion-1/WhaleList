@@ -1,4 +1,6 @@
 name: Build EazyLife (Zero Redundancy)
+# Copyright (c) 2026 <EazyWhale>
+# Licensed under the MIT License. See scripts/LICENSE for details.
 
 on:
   schedule:
@@ -169,6 +171,7 @@ jobs:
               waktu = datetime.datetime.now(datetime.timezone.utc).strftime("%Y.%m.%d.%H%M")
               header = [
                   f"! Title: {target['title']}",
+                  "! License: GNU General Public License v3.0 (GPL-3.0)",
                   "! Maintainer: EazyWhale",
                   f"! Version: {waktu}",
                   "! Expires: 1 day",
