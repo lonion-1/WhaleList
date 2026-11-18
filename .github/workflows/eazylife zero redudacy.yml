@@ -254,13 +254,16 @@ jobs:
               return None
 
           def load_list(path):
+              # Terima domain polos maupun format Adblock (||domain^)
               if not path.exists():
                   return set()
-              return {
-                  l.strip().lower()
-                  for l in path.read_text(encoding="utf-8").splitlines()
-                  if l.strip() and not l.lstrip().startswith(("!", "#"))
-              }
+              hasil = set()
+              for l in path.read_text(encoding="utf-8").splitlines():
+                  s = l.strip().lower()
+                  if not s or s.startswith(("!", "#")):
+                      continue
+                  hasil.add(s.removeprefix("||").removesuffix("^"))
+              return hasil
 
           izin = load_list(ALLOW)
           hapus = load_list(DELETE)
@@ -338,25 +341,43 @@ jobs:
               out_path.write_text("\n".join(header + aturan) + "\n", encoding="utf-8")
               print(f"  Selesai {target['file']}: {len(hasil)} domain dari {len(berhasil)} sumber.\n")
 
-                  # Update otomatis statistik jumlah domain di README.md
+          # === Update otomatis statistik (jumlah domain & ukuran file) di README.md ===
+          def fmt_angka(n):
+              return f"{n:,}".replace(",", ".")  # 1234567 -> 1.234.567
+
+          def fmt_ukuran(b):
+              if b < 1024 * 1024:
+                  return f"{round(b / 1024)} KB"
+              return f"{b / (1024 * 1024):.1f} MB".replace(".", ",")
+
+          def isi_tag(teks, tag, nama_file, nilai):
+              pola = rf"(<!-- {tag}:{re.escape(nama_file)} -->).*?(<!-- /{tag} -->)"
+              return re.sub(pola, lambda m: m.group(1) + nilai + m.group(2), teks)
+
           readme_path = Path("README.md")
           if readme_path.exists():
               teks_readme = readme_path.read_text(encoding="utf-8")
               for target in TARGETS:
                   f_out = Path(target["file"])
-                  if f_out.exists():
-                      jml = sum(1 for l in f_out.read_text(encoding="utf-8").splitlines() if l.startswith("||"))
-                      pola = rf"(<!-- COUNT:{re.escape(target['file'])} -->).*?(<!-- /COUNT -->)"
-                      teks_readme = re.sub(pola, rf"\g<1>{jml:,}\g<2>", teks_readme)
+                  if not f_out.exists():
+                      continue
+                  isi = f_out.read_text(encoding="utf-8")
+                  jml = sum(1 for l in isi.splitlines() if l.startswith("||"))
+                  ukuran = f_out.stat().st_size
+                  teks_readme = isi_tag(teks_readme, "COUNT", target["file"], fmt_angka(jml))
+                  teks_readme = isi_tag(teks_readme, "SIZE", target["file"], fmt_ukuran(ukuran))
               readme_path.write_text(teks_readme, encoding="utf-8")
-              
+              print("README.md: statistik jumlah domain & ukuran diperbarui.")
+
           if ada_gagal:
               sys.exit(1)
           PY
 
+      # always(): kalau satu daftar gagal dibuild, daftar lain yang sukses tetap disimpan
       - name: Simpan semua file ke repo WhaleList
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add EazyLife-Core.txt EazyLife-Security.txt EazyLife-RouterTV.txt EazyLife-Family.txt EazyLife-AntiBypass.txt EazyLife-Max.txt EazyLife-Focus.txt EazyLife-IsekaiWall.txt EazyLife-NSFW.txt brands/
+          git add README.md EazyLife-Core.txt EazyLife-Security.txt EazyLife-RouterTV.txt EazyLife-Family.txt EazyLife-AntiBypass.txt EazyLife-Max.txt EazyLife-Focus.txt EazyLife-IsekaiWall.txt EazyLife-NSFW.txt brands/
           git diff --staged --quiet || (git commit -m "chore: update EazyLife lists" && git push)
