@@ -48,16 +48,14 @@ Ingin privasi lebih ketat tanpa membebani perangkat dengan aturan yang tidak rel
 
 ---
 
-## 💡 Rekomendasi Kombinasi Penggunaan
+### 💡 Panduan Kombinasi Sesuai Perangkat
 
-Agar performa perangkat tetap gesit dan seimbang, kamu bisa mengikuti pola kombinasi berikut:
-
-* **📱 Pengguna HP Pribadi (misal: iPhone atau Samsung):**
-  Aktifkan **`EazyLife-Core.txt`** + **`EazyLife-Security.txt`** + **`brands/Apple.txt`** *(atau `brands/Samsung.txt`)*.
-* **💻 Pengguna Laptop/PC Windows:**
-  Aktifkan **`EazyLife-Core.txt`** + **`EazyLife-Security.txt`** + **`brands/Windows.txt`**.
-* **🌐 Router Wi-Fi Rumah & Smart TV:**
-  Cukup aktifkan **`EazyLife-RouterTV.txt`** saja agar memori router tetap lega, Smart TV bebas iklan layar utama, dan seluruh anggota keluarga dapat berselancar dengan nyaman.
+* **HP & Laptop Pribadi (Standar Lengkap):**
+  `EazyLife-Core.txt` + `EazyLife-Security.txt` + `EazyWhale Isekai Wall` + *(1 file dari folder `brands/` sesuai perangkat)*
+* **Profil Keluarga / Perangkat Anak (Ramah Anak & Anti-Judol):**
+  `EazyLife-Core.txt` + `EazyLife-Security.txt` + `EazyWhale Isekai Wall` + `EazyLife-NSFW.txt` + *(file `brands/` terkait)*
+* **Router Rumah & Smart TV (Ringan & Anti-Telemetri Layar):**
+  `EazyLife-RouterTV.txt` + `EazyWhale Isekai Wall` *(+ `EazyLife-NSFW.txt` jika ingin memfilter seluruh jaringan Wi-Fi rumah)*
 
 ---
 
@@ -118,6 +116,16 @@ Klik bagian di bawah untuk melihat detail fungsi dan sumber hulu (*upstream*) da
 * **Sumber:** Menggunakan kurasi *Native Trackers* dari **HaGeZi** (`native.apple`, `native.winoffice`, `native.samsung`, `native.xiaomi`, `native.oppo-realme`, `native.vivo`).
 * **Memblokir:** *Endpoint* pengumpulan data diagnostik, pelacakan aktivitas sistem bawaan pabrikan, serta iklan tersembunyi di antarmuka sistem operasi tanpa memutus layanan inti (seperti pembaruan sistem/OTA, App Store, atau sinkronisasi cloud).
 
+</details>
+
+<details>
+<summary><b>4. EazyWhale Isekai Wall & EazyLife NSFW (Anti-Judol & Filter Keluarga)</b></summary>
+
+* **EazyWhale Isekai Wall** (`EazyLife-IsekaiWall.txt`):
+  * **EazyWhale Isekai Wall (Original):** domain judi online lokal & regional hasil kurasi organik jangka panjang untuk menutup celah domain judol yang terus berganti alamat.
+  * **HaGeZi Gambling:** Daftar pemblokir situs perjudian global yang diperbarui secara berkala.
+* **EazyLife NSFW** (`EazyLife-NSFW.txt`):
+  * **HaGeZi NSFW:** Daftar situs konten dewasa (18+) yang dipisahkan secara khusus agar pengguna bebas memilih apakah ingin mengaktifkannya atau tidak.
 </details>
 
 ---
