@@ -90,6 +90,14 @@ Dioptimalkan untuk perangkat router berkapasitas memori terbatas sekaligus mengh
 
 ---
 
+## 📄 Lisensi
+
+Proyek ini menggunakan pembagian lisensi sebagai berikut:
+* **Daftar Blocklist (`EazyLife-*.txt`):** Dilisensikan di bawah **[GNU GPL v3.0](LICENSE)** mengikuti ketentuan lisensi dari sumber hulu (*HaGeZi* dan *ABPindo*).
+* **Skrip Otomatisasi (`scripts/` & `.github/`):** Murni karya mandiri dan dilisensikan di bawah **[MIT License](scripts/LICENSE)**.
+
+---
+
 ## 🙏 Kredit & Apresiasi
 
 Seluruh daftar ini tidak akan terwujud tanpa kerja keras para pengelola sumber terbuka di balik layar:
