@@ -119,7 +119,7 @@ jobs:
                   "title": "EazyWhale Isekai Wall - Anti-Gambling Blocklist",
                   "min_domains": 2000,
                   "sources": [
-                      ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "domains"),
+                      ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "abp"),
                       ("HaGeZi Gambling", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt", "abp"),
                   ],
               },
