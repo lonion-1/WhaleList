@@ -117,7 +117,26 @@ jobs:
                       ("HaGeZi Native Vivo", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.vivo.txt", "abp"),  # ← bisa diubah
                   ],
               },
-          ]
+
+                            # === FILE ANTI-JUDOL & KONTEN DEWASA ===
+              {
+                  "file": "EazyLife-IsekaiWall.txt",  # ← ganti ini ke file tujuan.
+                  "title": "EazyWhale Isekai Wall - Anti-Gambling Blocklist",
+                  "min_domains": 2000,
+                  "sources": [
+                      ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "domains"),  # ← bisa diubah
+                      ("HaGeZi Gambling", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt", "abp"),  # ← bisa diubah
+                  ],
+              },
+              {
+                  "file": "EazyLife-NSFW.txt",  # ← ganti ini ke file tujuan.
+                  "title": "EazyLife NSFW - Adult Content Blocker (Optional)",
+                  "min_domains": 10000,
+                  "sources": [
+                      ("HaGeZi NSFW", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt", "abp"),  # ← bisa diubah
+                  ],
+              },
+         ]         
 
           # Opsi aturan yang aman diubah jadi blokir DNS penuh
           OPSI_AMAN = {"third-party", "3p", "important", "all", "popup"}
@@ -242,5 +261,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add EazyLife-Core.txt EazyLife-Security.txt EazyLife-RouterTV.txt brands/ # ← ganti ini ke file tujuan.
+          git add EazyLife-Core.txt EazyLife-Security.txt EazyLife-RouterTV.txt EazyLife-IsekaiWall.txt EazyLife-NSFW.txt brands/ # ← ganti ini ke file tujuan.                 
           git diff --staged --quiet || (git commit -m "chore: update EazyLife lists & brand filters" && git push)
