@@ -28,9 +28,9 @@ jobs:
           import re, sys, time, datetime, urllib.request
           from pathlib import Path
 
-          ALLOW = Path("Allowlist.txt")  # opsional: 1 domain per baris
+          ALLOW = Path("Allowlist.txt")    # opsional: domain yang diizinkan (tidak diblokir)
+          DELETE = Path("Deletelist.txt")  # opsional: domain mati/sampah yang dihapus dari hasil akhir
 
-          # Konfigurasi 3 file utama + 6 file modular khusus brand
           TARGETS = [
               # === 3 FILE UTAMA ===
               {
@@ -38,9 +38,9 @@ jobs:
                   "title": "EazyLife Core - Daily Ad & Tracker Blocklist",
                   "min_domains": 50000,
                   "sources": [
-                      ("HaGeZi Pro", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt", "abp"),  # ← bisa diubah
-                      ("HaGeZi Pop-Up Ads", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt", "abp"),  # ← bisa diubah
-                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),  # ← bisa diubah
+                      ("HaGeZi Pro", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt", "abp"),  # ← bisa diganti
+                      ("HaGeZi Pop-Up Ads", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt", "abp"),  # ← bisa diganti
+                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),  # ← bisa diganti
                   ],
               },
               {
@@ -48,9 +48,9 @@ jobs:
                   "title": "EazyLife Security - Anti-Phishing, Fake & Malware",
                   "min_domains": 5000,
                   "sources": [
-                      ("HaGeZi Fake", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt", "abp"),  # ← bisa diubah
-                      ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains"),  # ← bisa diubah
-                      ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts"),  # ← bisa diubah
+                      ("HaGeZi Fake", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt", "abp"),  # ← bisa diganti
+                      ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains"),  # ← bisa diganti
+                      ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts"),  # ← bisa diganti
                   ],
               },
               {
@@ -58,13 +58,32 @@ jobs:
                   "title": "EazyLife Router & Smart TV - Lightweight & Telemetry Blocker",
                   "min_domains": 10000,
                   "sources": [
-                      ("HaGeZi Light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt", "abp"),  # ← bisa diubah
-                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),  # ← bisa diubah
-                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),  # ← bisa diubah
-                      ("HaGeZi Native LG webOS", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.lgwebos.txt", "abp"),  # ← bisa diubah
-                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),  # ← bisa diubah
-                      ("HaGeZi Native Roku", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.roku.txt", "abp"),  # ← bisa diubah
-                      ("HaGeZi Native Amazon", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.amazon.txt", "abp"),  # ← bisa diubah
+                      ("HaGeZi Light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt", "abp"),  # ← bisa diganti
+                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),  # ← bisa diganti
+                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),  # ← bisa diganti
+                      ("HaGeZi Native LG webOS", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.lgwebos.txt", "abp"),  # ← bisa diganti
+                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),  # ← bisa diganti
+                      ("HaGeZi Native Roku", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.roku.txt", "abp"),  # ← bisa diganti
+                      ("HaGeZi Native Amazon", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.amazon.txt", "abp"),  # ← bisa diganti
+                  ],
+              },
+
+              # === ANTI-JUDOL & KONTEN DEWASA (TERPISAH) ===
+              {
+                  "file": "EazyLife-IsekaiWall.txt",  # ← ganti ini ke file tujuan.
+                  "title": "EazyWhale Isekai Wall - Anti-Gambling Blocklist",
+                  "min_domains": 2000,
+                  "sources": [
+                      ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/NAMA-REPO-KELUARGA/main/NAMA-FILE.txt", "domains"),  # ← bisa diganti
+                      ("HaGeZi Gambling", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt", "abp"),  # ← bisa diganti
+                  ],
+              },
+              {
+                  "file": "EazyLife-NSFW.txt",  # ← ganti ini ke file tujuan.
+                  "title": "EazyLife NSFW - Adult Content Blocker (Optional)",
+                  "min_domains": 10000,
+                  "sources": [
+                      ("HaGeZi NSFW", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt", "abp"),  # ← bisa diganti
                   ],
               },
 
@@ -74,7 +93,7 @@ jobs:
                   "title": "EazyLife Brand - Apple Native Telemetry Blocker",
                   "min_domains": 10,
                   "sources": [
-                      ("HaGeZi Native Apple", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.apple.txt", "abp"),  # ← bisa diubah
+                      ("HaGeZi Native Apple", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.apple.txt", "abp"),  # ← bisa diganti
                   ],
               },
               {
@@ -82,7 +101,7 @@ jobs:
                   "title": "EazyLife Brand - Windows & Office Telemetry Blocker",
                   "min_domains": 10,
                   "sources": [
-                      ("HaGeZi Native Windows/Office", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.winoffice.txt", "abp"),  # ← bisa diubah
+                      ("HaGeZi Native Windows/Office", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.winoffice.txt", "abp"),  # ← bisa diganti
                   ],
               },
               {
@@ -90,7 +109,7 @@ jobs:
                   "title": "EazyLife Brand - Samsung Native Telemetry Blocker",
                   "min_domains": 10,
                   "sources": [
-                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),  # ← bisa diubah
+                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),  # ← bisa diganti
                   ],
               },
               {
@@ -98,7 +117,7 @@ jobs:
                   "title": "EazyLife Brand - Xiaomi Native Telemetry Blocker",
                   "min_domains": 10,
                   "sources": [
-                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),  # ← bisa diubah
+                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),  # ← bisa diganti
                   ],
               },
               {
@@ -106,7 +125,7 @@ jobs:
                   "title": "EazyLife Brand - Oppo & Realme Native Telemetry Blocker",
                   "min_domains": 10,
                   "sources": [
-                      ("HaGeZi Native Oppo/Realme", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.oppo-realme.txt", "abp"),  # ← bisa diubah
+                      ("HaGeZi Native Oppo/Realme", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.oppo-realme.txt", "abp"),  # ← bisa diganti
                   ],
               },
               {
@@ -114,29 +133,10 @@ jobs:
                   "title": "EazyLife Brand - Vivo Native Telemetry Blocker",
                   "min_domains": 10,
                   "sources": [
-                      ("HaGeZi Native Vivo", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.vivo.txt", "abp"),  # ← bisa diubah
+                      ("HaGeZi Native Vivo", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.vivo.txt", "abp"),  # ← bisa diganti
                   ],
               },
-
-                            # === FILE ANTI-JUDOL & KONTEN DEWASA ===
-              {
-                  "file": "EazyLife-IsekaiWall.txt",  # ← ganti ini ke file tujuan.
-                  "title": "EazyWhale Isekai Wall - Anti-Gambling Blocklist",
-                  "min_domains": 2000,
-                  "sources": [
-                      ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "domains"),  # ← bisa diubah
-                      ("HaGeZi Gambling", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt", "abp"),  # ← bisa diubah
-                  ],
-              },
-              {
-                  "file": "EazyLife-NSFW.txt",  # ← ganti ini ke file tujuan.
-                  "title": "EazyLife NSFW - Adult Content Blocker (Optional)",
-                  "min_domains": 10000,
-                  "sources": [
-                      ("HaGeZi NSFW", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt", "abp"),  # ← bisa diubah
-                  ],
-              },
-          ]         
+          ]
 
           # Opsi aturan yang aman diubah jadi blokir DNS penuh
           OPSI_AMAN = {"third-party", "3p", "important", "all", "popup"}
@@ -168,7 +168,7 @@ jobs:
           def fetch(url, tries=3):
               for i in range(tries):
                   try:
-                      req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-Builder/3.0"})
+                      req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-Builder/4.0"})
                       with urllib.request.urlopen(req, timeout=60) as r:
                           return r.read().decode("utf-8", errors="ignore").splitlines()
                   except Exception as e:
@@ -176,15 +176,21 @@ jobs:
                       time.sleep(3 * (i + 1))
               return None
 
-          # Muat Allowlist sekali untuk dipakai ke semua file
-          izin = set()
-          if ALLOW.exists():
-              izin = {
+          def load_list(path):
+              if not path.exists():
+                  return set()
+              return {
                   l.strip().lower()
-                  for l in ALLOW.read_text(encoding="utf-8").splitlines()
+                  for l in path.read_text(encoding="utf-8").splitlines()
                   if l.strip() and not l.lstrip().startswith(("!", "#"))
               }
-              print(f"Allowlist aktif: {len(izin)} domain dikecualikan\n")
+
+          izin = load_list(ALLOW)
+          hapus = load_list(DELETE)
+          if izin:
+              print(f"Allowlist aktif: {len(izin)} domain diizinkan")
+          if hapus:
+              print(f"Deletelist aktif: {len(hapus)} domain dihapus")
 
           ada_gagal = False
 
@@ -215,6 +221,8 @@ jobs:
 
               if izin:
                   domains -= izin
+              if hapus:
+                  domains -= hapus
 
               if not berhasil or len(domains) < target["min_domains"]:
                   print(f"  GAGAL {target['file']}: hanya {len(domains)} domain dari {len(berhasil)} sumber. File lama dibiarkan.\n")
@@ -261,5 +269,5 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add EazyLife-Core.txt EazyLife-Security.txt EazyLife-RouterTV.txt EazyLife-IsekaiWall.txt EazyLife-NSFW.txt brands/ # ← ganti ini ke file tujuan.                 
-          git diff --staged --quiet || (git commit -m "chore: update EazyLife lists & brand filters" && git push)
+          git add EazyLife-Core.txt EazyLife-Security.txt EazyLife-RouterTV.txt EazyLife-IsekaiWall.txt EazyLife-NSFW.txt brands/ # ← ganti ini ke file tujuan.
+          git diff --staged --quiet || (git commit -m "chore: update EazyLife lists" && git push)
