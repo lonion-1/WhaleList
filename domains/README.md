@@ -42,8 +42,29 @@ Halaman ini menyediakan tautan **Raw URL** khusus berformat *wildcard* (`*domain
 
 ---
 
+## ⚙️ Cara Pasang di PersonalDNSfilter
+1. Unduh dan pasang aplikasi **[PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)** (tersedia juga di F-Droid dan Google Play).
+2. Salin salah satu tautan di atas (cukup pilih **3–4 daftar** agar RAM HP tetap ringan).
+3. Buka aplikasi -> ketuk **Advanced settings** -> pilih **Configure additional hosts**.
+4. Tempelkan tautan yang sudah disalin dan pastikan kotaknya tercentang.
+5. Kembali ke layar utama aplikasi, lalu tekan tombol **RELOAD FILTER**.
+
+---
+
 ## ⚙️ Cara Pasang di `personalDNSfilter`
 1. Salin salah satu tautan di atas (cukup pilih **3–4 daftar** agar RAM HP tetap ringan).
 2. Buka aplikasi **personalDNSfilter** -> ketuk **Advanced settings** -> pilih **Configure additional hosts**.
 3. Tempelkan tautan yang sudah disalin dan pastikan kotaknya tercentang.
 4. Kembali ke layar utama aplikasi, lalu tekan tombol **RELOAD FILTER** atau **RESTART**.
+
+---
+
+---
+
+## 🙏 Ucapan Terima Kasih
+Terima kasih khusus kepada **Ingo Zenz** atas pengembangan aplikasi pemblokir DNS *open-source* yang ringan dan andal:
+* **Situs Resmi:** [PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)
+* **Repositori GitHub:** [IngoZenz/personaldnsfilter](https://github.com/IngoZenz/personaldnsfilter)
+
+---
+Halaman ini menyediakan tautan **Raw URL** khusus berformat *wildcard* (`*domain`) untuk aplikasi pemblokir DNS lokal seperti **[PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)** di Android.
