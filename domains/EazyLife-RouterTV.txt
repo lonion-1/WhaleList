@@ -1,6 +1,6 @@
 # Title: EazyLife Router & Smart TV - Lightweight & Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.1453
-# Count: 93005
+# Version: 2026.11.19.1756
+# Count: 93111
 # Sources: HaGeZi Light, ABPindo, HaGeZi Native Samsung, HaGeZi Native LG webOS, HaGeZi Native Xiaomi, HaGeZi Native Roku, HaGeZi Native Amazon
 
 0--d.com
@@ -3987,6 +3987,8 @@
 *.44216f3fdf.com
 442fe7151fb1e9b5.com
 *.442fe7151fb1e9b5.com
+443zcl1474vye5k843z.cfd
+*.443zcl1474vye5k843z.cfd
 447s0ymzq.com
 *.447s0ymzq.com
 44bada2a-y5fxrixi.cname.ebis.ne.jp
@@ -4227,6 +4229,8 @@
 *.4fizjoferta.shop
 4fizjokazje.shop
 *.4fizjokazje.shop
+4fizjomarket.shop
+*.4fizjomarket.shop
 4fizjooferta.shop
 *.4fizjooferta.shop
 4fizjookazje.shop
@@ -17245,6 +17249,8 @@ ahoravideo-endpoint.com
 *.ahoravideo-endpoint.com
 ahoravideo-endpoint.xyz
 *.ahoravideo-endpoint.xyz
+ahorraveria.com
+*.ahorraveria.com
 ahort.xyz
 *.ahort.xyz
 ahp-management.com
@@ -17825,6 +17831,8 @@ alahlam.sa
 *.alahlam.sa
 alamuk.com
 *.alamuk.com
+alandyapping.com
+*.alandyapping.com
 alanticsunless.qpon
 *.alanticsunless.qpon
 alaphoid.com
@@ -17869,12 +17877,16 @@ alb52x8373.com
 *.alb52x8373.com
 albamargroup.com
 *.albamargroup.com
+albapujantavanza.com
+*.albapujantavanza.com
 albcschool.edu
 *.albcschool.edu
 albertoleon.es
 *.albertoleon.es
 albinoeuxine.qpon
 *.albinoeuxine.qpon
+alborteniazgo.com
+*.alborteniazgo.com
 albss.com
 *.albss.com
 album-sg01a.ocloud.heytapmobi.com
@@ -18387,8 +18399,6 @@ alphabird.com
 *.alphabird.com
 alphagodaddy.com
 *.alphagodaddy.com
-alphaguide.shop
-*.alphaguide.shop
 alpharockone.com
 *.alpharockone.com
 alphatransportlogistik.com
@@ -18931,6 +18941,8 @@ amplifypixel.outbrain.com
 *.amplifypixel.outbrain.com
 amplilab.thepure.app
 *.amplilab.thepure.app
+amplioacopiario.com
+*.amplioacopiario.com
 amplitude-experiment.bandlab.com
 *.amplitude-experiment.bandlab.com
 amplitude.anytype.io
@@ -18963,6 +18975,8 @@ amplitude.thepure.app.cdn.cloudflare.net
 *.amplitude.thepure.app.cdn.cloudflare.net
 amplitude1.wanderlog.com
 *.amplitude1.wanderlog.com
+amplobenvaloria.com
+*.amplobenvaloria.com
 ampltd.medal.tv
 *.ampltd.medal.tv
 ampltd2.medal.tv
@@ -31673,6 +31687,8 @@ apll.org
 *.apll.org
 aplo-evnt.com
 *.aplo-evnt.com
+aplomosaldencia.com
+*.aplomosaldencia.com
 aplschuhe.at
 *.aplschuhe.at
 aplus.alibaba.com
@@ -32645,6 +32661,8 @@ ardenodemedia.com
 *.ardenodemedia.com
 ardguisser.com
 *.ardguisser.com
+arditopossedurio.com
+*.arditopossedurio.com
 ardsigorta.com
 *.ardsigorta.com
 arduino.org
@@ -33685,6 +33703,8 @@ atemda.com
 *.atemda.com
 atendimen.to
 *.atendimen.to
+atendyrgrovic.pro
+*.atendyrgrovic.pro
 atepcs.icu
 *.atepcs.icu
 aterlthkgirxw.space
@@ -33761,6 +33781,8 @@ atlantictrikot.de
 *.atlantictrikot.de
 atlantis-asia.com
 *.atlantis-asia.com
+atlantonex.com
+*.atlantonex.com
 atlas-3ib.com
 *.atlas-3ib.com
 atlas-production.com
@@ -33989,6 +34011,8 @@ aubainebrowny.cfd
 *.aubainebrowny.cfd
 aubankprod.112.2o7.net
 *.aubankprod.112.2o7.net
+aubelevorine.com
+*.aubelevorine.com
 aucdn.net
 *.aucdn.net
 auchan-online.shop
@@ -37459,6 +37483,8 @@ bestrelationsdigital.de
 *.bestrelationsdigital.de
 bestsearch.net
 *.bestsearch.net
+bestshoppingoutlet.shop
+*.bestshoppingoutlet.shop
 bestsizeservice.top
 *.bestsizeservice.top
 bestslshop.com
@@ -38095,6 +38121,8 @@ biecarauqzeqi.online
 *.biecarauqzeqi.online
 biedroneczkasale-pl.shop
 *.biedroneczkasale-pl.shop
+biedroneczkosale.shop
+*.biedroneczkosale.shop
 biedronka-blender.shop
 *.biedronka-blender.shop
 biekhofen.de
@@ -39713,6 +39741,8 @@ boldincabrie.cfd
 *.boldincabrie.cfd
 boldmetrics.io
 *.boldmetrics.io
+boldmintoranage.com
+*.boldmintoranage.com
 boldpasta.me
 *.boldpasta.me
 boldtallywarden.com
@@ -40717,6 +40747,8 @@ brightsport.com
 *.brightsport.com
 brightstackuv.info
 *.brightstackuv.info
+brightstorm-core.online
+*.brightstorm-core.online
 brigsgunster.com
 *.brigsgunster.com
 briguefidibus.com
@@ -41603,6 +41635,8 @@ busy-man.com
 *.busy-man.com
 busybabybee.com
 *.busybabybee.com
+busybacon.info
+*.busybacon.info
 busybee.goatcounter.com
 *.busybee.goatcounter.com
 busyuptoss.com
@@ -43637,10 +43671,16 @@ candidateconnector.com
 *.candidateconnector.com
 candidatelogapi.jobvision.ir
 *.candidatelogapi.jobvision.ir
+candidworthenance.com
+*.candidworthenance.com
 candor-dividholden.pro
 *.candor-dividholden.pro
 candoredge.com
 *.candoredge.com
+candormaturenage.com
+*.candormaturenage.com
+candorworthensome.com
+*.candorworthensome.com
 candrivexo.shop
 *.candrivexo.shop
 candrugsupplies.ca
@@ -46907,6 +46947,8 @@ claimyour.gold
 *.claimyour.gold
 clair.iad-03.braze.com
 *.clair.iad-03.braze.com
+clairepartavoir.com
+*.clairepartavoir.com
 claires.com.102.122.2o7.net
 *.claires.com.102.122.2o7.net
 clairpixum.com
@@ -47133,6 +47175,8 @@ clearrobin.com
 *.clearrobin.com
 cleartallish.live
 *.cleartallish.live
+cleartallyminten.com
+*.cleartallyminten.com
 clearteeth.pl
 *.clearteeth.pl
 cleartrack.sbs
@@ -48461,6 +48505,8 @@ coiffesreal.qpon
 *.coiffesreal.qpon
 coilapprobationbyword.com
 *.coilapprobationbyword.com
+coin-ai-flow.app
+*.coin-ai-flow.app
 coin-birds.com
 *.coin-birds.com
 coin-have.com
@@ -52297,6 +52343,8 @@ culturetoolers.com
 *.culturetoolers.com
 cum.fr
 *.cum.fr
+cumbreprovechuria.com
+*.cumbreprovechuria.com
 cunasreno.cfd
 *.cunasreno.cfd
 cuncqsnhdhhqw.site
@@ -55837,6 +55885,8 @@ defocustrigla.cyou
 *.defocustrigla.cyou
 deftsecurity.com
 *.deftsecurity.com
+deftthriftovane.com
+*.deftthriftovane.com
 defusednawabs.com
 *.defusednawabs.com
 degasssnibellore.cfd
@@ -56185,6 +56235,8 @@ depcollect.hmgroup.com
 *.depcollect.hmgroup.com
 dependablemountain.com
 *.dependablemountain.com
+dependablewish.com
+*.dependablewish.com
 dependent-boy.com
 *.dependent-boy.com
 depfile.us
@@ -56791,6 +56843,10 @@ di5stero.com
 *.di5stero.com
 di7stero.com
 *.di7stero.com
+diafanofomentaje.com
+*.diafanofomentaje.com
+diafanopermutazgo.com
+*.diafanopermutazgo.com
 diag.adsafeprotected.com
 *.diag.adsafeprotected.com
 diagmon-policy.samsungdm.com
@@ -56923,6 +56979,8 @@ digiads.tv
 *.digiads.tv
 digibizhub.com
 *.digibizhub.com
+digifaro-digital.uk.monitoringsolutions.sky
+*.digifaro-digital.uk.monitoringsolutions.sky
 digimedllc.com
 *.digimedllc.com
 digineutrons.com
@@ -59011,6 +59069,8 @@ driftingchef.com
 *.driftingchef.com
 driftpixel.live
 *.driftpixel.live
+driftpost.sbs
+*.driftpost.sbs
 drillcompensate.com
 *.drillcompensate.com
 drimble.space
@@ -60607,6 +60667,8 @@ earringsatisfiedsplice.com
 *.earringsatisfiedsplice.com
 earthcontrolsys.com
 *.earthcontrolsys.com
+earthspetti.com
+*.earthspetti.com
 earthyfarm.com
 *.earthyfarm.com
 easelsakhlame.com
@@ -61005,6 +61067,8 @@ ecotrackings.com
 *.ecotrackings.com
 ecoupons.com
 *.ecoupons.com
+ecowhispyrinyq.info
+*.ecowhispyrinyq.info
 ecqph.com
 *.ecqph.com
 ecqwmhtxjwahw.online
@@ -66039,6 +66103,8 @@ faro-collector-prod-us-east-4.aws-us-east-1-1.grafana.net
 *.faro-collector-prod-us-east-4.aws-us-east-1-1.grafana.net
 faro-collector-prod-us-west-0.grafana.net
 *.faro-collector-prod-us-west-0.grafana.net
+farolfiancario.com
+*.farolfiancario.com
 farranthants.cfd
 *.farranthants.cfd
 farschid.de
@@ -66187,6 +66253,8 @@ fathead.com.102.122.2o7.net
 *.fathead.com.102.122.2o7.net
 fathiwhopy.com
 *.fathiwhopy.com
+fathompledgerance.com
+*.fathompledgerance.com
 fathomseo.com
 *.fathomseo.com
 fatihahfinings.com
@@ -66711,6 +66779,8 @@ fermolo.info
 *.fermolo.info
 fern46.com
 *.fern46.com
+fernburgung.com
+*.fernburgung.com
 fernzenith.com
 *.fernzenith.com
 ferocitycandour.com
@@ -67887,6 +67957,8 @@ fleshlightgirls.com
 *.fleshlightgirls.com
 fletherpetos.com
 *.fletherpetos.com
+flex-trade-ai.app
+*.flex-trade-ai.app
 flex.msn.com
 *.flex.msn.com
 flexasio.com
@@ -68799,6 +68871,8 @@ foundationhorny.com
 *.foundationhorny.com
 founddroopinglaid.com
 *.founddroopinglaid.com
+founderhaes.com
+*.founderhaes.com
 founderyet.com
 *.founderyet.com
 foundtr.com
@@ -70739,6 +70813,8 @@ gamblingbuilder.com
 *.gamblingbuilder.com
 gambo-ad.com
 *.gambo-ad.com
+gamboge-bombazine.shop
+*.gamboge-bombazine.shop
 gamd.hit.gemius.pl
 *.gamd.hit.gemius.pl
 game-advertising-online.com
@@ -72585,6 +72661,8 @@ gjcvvmwz.com
 *.gjcvvmwz.com
 gjeadcfibjjdadcaaadj.world
 *.gjeadcfibjjdadcaaadj.world
+gjevtellerskapet.com
+*.gjevtellerskapet.com
 gjfayongoeneq.space
 *.gjfayongoeneq.space
 gjigle.com
@@ -72793,6 +72871,8 @@ glfa5y-launches.appsflyersdk.com
 *.glfa5y-launches.appsflyersdk.com
 glhjrjohcdbam.com
 *.glhjrjohcdbam.com
+glidenode.rest
+*.glidenode.rest
 glimpsedimebodyguard.com
 *.glimpsedimebodyguard.com
 glimr.io
@@ -73231,6 +73311,8 @@ go.activengage.com
 *.go.activengage.com
 go.bravotube.tv
 *.go.bravotube.tv
+go.camterest.com
+*.go.camterest.com
 go.cbro.win
 *.go.cbro.win
 go.cdnjs.work
@@ -76363,6 +76445,8 @@ hassampc.com
 *.hassampc.com
 hasselscloth.cyou
 *.hasselscloth.cyou
+hasselsdoeling.click
+*.hasselsdoeling.click
 hasseltill.cfd
 *.hasseltill.cfd
 hassletorbited.cyou
@@ -77425,6 +77509,8 @@ hicuci2f9bd.net
 *.hicuci2f9bd.net
 hiddeninplainsight.top
 *.hiddeninplainsight.top
+hiddenorchart.info
+*.hiddenorchart.info
 hideousnumber.com
 *.hideousnumber.com
 hideousplay.com
@@ -78711,6 +78797,8 @@ hprofits.com
 *.hprofits.com
 hproicalc.com
 *.hproicalc.com
+hps93z2u.xyz
+*.hps93z2u.xyz
 hpslzsfai.com
 *.hpslzsfai.com
 hpyjmp.com
@@ -84903,6 +84991,8 @@ jasmineamalia.goatcounter.com
 *.jasmineamalia.goatcounter.com
 jasmingnars.com
 *.jasmingnars.com
+jasnymajetarnik.com
+*.jasnymajetarnik.com
 jasoncase.122.2o7.net
 *.jasoncase.122.2o7.net
 jasonkrasavage.com
@@ -87869,12 +87959,16 @@ keelsongluing.cyou
 *.keelsongluing.cyou
 keenalto.com
 *.keenalto.com
+keendividoverance.com
+*.keendividoverance.com
 keengainatory.com
 *.keengainatory.com
 keengriffin.media
 *.keengriffin.media
 keennight.com
 *.keennight.com
+keenpledgevanten.com
+*.keenpledgevanten.com
 keenporch.org
 *.keenporch.org
 keenquill.com
@@ -88821,6 +88915,8 @@ klsqjcogadcvm.website
 *.klsqjcogadcvm.website
 kluckerzaque.cfd
 *.kluckerzaque.cfd
+klugbuchzahlenz.com
+*.klugbuchzahlenz.com
 klutzesdiasper.cfd
 *.klutzesdiasper.cfd
 klxvulujbpexn.online
@@ -91305,6 +91401,8 @@ ledgerdiagnose.com
 *.ledgerdiagnose.com
 ledgerlive.fr
 *.ledgerlive.fr
+ledgeronium.com
+*.ledgeronium.com
 ledgeroriel.biz
 *.ledgeroriel.biz
 ledgerorielinvestmentplatform.biz
@@ -91913,6 +92011,8 @@ lichcatdien.info
 *.lichcatdien.info
 lichsuvanhoa.net
 *.lichsuvanhoa.net
+lichtreifanz.com
+*.lichtreifanz.com
 lidjeu.be
 *.lidjeu.be
 lidlflash.com
@@ -93027,8 +93127,6 @@ loa-analytics.guli-games-prod.com
 *.loa-analytics.guli-games-prod.com
 load-reservationerror8247.com
 *.load-reservationerror8247.com
-load.analytics.qzs-ksa.com
-*.load.analytics.qzs-ksa.com
 load.fomo.com
 *.load.fomo.com
 load.s3.amazonaws.com
@@ -95179,6 +95277,12 @@ lucidcommerce.com
 *.lucidcommerce.com
 lucidmedia.com
 *.lucidmedia.com
+lucidovalimbrio.com
+*.lucidovalimbrio.com
+lucidportionward.com
+*.lucidportionward.com
+lucidtallymerance.com
+*.lucidtallymerance.com
 luckfullacinia.com
 *.luckfullacinia.com
 luckilygelatine.com
@@ -95439,6 +95543,8 @@ luzavero.shop
 *.luzavero.shop
 luzendavrix.shop
 *.luzendavrix.shop
+luzmedreza.com
+*.luzmedreza.com
 lv-ad-lgsmartad-com.aws-prd.net
 *.lv-ad-lgsmartad-com.aws-prd.net
 lv-info-lgsmartad-com.aws-prd.net
@@ -96055,6 +96161,10 @@ maddenwiped.com
 *.maddenwiped.com
 madder-keystone.shop
 *.madder-keystone.shop
+madder-mullion.shop
+*.madder-mullion.shop
+madder-soffit.shop
+*.madder-soffit.shop
 madder-transom.shop
 *.madder-transom.shop
 madeforgaming.com
@@ -104679,8 +104789,6 @@ metrics.corewellhealth.org
 *.metrics.corewellhealth.org
 metrics.couriermail.com.au
 *.metrics.couriermail.com.au
-metrics.crabnebula.cloud
-*.metrics.crabnebula.cloud
 metrics.crateandbarrel.com
 *.metrics.crateandbarrel.com
 metrics.creativemode.net
@@ -109265,6 +109373,8 @@ msg.video.ptqy.gitv.tv
 *.msg.video.ptqy.gitv.tv
 msg2.video.ptqy.gitv.tv
 *.msg2.video.ptqy.gitv.tv
+msg3zn5w9.com
+*.msg3zn5w9.com
 msga.cupid.iqiyi.com
 *.msga.cupid.iqiyi.com
 msga.ptqy.gitv.tv
@@ -112441,6 +112551,8 @@ nimblermysosts.com
 *.nimblermysosts.com
 nimbleswan.io
 *.nimbleswan.io
+nimbovalimatria.com
+*.nimbovalimatria.com
 nimbus-90.com
 *.nimbus-90.com
 nimbusgrovelodge.com
@@ -112861,6 +112973,8 @@ noblecables.com
 *.noblecables.com
 noblefellow.com
 *.noblefellow.com
+noblethrivanture.com
+*.noblethrivanture.com
 nobrain.dk
 *.nobrain.dk
 nocdncnjaujhd.site
@@ -114037,6 +114151,8 @@ nyaa.eu
 *.nyaa.eu
 nyagwasergj.web.app
 *.nyagwasergj.web.app
+nyamaledgstead.com
+*.nyamaledgstead.com
 nyboleu.com
 *.nyboleu.com
 nycandcompany.112.2o7.net
@@ -116853,6 +116969,8 @@ optima-hr.com
 *.optima-hr.com
 optimafluxoria.com
 *.optimafluxoria.com
+optimaljelly.com
+*.optimaljelly.com
 optimallimit.com
 *.optimallimit.com
 optimatic.com
@@ -117187,10 +117305,18 @@ orpcmlekqqujdx.com
 *.orpcmlekqqujdx.com
 orphicnoop.click
 *.orphicnoop.click
+orpiment-caftan.shop
+*.orpiment-caftan.shop
 orpiment-chopine.shop
 *.orpiment-chopine.shop
 orpiment-duffel.shop
 *.orpiment-duffel.shop
+orpiment-escarpin.shop
+*.orpiment-escarpin.shop
+orpiment-galosh.shop
+*.orpiment-galosh.shop
+orpiment-gambado.shop
+*.orpiment-gambado.shop
 orpiment-patyn.shop
 *.orpiment-patyn.shop
 orpiment-peplos.shop
@@ -117313,6 +117439,8 @@ osgmfe-launches.appsflyersdk.com
 *.osgmfe-launches.appsflyersdk.com
 osgxzapi.in
 *.osgxzapi.in
+osilverfarnub.top
+*.osilverfarnub.top
 osimg.universalorlando.com
 *.osimg.universalorlando.com
 osiq.club
@@ -118533,6 +118661,8 @@ p3a-creative.bravesoftware.com
 *.p3a-creative.bravesoftware.com
 p3a-json.brave.com
 *.p3a-json.brave.com
+p3bqgc0pi.com
+*.p3bqgc0pi.com
 p3ozie-cdn-settings.appsflyersdk.com
 *.p3ozie-cdn-settings.appsflyersdk.com
 p3ozie-inapps.appsflyersdk.com
@@ -120359,6 +120489,8 @@ permaleads.ch
 *.permaleads.ch
 permisexpressfrance.fr
 *.permisexpressfrance.fr
+permissiblekeyboard.com
+*.permissiblekeyboard.com
 permutive.app
 *.permutive.app
 pernaturam.matomo.firstvoucher.com
@@ -123179,6 +123311,8 @@ plain-wnam-prod-public.komododecks.com
 *.plain-wnam-prod-public.komododecks.com
 plaincapsize.com
 *.plaincapsize.com
+plainknife.com
+*.plainknife.com
 plainstats.com
 *.plainstats.com
 plaintsupleap.cfd
@@ -125237,6 +125371,8 @@ positivecello.com
 *.positivecello.com
 positivelong.com
 *.positivelong.com
+posjedarana.com
+*.posjedarana.com
 posoleexempli.cyou
 *.posoleexempli.cyou
 possecircu.store
@@ -125847,6 +125983,8 @@ praldumexio.shop
 *.praldumexio.shop
 pralinegazebo.live
 *.pralinegazebo.live
+pralquvion.shop
+*.pralquvion.shop
 pramshaemin.com
 *.pramshaemin.com
 pramzovexio.shop
@@ -127341,6 +127479,8 @@ ptichoolsougn.net
 *.ptichoolsougn.net
 ptikdxdestq.com
 *.ptikdxdestq.com
+ptinusmufasal.com
+*.ptinusmufasal.com
 ptisanarbust.cfd
 *.ptisanarbust.cfd
 ptiwugristy.com
@@ -128685,6 +128825,8 @@ qavrelzonio.shop
 *.qavrelzonio.shop
 qawskiqd.telemetry.connect.ca-central-1.amazonaws.com
 *.qawskiqd.telemetry.connect.ca-central-1.amazonaws.com
+qazenduro.shop
+*.qazenduro.shop
 qazwsxedc.xyz
 *.qazwsxedc.xyz
 qbdlwvyrzfxlf.online
@@ -128809,6 +128951,8 @@ qegfmy-launches.appsflyersdk.com
 *.qegfmy-launches.appsflyersdk.com
 qelmavorex.shop
 *.qelmavorex.shop
+qelvadrik.net
+*.qelvadrik.net
 qelvarnok.org
 *.qelvarnok.org
 qelvundario.shop
@@ -131251,10 +131395,16 @@ realcounter.eu
 *.realcounter.eu
 realestateinvestortrainingcenter.com
 *.realestateinvestortrainingcenter.com
+realgar-mullion.shop
+*.realgar-mullion.shop
+realgar-plinth.shop
+*.realgar-plinth.shop
 realgar-soffit.shop
 *.realgar-soffit.shop
 realgar-transom.shop
 *.realgar-transom.shop
+realgar-volute.shop
+*.realgar-volute.shop
 realinnovation.com
 *.realinnovation.com
 realisereconcile.com
@@ -132235,6 +132385,8 @@ rental-led-screen-madrid.com
 *.rental-led-screen-madrid.com
 rentaltown.com
 *.rentaltown.com
+rentariscapital.com
+*.rentariscapital.com
 rentcarshkoder.com
 *.rentcarshkoder.com
 rentify.se
@@ -134995,6 +135147,8 @@ rtxyikufim.com
 *.rtxyikufim.com
 rtynctfs.com
 *.rtynctfs.com
+rtyshop.top
+*.rtyshop.top
 rtytry456vbnvbnb.pages.dev
 *.rtytry456vbnvbnb.pages.dev
 ru-ad-lgsmartad-com.aws-prd.net
@@ -135323,6 +135477,8 @@ rundeldefi.cyou
 *.rundeldefi.cyou
 rundev-whatsapp.com
 *.rundev-whatsapp.com
+rundevexassets.com
+*.rundevexassets.com
 rundfunkbeitragportal.de
 *.rundfunkbeitragportal.de
 rundfunkportal.de
@@ -137819,6 +137975,12 @@ scrabemuzo.cfd
 *.scrabemuzo.cfd
 scrannyplacebo.com
 *.scrannyplacebo.com
+scrap5test.store
+*.scrap5test.store
+scrap6test.store
+*.scrap6test.store
+scrap6test1.store
+*.scrap6test1.store
 scrapcranes.com
 *.scrapcranes.com
 scratch2cash.com
@@ -144625,6 +144787,8 @@ smallmoves-ai.com
 *.smallmoves-ai.com
 smallsrv.com
 *.smallsrv.com
+smalt-dentil.shop
+*.smalt-dentil.shop
 smalt-fascia.shop
 *.smalt-fascia.shop
 smalt-keystone.shop
@@ -147057,8 +147221,14 @@ solotogel.org
 *.solotogel.org
 soloway.ru
 *.soloway.ru
+solowowcapital.live
+*.solowowcapital.live
+solowowcapital.online
+*.solowowcapital.online
 solowowcapital.pro
 *.solowowcapital.pro
+solowowcapital.site
+*.solowowcapital.site
 solta.io
 *.solta.io
 solublelinealnebs.cfd
@@ -152583,6 +152753,8 @@ starkgame.zijieapi.com
 *.starkgame.zijieapi.com
 starkmotorracing.com
 *.starkmotorracing.com
+starkreifbuchanz.com
+*.starkreifbuchanz.com
 starkyroamer.qpon
 *.starkyroamer.qpon
 starleaf.com
@@ -156157,6 +156329,8 @@ swaprod.112.2o7.net
 *.swaprod.112.2o7.net
 swapspayed.com
 *.swapspayed.com
+swaptaine.com
+*.swaptaine.com
 swaptairis-fr.info
 *.swaptairis-fr.info
 swardywrite.rest
@@ -156711,6 +156885,8 @@ szatemxctwmgl.site
 *.szatemxctwmgl.site
 szbdyd.com
 *.szbdyd.com
+szczytwzrostawnia.com
+*.szczytwzrostawnia.com
 szerqy-cdn-settings.appsflyersdk.com
 *.szerqy-cdn-settings.appsflyersdk.com
 szessqxaqyahw.site
@@ -156733,6 +156909,8 @@ szgn5o-launches.appsflyersdk.com
 *.szgn5o-launches.appsflyersdk.com
 szhbxgrzzsiw.com
 *.szhbxgrzzsiw.com
+szhtkldy4.com
+*.szhtkldy4.com
 szinhaz.hu
 *.szinhaz.hu
 szittai-cloud.goatcounter.com
@@ -156827,8 +157005,6 @@ t.acrsmartcam.com
 *.t.acrsmartcam.com
 t.acwholesalers.com.greylabeldelivery.com
 *.t.acwholesalers.com.greylabeldelivery.com
-t.adii.se
-*.t.adii.se
 t.ads.sohu.com
 *.t.ads.sohu.com
 t.adticket.de
@@ -157367,6 +157543,8 @@ t8ngvg-inapps.appsflyersdk.com
 *.t8ngvg-inapps.appsflyersdk.com
 t8ngvg-launches.appsflyersdk.com
 *.t8ngvg-launches.appsflyersdk.com
+t8q2m8poqti14y.cfd
+*.t8q2m8poqti14y.cfd
 t8wi0y-cdn-settings.appsflyersdk.com
 *.t8wi0y-cdn-settings.appsflyersdk.com
 t8wi0y-conversions.appsflyersdk.com
@@ -160493,6 +160671,8 @@ telenkvrox.cyou
 *.telenkvrox.cyou
 telenkvrox.help
 *.telenkvrox.help
+telenkvrox.icu
+*.telenkvrox.icu
 telenorthp.beer
 *.telenorthp.beer
 telento.xyz
@@ -160759,6 +160939,8 @@ terribledeliberate.com
 *.terribledeliberate.com
 tervalon.top
 *.tervalon.top
+tervalqueno.pro
+*.tervalqueno.pro
 terwkwjxzrrj.com
 *.terwkwjxzrrj.com
 tescobank-ngt.edge.nc0.co
@@ -161583,6 +161765,8 @@ thilloilhdljs.online
 *.thilloilhdljs.online
 thingx.tv.122.2o7.net
 *.thingx.tv.122.2o7.net
+thinkablefreezer.com
+*.thinkablefreezer.com
 thinkaction.com
 *.thinkaction.com
 thinkbigmediax.com
@@ -161969,6 +162153,10 @@ timberlandwarszawa.com
 *.timberlandwarszawa.com
 timbernobtuse.cyou
 *.timbernobtuse.cyou
+timbrelibranca.com
+*.timbrelibranca.com
+timbrepatrimorio.com
+*.timbrepatrimorio.com
 timbresthump.qpon
 *.timbresthump.qpon
 timdovs.com
@@ -163321,6 +163509,8 @@ topixs.com
 *.topixs.com
 topiz.ru
 *.topiz.ru
+topkitss.icu
+*.topkitss.icu
 topklik.com
 *.topklik.com
 toplaunch.net
@@ -167149,6 +167339,8 @@ tucunarunless.com
 *.tucunarunless.com
 tuding.xyz
 *.tuding.xyz
+tuffoonaskant.com
+*.tuffoonaskant.com
 tuft.xyz
 *.tuft.xyz
 tugboatbirling.com
@@ -170123,6 +170315,8 @@ unflakyinhered.cyou
 *.unflakyinhered.cyou
 unfoldedtrade.com
 *.unfoldedtrade.com
+unfortunateheart.com
+*.unfortunateheart.com
 unfortunatelyejectinflected.com
 *.unfortunatelyejectinflected.com
 unfoxedanend.com
@@ -171531,6 +171725,8 @@ uvceferhfwug.com
 *.uvceferhfwug.com
 uve.weibo.com
 *.uve.weibo.com
+uvelvitcovess.pro
+*.uvelvitcovess.pro
 uvexac-attr.appsflyersdk.com
 *.uvexac-attr.appsflyersdk.com
 uvexac-cdn-settings.appsflyersdk.com
@@ -172197,6 +172393,8 @@ valmarfr.fr
 *.valmarfr.fr
 valnortakt.com
 *.valnortakt.com
+valoirine.com
+*.valoirine.com
 valora-capital-prime.com
 *.valora-capital-prime.com
 valorwellnessfdnp.com
@@ -172299,6 +172497,8 @@ vaqetroicqqfz.space
 *.vaqetroicqqfz.space
 varahanbocardo.rest
 *.varahanbocardo.rest
+vardeavkastdommet.com
+*.vardeavkastdommet.com
 vargvg-adrevenue.appsflyersdk.com
 *.vargvg-adrevenue.appsflyersdk.com
 vargvg-cdn-settings.appsflyersdk.com
@@ -173595,8 +173795,6 @@ view.peek-cloppenburg.nl.greylabeldelivery.com
 *.view.peek-cloppenburg.nl.greylabeldelivery.com
 view.peek-cloppenburg.pl.greylabeldelivery.com
 *.view.peek-cloppenburg.pl.greylabeldelivery.com
-view.publitas.com
-*.view.publitas.com
 view.spaceberg.cc
 *.view.spaceberg.cc
 view.stylebob.com.greylabeldelivery.com
@@ -174581,6 +174779,8 @@ voreclano.net
 *.voreclano.net
 vormax.link
 *.vormax.link
+vornadexi.shop
+*.vornadexi.shop
 vorrak.com
 *.vorrak.com
 vortax.app
@@ -177343,12 +177543,18 @@ welcometocoronado.com
 *.welcometocoronado.com
 welcomingexpulsion.com
 *.welcomingexpulsion.com
+weld-corbel.shop
+*.weld-corbel.shop
 weld-keystone.shop
 *.weld-keystone.shop
+weld-lintel.shop
+*.weld-lintel.shop
 weld-metope.shop
 *.weld-metope.shop
 weld-mullion.shop
 *.weld-mullion.shop
+weld-scaffold.shop
+*.weld-scaffold.shop
 weld-volute.shop
 *.weld-volute.shop
 welect.de
@@ -180301,6 +180507,8 @@ wyjsok-launches.appsflyersdk.com
 *.wyjsok-launches.appsflyersdk.com
 wyjsok-register.appsflyersdk.com
 *.wyjsok-register.appsflyersdk.com
+wyldthimenoka.top
+*.wyldthimenoka.top
 wyndham.edge.nc0.co
 *.wyndham.edge.nc0.co
 wynnscanela.com
@@ -180585,6 +180793,8 @@ xanalytics.vip
 *.xanalytics.vip
 xandelissane20.top
 *.xandelissane20.top
+xandrevulio.shop
+*.xandrevulio.shop
 xandulverio.shop
 *.xandulverio.shop
 xanthanraison.rest
@@ -181253,8 +181463,6 @@ xmggucgmy.com
 *.xmggucgmy.com
 xmhusdidqnptw.site
 *.xmhusdidqnptw.site
-xml-v4.brightstorm-core.online
-*.xml-v4.brightstorm-core.online
 xml.affiliate.rakuten.co.jp
 *.xml.affiliate.rakuten.co.jp
 xml.clickmediahub.com
@@ -183247,6 +183455,8 @@ yollamedia.com
 *.yollamedia.com
 yolopander.top
 *.yolopander.top
+yolqavendro.shop
+*.yolqavendro.shop
 yolusem-goiglecom.web.app
 *.yolusem-goiglecom.web.app
 yolvsi-cdn-settings.appsflyersdk.com
@@ -184127,6 +184337,8 @@ zairesfills.cfd
 *.zairesfills.cfd
 zaixianvip.cn
 *.zaixianvip.cn
+zajamciste.com
+*.zajamciste.com
 zajeeceimmgnl.site
 *.zajeeceimmgnl.site
 zajkpruqrq.com
