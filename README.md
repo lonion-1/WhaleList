@@ -4,7 +4,7 @@
 
 **Koleksi *DNS blocklist* terkurasi, ringan, dan bebas duplikasi (*Zero Redundancy*) untuk perlindungan iklan, pelacak, dan ancaman siber di seluruh perangkat.**
 
-[![Build EazyLife](https://github.com/lonion-1/WhaleList/actions/workflows/build-eazylife.yml/badge.svg)](https://github.com/lonion-1/WhaleList/actions/workflows/build-eazylife.yml)
+[![Build EazyLife](https://img.shields.io/github/actions/workflow/status/lonion-1/WhaleList/eazylife-zero-redudancy.yml?branch=main&label=Build%20EazyLife&style=flat)](https://github.com/lonion-1/WhaleList/actions/workflows/eazylife-zero-redudancy.yml) ![Last Commit](https://img.shields.io/github/last-commit/lonion-1/WhaleList?label=Last%20Update&style=flat&color=success)
 ![Update Schedule](https://img.shields.io/badge/Update-Harian%20(04%3A23%20WIB)-blue?style=flat)
 ![Syntax](https://img.shields.io/badge/Format-Adblock%20(%7C%7Cdomain%5E)-success?style=flat)
 
@@ -26,11 +26,11 @@
 
 Gunakan daftar utama ini sebagai fondasi pemblokiran di DNS blocker pilihanmu:
 
-| Daftar | Target Perangkat | Fokus Utama | Domain | Ukuran | Tautan Langganan (*Raw URL*) |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **EazyLife Core** | HP, Tablet, Laptop | Iklan harian, *pop-up*, pelacak (*trackers*), & iklan lokal Indonesia. | <!-- COUNT:EazyLife-Core.txt -->229.898<!-- /COUNT --> | <!-- SIZE:EazyLife-Core.txt -->5,1 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Core.txt` |
-| **EazyLife Security** | Semua Perangkat | Anti-*phishing*, toko online palsu (*scam*), & penyebar *malware*. | <!-- COUNT:EazyLife-Security.txt -->136.641<!-- /COUNT --> | <!-- SIZE:EazyLife-Security.txt -->3,0 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Security.txt` |
-| **EazyLife Router & TV** | Router & Smart TV | Super ringan untuk RAM terbatas + blokir telemetri & iklan Smart TV. | <!-- COUNT:EazyLife-RouterTV.txt -->93.111<!-- /COUNT --> | <!-- SIZE:EazyLife-RouterTV.txt -->2,2 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-RouterTV.txt` |
+| Daftar | Target Perangkat | Fokus Utama | Domain | Ukuran | Last Update | Tautan Langganan (*Raw URL*) |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **EazyLife Core** | HP, Tablet, Laptop | Iklan harian, *pop-up*, pelacak (*trackers*), & iklan lokal Indonesia. | <!-- COUNT:EazyLife-Core.txt -->229.665<!-- /COUNT --> | <!-- SIZE:EazyLife-Core.txt -->5,1 MB<!-- /SIZE --> | ![Core Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-Core.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Core.txt` |
+| **EazyLife Security** | Semua Perangkat | Anti-*phishing*, toko online palsu (*scam*), & penyebar *malware*. | <!-- COUNT:EazyLife-Security.txt -->136.221<!-- /COUNT --> | <!-- SIZE:EazyLife-Security.txt -->3,0 MB<!-- /SIZE --> | ![Security Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-Security.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Security.txt` |
+| **EazyLife Router & TV** | Router & Smart TV | Super ringan untuk RAM terbatas + blokir telemetri & iklan Smart TV. | <!-- COUNT:EazyLife-RouterTV.txt -->93.005<!-- /COUNT --> | <!-- SIZE:EazyLife-RouterTV.txt -->2,2 MB<!-- /SIZE --> | ![RouterTV Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-RouterTV.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-RouterTV.txt` |
 
 ---
 
@@ -40,12 +40,12 @@ Pilih daftar tambahan berikut sesuai kebutuhan spesifik jaringan atau aktivitasm
 
 | Daftar | Target Penggunaan | Fokus Utama | Domain | Ukuran | Tautan Langganan (*Raw URL*) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **EazyLife Family** | Router Wi-Fi Keluarga | Paket komplet 1-klik: iklan ringan, *scam/malware*, anti-judol, & blokir konten dewasa. | <!-- COUNT:EazyLife-Family.txt -->983.832<!-- /COUNT --> | <!-- SIZE:EazyLife-Family.txt -->20,0 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Family.txt` |
+| **EazyLife Family** | Router Wi-Fi Keluarga | Paket komplet 1-klik: iklan ringan, *scam/malware*, anti-judol, & blokir konten dewasa. | <!-- COUNT:EazyLife-Family.txt -->982.012<!-- /COUNT --> | <!-- SIZE:EazyLife-Family.txt -->19,9 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Family.txt` |
 | **EazyLife Anti-Bypass** | Router & DNS Kontrol | Memblokir server *Encrypted DNS* (DoH), VPN, & proxy publik agar aturan DNS tidak diakali. | <!-- COUNT:EazyLife-AntiBypass.txt -->16.615<!-- /COUNT --> | <!-- SIZE:EazyLife-AntiBypass.txt -->338 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-AntiBypass.txt` |
-| **EazyLife Max** | *Power User* | Perlindungan agresif (*Pro++* + *Threat Intelligence Feeds*) untuk sapu bersih telemetri & ancaman siber. | <!-- COUNT:EazyLife-Max.txt -->1.746.367<!-- /COUNT --> | <!-- SIZE:EazyLife-Max.txt -->35,9 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Max.txt` |
+| **EazyLife Max** | *Power User* | Perlindungan agresif (*Pro++* + *Threat Intelligence Feeds*) untuk sapu bersih telemetri & ancaman siber. | <!-- COUNT:EazyLife-Max.txt -->1.688.203<!-- /COUNT --> | <!-- SIZE:EazyLife-Max.txt -->34,8 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Max.txt` |
 | **EazyLife Focus** | Kerja & Belajar | Memblokir media sosial populer untuk mengurangi distraksi (*digital detox*). | <!-- COUNT:EazyLife-Focus.txt -->586<!-- /COUNT --> | <!-- SIZE:EazyLife-Focus.txt -->15 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Focus.txt` |
-| **EazyLife Isekai Wall** | Semua Perangkat | Pemblokiran khusus situs perjudian (*anti-gambling*). | <!-- COUNT:EazyLife-IsekaiWall.txt -->676.387<!-- /COUNT --> | <!-- SIZE:EazyLife-IsekaiWall.txt -->13,3 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-IsekaiWall.txt` |
-| **EazyLife NSFW** | Semua Perangkat | Pemblokiran khusus konten dewasa (opsional). | <!-- COUNT:EazyLife-NSFW.txt -->85.930<!-- /COUNT --> | <!-- SIZE:EazyLife-NSFW.txt -->1,6 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-NSFW.txt` |
+| **EazyLife Isekai Wall** | Semua Perangkat | Pemblokiran khusus situs perjudian (*anti-gambling*). | <!-- COUNT:EazyLife-IsekaiWall.txt -->675.185<!-- /COUNT --> | <!-- SIZE:EazyLife-IsekaiWall.txt -->13,3 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-IsekaiWall.txt` |
+| **EazyLife NSFW** | Semua Perangkat | Pemblokiran khusus konten dewasa (opsional). | <!-- COUNT:EazyLife-NSFW.txt -->85.744<!-- /COUNT --> | <!-- SIZE:EazyLife-NSFW.txt -->1,6 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-NSFW.txt` |
 
 ---
 
@@ -68,19 +68,18 @@ Ingin privasi lebih ketat tanpa membebani perangkat dengan aturan yang tidak rel
 
 ---
 
-> **Pengguna `personalDNSfilter` (Android)?** Jika format Adblock (`||domain^`) tidak terbaca, Anda bisa langsung menyalin tautan versi *wildcard* (`*domain`) di **[Panduan & Daftar URL Wildcard](./domains/README.md)**.
-> 
+> **Pengguna `personalDNSfilter` (Android)?** Jika format Adblock (`||domain^`) tidak terbaca, kamu bisa langsung menyalin tautan versi *wildcard* (`*domain`) di **[Panduan & Daftar URL Wildcard](./domains/README.md)**.
 
 ---
 
-### 💡 Panduan Kombinasi Sesuai Perangkat
+## 💡 Panduan Kombinasi Sesuai Perangkat
 
 * **HP & Laptop Pribadi (Standar Lengkap):**
-  `EazyLife-Core.txt` + `EazyLife-Security.txt` + `EazyWhale Isekai Wall` + *(1 file dari folder `brands/` sesuai perangkat)*
+  `EazyLife-Core.txt` + `EazyLife-Security.txt` + `EazyLife-IsekaiWall.txt` + *(1 file dari folder `brands/` sesuai perangkat)*
 * **Profil Keluarga / Perangkat Anak (Ramah Anak & Anti-Judol):**
-  `EazyLife-Core.txt` + `EazyLife-Security.txt` + `EazyWhale Isekai Wall` + `EazyLife-NSFW.txt` + *(file `brands/` terkait)*
+  `EazyLife-Core.txt` + `EazyLife-Security.txt` + `EazyLife-IsekaiWall.txt` + `EazyLife-NSFW.txt` + *(file `brands/` terkait)*
 * **Router Rumah & Smart TV (Ringan & Anti-Telemetri Layar):**
-  `EazyLife-RouterTV.txt` + `EazyWhale Isekai Wall` *(+ `EazyLife-NSFW.txt` jika ingin memfilter seluruh jaringan Wi-Fi rumah)*
+  `EazyLife-RouterTV.txt` + `EazyLife-IsekaiWall.txt` *(+ `EazyLife-NSFW.txt` jika ingin memfilter seluruh jaringan Wi-Fi rumah)*
 
 ---
 
@@ -144,13 +143,15 @@ Klik bagian di bawah untuk melihat detail fungsi dan sumber hulu (*upstream*) da
 </details>
 
 <details>
-<summary><b>5. EazyWhale Isekai Wall & EazyLife NSFW (Anti-Judol & Filter Keluarga)</b></summary>
+<summary><b>5. Rincian EazyLife Isekai Wall & EazyLife NSFW (Anti-Judol & Filter Keluarga)</b></summary>
+<br>
 
-* **EazyWhale Isekai Wall** (`EazyLife-IsekaiWall.txt`):
-  * **EazyWhale Isekai Wall (Original):** domain judi online lokal & regional hasil kurasi organik jangka panjang untuk menutup celah domain judol yang terus berganti alamat.
+* **EazyLife Isekai Wall (`EazyLife-IsekaiWall.txt`):**
+  * **EazyWhale Isekai Wall (Original):** Domain judi online lokal & regional hasil kurasi organik jangka panjang untuk menutup celah domain judol yang terus berganti alamat.
   * **HaGeZi Gambling:** Daftar pemblokir situs perjudian global yang diperbarui secara berkala.
-* **EazyLife NSFW** (`EazyLife-NSFW.txt`):
+* **EazyLife NSFW (`EazyLife-NSFW.txt`):**
   * **HaGeZi NSFW:** Daftar situs konten dewasa (18+) yang dipisahkan secara khusus agar pengguna bebas memilih apakah ingin mengaktifkannya atau tidak.
+
 </details>
 
 <details>
@@ -193,8 +194,10 @@ Proyek ini menggunakan pembagian lisensi sebagai berikut:
 
 Seluruh daftar ini dapat berjalan berkat kontribusi luar biasa dari para pengelola proyek sumber terbuka berikut:
 
-* [HaGeZi's DNS Blocklists](https://github.com/hagezi/dns-blocklists)
-* [ABPindo (Indonesian Adblock Rules)](https://github.com/ABPindo/indonesianadblockrules)
-* [Phishing Army](https://phishing.army/)
-* [URLhaus by abuse.ch](https://urlhaus.abuse.ch/)
-* [StevenBlack's Hosts](https://github.com/StevenBlack/hosts)
+| Kredit | Last Commit |
+| :--- | :--- |
+| [HaGeZi's DNS Blocklists](https://github.com/hagezi/dns-blocklists) | ![HaGeZi Last Commit](https://img.shields.io/github/last-commit/hagezi/dns-blocklists?label=HaGeZi&style=flat) |
+| [ABPindo (Indonesian Adblock Rules)](https://github.com/ABPindo/indonesianadblockrules) | ![ABPindo Last Commit](https://img.shields.io/github/last-commit/ABPindo/indonesianadblockrules?label=ABPindo&style=flat) |
+| [Phishing Army](https://phishing.army/) | ![Phishing Army](https://img.shields.io/website?url=https%3A%2F%2Fphishing.army%2Fdownload%2Fphishing_army_blocklist.txt&up_message=Online%20%28Update%206%20Jam%29&down_message=Offline&label=Phishing%20Army&style=flat) |
+| [URLhaus by abuse.ch](https://urlhaus.abuse.ch/) | ![URLhaus](https://img.shields.io/website?url=https%3A%2F%2Furlhaus.abuse.ch%2Fdownloads%2Fhostfile%2F&up_message=Online%20%28Update%205%20Menit%29&down_message=Offline&label=URLhaus%20abuse.ch&style=flat) |
+| [StevenBlack's Hosts](https://github.com/StevenBlack/hosts) | ![StevenBlack Last Commit](https://img.shields.io/github/last-commit/StevenBlack/hosts?label=StevenBlack&style=flat) |
