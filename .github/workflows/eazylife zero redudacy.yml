@@ -328,6 +328,9 @@ jobs:
                   readme_path.write_text(teks_readme, encoding="utf-8")
               print("README.md: statistik jumlah domain & ukuran diperiksa.")
 
+          # ---------- Keep-Alive (Anti-Beku 60 Hari) ----------
+          Path("last-run.txt").write_text(f"Last check (UTC): {WAKTU}\n", encoding="utf-8")
+          
           # ---------- Ringkasan ----------
           # Gagal sebagian = cukup peringatan (file lama aman). Merah hanya kalau SEMUA gagal.
           for f in gagal:
