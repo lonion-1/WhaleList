@@ -4,7 +4,7 @@ name: Build EazyLife (Zero Redundancy)
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Update otomatis setiap hari jam 00:00 UTC
+    - cron: '23 21 * * *' # Update otomatis setiap hari jam 04:23 WIB
   workflow_dispatch: # Tombol jalankan manual kapan saja
 
 permissions:
