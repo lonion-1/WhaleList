@@ -1,33 +1,31 @@
-# 🐋 WhaleList — Versi Wildcard (`personalDNSfilter`)
+# 🐋 WhaleList — Wildcard Domain Lists (personalDNSfilter)
 
-Halaman ini menyediakan tautan **Raw URL** khusus berformat *wildcard* (`*domain`) untuk aplikasi pemblokir DNS yang tidak mendukung sintaks Adblock (`||domain^`), seperti **personalDNSfilter** di Android.
+Folder ini berisi daftar blokir versi *wildcard* polos (`*domain`) yang dioptimalkan agar ringan di memori untuk aplikasi pemblokir DNS lokal Android seperti **[PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)** (tersedia juga di [F-Droid](https://f-droid.org/packages/dnsfilter.android/)).
+
+> ⚠️ **Catatan RAM (`EazyLife-Max.txt`):** File versi *Max* berukuran **34+ MB**. Jangan dipasang di `personalDNSfilter` pada ponsel dengan RAM terbatas, karena bisa bikin berat atau *force close*. Untuk harian di ponsel, cukup pakai kombinasi **Core + Security + Indo + IsekaiWall**.
 
 ---
 
-## 📋 Daftar Utama (Pilih Sesuai Kebutuhan)
+## 🛡️ Daftar Utama (Core & Keamanan)
 
-* **EazyLife Core (Rekomendasi Harian):**
+* **EazyLife Core (Disarankan — Ringan & Aman):**
   `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Core.txt`
-* **EazyLife Security (Anti-Phishing & Malware):**
+* **EazyLife Security (Disarankan — Malware & Phishing):**
   `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Security.txt`
-* **EazyLife Router & TV (Ringan + Smart TV):**
-  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-RouterTV.txt`
-* **EazyLife Family (Perlindungan Keluarga & Anak):**
-  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Family.txt`
-* **EazyLife Anti-Bypass (Blokir DoH/VPN/Proxy):**
-  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-AntiBypass.txt`
-* **EazyLife Max (Agresif — Wajib RAM HP Lega):**
-  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Max.txt`
-* **EazyLife Focus (Blokir Media Sosial):**
-  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Focus.txt`
-* **EazyWhale Isekai Wall (Anti-Judi Online):**
+* **EazyLife Indo (Disarankan — Iklan & Pelacak Lokal):**
+  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Indo.txt`
+* **EazyLife IsekaiWall (Disarankan — Judol & Scam):**
   `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-IsekaiWall.txt`
-* **EazyLife NSFW (Blokir Konten Dewasa):**
-  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-NSFW.txt`
+* **EazyLife Pro (Opsional — Ketat, RAM Menengah ke Atas):**
+  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Pro.txt`
+* **EazyLife Max (Berat 34+ MB — Khusus Router / PC / Cloud DNS):**
+  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Max.txt`
 
 ---
 
-## 📱 Daftar Telemetri Merek Perangkat (Opsional)
+## 📱 Telemetri Bawaan Merek HP (Native Telemetry)
+
+Pilih **hanya** sesuai merek HP yang dipakai agar hemat RAM:
 
 * **Apple:** `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/brands/Apple.txt`
 * **Windows:** `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/brands/Windows.txt`
@@ -43,28 +41,13 @@ Halaman ini menyediakan tautan **Raw URL** khusus berformat *wildcard* (`*domain
 ---
 
 ## ⚙️ Cara Pasang di PersonalDNSfilter
-1. Unduh dan pasang aplikasi **[PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)** (tersedia juga di F-Droid dan Google Play).
-2. Salin salah satu tautan di atas (cukup pilih **3–4 daftar** agar RAM HP tetap ringan).
-3. Buka aplikasi -> ketuk **Advanced settings** -> pilih **Configure additional hosts**.
+
+1. Unduh dan pasang **[PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)** (atau via [F-Droid](https://f-droid.org/packages/dnsfilter.android/)).
+2. Salin tautan yang dibutuhkan (disarankan **Core + Security + Indo + IsekaiWall + 1 merek HP**).
+3. Buka aplikasi $\rightarrow$ ketuk **Advanced settings** $\rightarrow$ pilih **Configure additional hosts**.
 4. Tempelkan tautan yang sudah disalin dan pastikan kotaknya tercentang.
-5. Kembali ke layar utama aplikasi, lalu tekan tombol **RELOAD FILTER**.
+5. Kembali ke layar utama, lalu tekan **RELOAD FILTER**.
 
 ---
 
-## ⚙️ Cara Pasang di `personalDNSfilter`
-1. Salin salah satu tautan di atas (cukup pilih **3–4 daftar** agar RAM HP tetap ringan).
-2. Buka aplikasi **personalDNSfilter** -> ketuk **Advanced settings** -> pilih **Configure additional hosts**.
-3. Tempelkan tautan yang sudah disalin dan pastikan kotaknya tercentang.
-4. Kembali ke layar utama aplikasi, lalu tekan tombol **RELOAD FILTER** atau **RESTART**.
-
----
-
----
-
-## 🙏 Ucapan Terima Kasih
-Terima kasih khusus kepada **Ingo Zenz** atas pengembangan aplikasi pemblokir DNS *open-source* yang ringan dan andal:
-* **Situs Resmi:** [PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)
-* **Repositori GitHub:** [IngoZenz/personaldnsfilter](https://github.com/IngoZenz/personaldnsfilter)
-
----
-Halaman ini menyediakan tautan **Raw URL** khusus berformat *wildcard* (`*domain`) untuk aplikasi pemblokir DNS lokal seperti **[PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)** di Android.
+> 🙏 Terima kasih kepada **Ingo Zenz** atas proyek *open-source* **[PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)** ([GitHub](https://github.com/IngoZenz/personaldnsfilter)).
