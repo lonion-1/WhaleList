@@ -68,7 +68,8 @@ Ingin privasi lebih ketat tanpa membebani perangkat dengan aturan yang tidak rel
 
 ---
 
-> **Pengguna `personalDNSfilter` (Android)?** Jika format Adblock (`||domain^`) tidak terbaca, Anda bisa langsung menyalin tautan versi *wildcard* (`*domain`) di **[Panduan & Daftar URL Wildcard (`domains/README.md`)](./domains/README.md)**.
+> **Pengguna `personalDNSfilter` (Android)?** Jika format Adblock (`||domain^`) tidak terbaca, Anda bisa langsung menyalin tautan versi *wildcard* (`*domain`) di **[Panduan & Daftar URL Wildcard](./domains/README.md)**.
+> 
 
 ---
 
