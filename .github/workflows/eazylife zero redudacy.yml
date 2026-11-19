@@ -17,7 +17,7 @@ concurrency:
 jobs:
   build-list:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Siapkan workspace repo WhaleList
         uses: actions/checkout@v4
@@ -28,194 +28,121 @@ jobs:
           import re, sys, time, datetime, urllib.request
           from pathlib import Path
 
+          # ---------- PENGATURAN ----------
           ALLOW = Path("Allowlist.txt")    # opsional: domain yang diizinkan (tidak diblokir)
           DELETE = Path("Deletelist.txt")  # opsional: domain mati/sampah yang dihapus dari hasil akhir
+          DNSFILTER_DIR = Path("domains")  # folder output personalDNSfilter
+          WILDCARD = "*.{d}"               # format personalDNSfilter. Alternatif: "*{d}"
+          MIN_RATIO = 0.7                  # tolak hasil baru kalau < 70% dari isi file lama (anti sumber rusak)
+          WAKTU = datetime.datetime.now(datetime.timezone.utc).strftime("%Y.%m.%d.%H%M")
+
+          # ---------- SUMBER ----------
+          HZ = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/"
+
+          def hz(nama, file):
+              return (f"HaGeZi {nama}", HZ + file, "abp")
+
+          ABPINDO = ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp")
+          ISEKAI = ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "abp")
+          PHISHING_ARMY = ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains")
+          URLHAUS = ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts")
+          STEVENBLACK_SOCIAL = ("StevenBlack Social", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts", "hosts")
 
           TARGETS = [
-              # === 3 FILE UTAMA ===
               {
                   "file": "EazyLife-Core.txt",
                   "title": "EazyLife Core - Daily Ad & Tracker Blocklist",
                   "min_domains": 50000,
-                  "sources": [
-                      ("HaGeZi Pro", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt", "abp"),
-                      ("HaGeZi Pop-Up Ads", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt", "abp"),
-                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),
-                  ],
+                  "sources": [hz("Pro", "pro.txt"), hz("Pop-Up Ads", "popupads.txt"), ABPINDO],
               },
               {
                   "file": "EazyLife-Security.txt",
                   "title": "EazyLife Security - Anti-Phishing, Fake & Malware",
                   "min_domains": 5000,
-                  "sources": [
-                      ("HaGeZi Fake", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt", "abp"),
-                      ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains"),
-                      ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts"),
-                  ],
+                  "sources": [hz("Fake", "fake.txt"), PHISHING_ARMY, URLHAUS],
               },
               {
                   "file": "EazyLife-RouterTV.txt",
                   "title": "EazyLife Router & Smart TV - Lightweight & Telemetry Blocker",
                   "min_domains": 10000,
                   "sources": [
-                      ("HaGeZi Light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt", "abp"),
-                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),
-                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),
-                      ("HaGeZi Native LG webOS", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.lgwebos.txt", "abp"),
-                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),
-                      ("HaGeZi Native Roku", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.roku.txt", "abp"),
-                      ("HaGeZi Native Amazon", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.amazon.txt", "abp"),
+                      hz("Light", "light.txt"), ABPINDO,
+                      hz("Native Samsung", "native.samsung.txt"),
+                      hz("Native LG webOS", "native.lgwebos.txt"),
+                      hz("Native Xiaomi", "native.xiaomi.txt"),
+                      hz("Native Roku", "native.roku.txt"),
+                      hz("Native Amazon", "native.amazon.txt"),
                   ],
               },
-
-              # === PAKET MIXING SPESIAL BARU ===
               {
                   "file": "EazyLife-Family.txt",
                   "title": "EazyLife Family - All-in-One Safe Home Wi-Fi Blocker",
                   "min_domains": 50000,
                   "sources": [
-                      ("HaGeZi Light", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt", "abp"),
-                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),
-                      ("HaGeZi Fake", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/fake.txt", "abp"),
-                      ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains"),
-                      ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts"),
-                      ("HaGeZi Gambling", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt", "abp"),
-                      ("HaGeZi NSFW", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt", "abp"),
-                      # Uncomment baris di bawah kalau URL IsekaiWall sudah diisi:
-                      # ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "abp"),
+                      hz("Light", "light.txt"), ABPINDO, hz("Fake", "fake.txt"),
+                      PHISHING_ARMY, URLHAUS,
+                      hz("Gambling", "gambling.txt"), hz("NSFW", "nsfw.txt"),
+                       ISEKAI,
                   ],
               },
               {
                   "file": "EazyLife-AntiBypass.txt",
                   "title": "EazyLife Anti-Bypass - Encrypted DNS (DoH), VPN & Proxy Blocker",
                   "min_domains": 500,
-                  "sources": [
-                      ("HaGeZi DoH/VPN/Proxy Bypass", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt", "abp"),
-                  ],
+                  "sources": [hz("DoH/VPN/Proxy Bypass", "doh-vpn-proxy-bypass.txt")],
               },
               {
                   "file": "EazyLife-Max.txt",
                   "title": "EazyLife Max - Aggressive Ad, Telemetry & Threat Intelligence Blocker",
                   "min_domains": 100000,
                   "sources": [
-                      ("HaGeZi Pro++", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt", "abp"),
-                      ("HaGeZi Pop-Up Ads", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/popupads.txt", "abp"),
-                      ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp"),
-                      ("HaGeZi Threat Intelligence Feeds", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt", "abp"),
+                      hz("Pro++", "pro.plus.txt"), hz("Pop-Up Ads", "popupads.txt"),
+                      ABPINDO, hz("Threat Intelligence Feeds", "tif.txt"),
                   ],
               },
               {
                   "file": "EazyLife-Focus.txt",
                   "title": "EazyLife Focus - Social Media & Distraction Blocker",
                   "min_domains": 500,
-                  "sources": [
-                      ("StevenBlack Social", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts", "hosts"),
-                  ],
+                  "sources": [STEVENBLACK_SOCIAL],
               },
-
-              # === ANTI-JUDOL & KONTEN DEWASA (TERPISAH) ===
               {
                   "file": "EazyLife-IsekaiWall.txt",
                   "title": "EazyWhale Isekai Wall - Anti-Gambling Blocklist",
                   "min_domains": 2000,
-                  "sources": [
-                      ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "abp"),
-                      ("HaGeZi Gambling", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt", "abp"),
-                  ],
+                  "sources": [ISEKAI, hz("Gambling", "gambling.txt")],
               },
               {
                   "file": "EazyLife-NSFW.txt",
                   "title": "EazyLife NSFW - Adult Content Blocker (Optional)",
                   "min_domains": 10000,
-                  "sources": [
-                      ("HaGeZi NSFW", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt", "abp"),
-                  ],
-              },
-
-              # === 10 FILE MODULAR PER BRAND ===
-              {
-                  "file": "brands/Apple.txt",
-                  "title": "EazyLife Brand - Apple Native Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Apple", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.apple.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/Windows.txt",
-                  "title": "EazyLife Brand - Windows & Office Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Windows/Office", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.winoffice.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/Samsung.txt",
-                  "title": "EazyLife Brand - Samsung Native Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Samsung", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/Xiaomi.txt",
-                  "title": "EazyLife Brand - Xiaomi Native Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Xiaomi", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/Oppo-Realme.txt",
-                  "title": "EazyLife Brand - Oppo & Realme Native Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Oppo/Realme", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.oppo-realme.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/Vivo.txt",
-                  "title": "EazyLife Brand - Vivo Native Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Vivo", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.vivo.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/Huawei.txt",
-                  "title": "EazyLife Brand - Huawei Native Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Huawei", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.huawei.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/Amazon.txt",
-                  "title": "EazyLife Brand - Amazon & Fire TV Native Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Amazon", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.amazon.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/LG-webOS.txt",
-                  "title": "EazyLife Brand - LG webOS Smart TV Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native LG webOS", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.lgwebos.txt", "abp"),
-                  ],
-              },
-              {
-                  "file": "brands/Roku.txt",
-                  "title": "EazyLife Brand - Roku Streaming Telemetry Blocker",
-                  "min_domains": 10,
-                  "sources": [
-                      ("HaGeZi Native Roku", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.roku.txt", "abp"),
-                  ],
+                  "sources": [hz("NSFW", "nsfw.txt")],
               },
           ]
 
-          # Opsi aturan yang aman diubah jadi blokir DNS penuh
+          # Modular per brand: tambah brand baru cukup 1 baris di sini
+          # (nama file, file sumber HaGeZi, label)
+          BRANDS = [
+              ("Apple", "native.apple.txt", "Apple"),
+              ("Windows", "native.winoffice.txt", "Windows & Office"),
+              ("Samsung", "native.samsung.txt", "Samsung"),
+              ("Xiaomi", "native.xiaomi.txt", "Xiaomi"),
+              ("Oppo-Realme", "native.oppo-realme.txt", "Oppo & Realme"),
+              ("Vivo", "native.vivo.txt", "Vivo"),
+              ("Huawei", "native.huawei.txt", "Huawei"),
+              ("Amazon", "native.amazon.txt", "Amazon & Fire TV"),
+              ("LG-webOS", "native.lgwebos.txt", "LG webOS Smart TV"),
+              ("Roku", "native.roku.txt", "Roku Streaming"),
+          ]
+          for stem, src, label in BRANDS:
+              TARGETS.append({
+                  "file": f"brands/{stem}.txt",
+                  "title": f"EazyLife Brand - {label} Native Telemetry Blocker",
+                  "min_domains": 10,
+                  "sources": [hz(f"Native {label}", src)],
+              })
+
+          # ---------- PARSER ----------
           OPSI_AMAN = {"third-party", "3p", "important", "all", "popup"}
 
           RE_DOMAIN = re.compile(r"^(?=.{4,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+(?:xn--[a-z0-9-]{1,59}|[a-z]{2,63})$")
@@ -242,16 +169,24 @@ jobs:
 
           PARSER = {"abp": parse_abp, "hosts": parse_hosts, "domains": parse_domains}
 
+          # ---------- FETCH (dengan cache: 1 URL cukup diunduh sekali) ----------
+          CACHE = {}
+
           def fetch(url, tries=3):
+              if url in CACHE:
+                  return CACHE[url]
+              hasil = None
               for i in range(tries):
                   try:
-                      req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-Builder/4.0"})
+                      req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-Builder/5.0"})
                       with urllib.request.urlopen(req, timeout=60) as r:
-                          return r.read().decode("utf-8", errors="ignore").splitlines()
+                          hasil = r.read().decode("utf-8", errors="ignore").splitlines()
+                      break
                   except Exception as e:
                       print(f"    percobaan {i + 1}/{tries} gagal: {e}")
                       time.sleep(3 * (i + 1))
-              return None
+              CACHE[url] = hasil
+              return hasil
 
           def load_list(path):
               # Terima domain polos maupun format Adblock (||domain^)
@@ -265,6 +200,19 @@ jobs:
                   hasil.add(s.removeprefix("||").removesuffix("^"))
               return hasil
 
+          def baca_aturan(path, komentar):
+              if not path.exists():
+                  return []
+              return [l for l in path.read_text(encoding="utf-8").splitlines() if l and not l.startswith(komentar)]
+
+          def simpan(path, header, baris, komentar):
+              # Tulis hanya kalau isi benar-benar berubah (hindari commit sia-sia)
+              if baca_aturan(path, komentar) == baris:
+                  return False
+              path.parent.mkdir(parents=True, exist_ok=True)
+              path.write_text("\n".join(header + baris) + "\n", encoding="utf-8")
+              return True
+
           izin = load_list(ALLOW)
           hapus = load_list(DELETE)
           if izin:
@@ -272,12 +220,12 @@ jobs:
           if hapus:
               print(f"Deletelist aktif: {len(hapus)} domain dihapus")
 
-          ada_gagal = False
+          sukses, gagal = [], []
 
           for target in TARGETS:
-              out_path = Path(target["file"])
-              out_path.parent.mkdir(parents=True, exist_ok=True)
-              print(f"=== Membangun {target['file']} ===")
+              nama_file = target["file"]
+              out_path = Path(nama_file)
+              print(f"=== Membangun {nama_file} ===")
               domains = set()
               berhasil = []
 
@@ -299,14 +247,12 @@ jobs:
                   print(f"    +{len(domains) - sebelum} domain baru")
                   berhasil.append(nama)
 
-              if izin:
-                  domains -= izin
-              if hapus:
-                  domains -= hapus
+              domains -= izin
+              domains -= hapus
 
               if not berhasil or len(domains) < target["min_domains"]:
-                  print(f"  GAGAL {target['file']}: hanya {len(domains)} domain dari {len(berhasil)} sumber. File lama dibiarkan.\n")
-                  ada_gagal = True
+                  print(f"  GAGAL {nama_file}: hanya {len(domains)} domain dari {len(berhasil)} sumber. File lama dibiarkan.\n")
+                  gagal.append(nama_file)
                   continue
 
               # Eliminasi subdomain jika domain induk sudah ada
@@ -317,31 +263,44 @@ jobs:
                       continue
                   hasil.append(d)
 
+              # Pengaman: kalau hasil anjlok drastis dibanding file lama, anggap sumber rusak
+              lama_jml = sum(1 for l in baca_aturan(out_path, "!") if l.startswith("||"))
+              if lama_jml and len(hasil) < lama_jml * MIN_RATIO:
+                  print(f"  GAGAL {nama_file}: anjlok dari {lama_jml} ke {len(hasil)} domain. File lama dibiarkan.\n")
+                  gagal.append(nama_file)
+                  continue
+
+              # --- Output 1: format AdGuard/ABP (||domain^) ---
               aturan = [f"||{d}^" for d in hasil]
-
-              # Jangan tulis ulang kalau isi aturan tidak berubah (hindari commit sia-sia)
-              if out_path.exists():
-                  lama = [l for l in out_path.read_text(encoding="utf-8").splitlines() if l and not l.startswith("!")]
-                  if lama == aturan:
-                      print(f"  Tidak ada perubahan aturan untuk {target['file']}.\n")
-                      continue
-
-              waktu = datetime.datetime.now(datetime.timezone.utc).strftime("%Y.%m.%d.%H%M")
-              header = [
+              header_abp = [
                   f"! Title: {target['title']}",
                   "! License: GNU General Public License v3.0 (GPL-3.0)",
                   "! Maintainer: EazyWhale",
-                  f"! Version: {waktu}",
+                  f"! Version: {WAKTU}",
                   "! Expires: 1 day",
                   f"! Total Unique Domains: {len(hasil)}",
                   f"! Sources: {', '.join(berhasil)}",
                   "! --------------------------------------------------",
                   "",
               ]
-              out_path.write_text("\n".join(header + aturan) + "\n", encoding="utf-8")
-              print(f"  Selesai {target['file']}: {len(hasil)} domain dari {len(berhasil)} sumber.\n")
+              ubah_abp = simpan(out_path, header_abp, aturan, "!")
 
-          # === Update otomatis statistik (jumlah domain & ukuran file) di README.md ===
+              # --- Output 2: format personalDNSfilter (wildcard) ---
+              baris_dns = [item for d in hasil for item in (d, f"*.{d}")]
+              header_dns = [
+                  f"# Title: {target['title']} (personalDNSfilter Wildcard)",
+                  f"# Version: {WAKTU}",
+                  f"# Count: {len(hasil)}",
+                  f"# Sources: {', '.join(berhasil)}",
+                  "",
+              ]
+              ubah_dns = simpan(DNSFILTER_DIR / nama_file, header_dns, baris_dns, "#")
+
+              status = "diperbarui" if (ubah_abp or ubah_dns) else "tidak ada perubahan"
+              print(f"  Selesai {nama_file}: {len(hasil)} domain dari {len(berhasil)} sumber ({status}).\n")
+              sukses.append(nama_file)
+
+          # ---------- Update otomatis statistik di README.md ----------
           def fmt_angka(n):
               return f"{n:,}".replace(",", ".")  # 1234567 -> 1.234.567
 
@@ -356,28 +315,44 @@ jobs:
 
           readme_path = Path("README.md")
           if readme_path.exists():
-              teks_readme = readme_path.read_text(encoding="utf-8")
+              teks_awal = readme_path.read_text(encoding="utf-8")
+              teks_readme = teks_awal
               for target in TARGETS:
                   f_out = Path(target["file"])
                   if not f_out.exists():
                       continue
-                  isi = f_out.read_text(encoding="utf-8")
-                  jml = sum(1 for l in isi.splitlines() if l.startswith("||"))
-                  ukuran = f_out.stat().st_size
+                  jml = sum(1 for l in f_out.read_text(encoding="utf-8").splitlines() if l.startswith("||"))
                   teks_readme = isi_tag(teks_readme, "COUNT", target["file"], fmt_angka(jml))
-                  teks_readme = isi_tag(teks_readme, "SIZE", target["file"], fmt_ukuran(ukuran))
-              readme_path.write_text(teks_readme, encoding="utf-8")
-              print("README.md: statistik jumlah domain & ukuran diperbarui.")
+                  teks_readme = isi_tag(teks_readme, "SIZE", target["file"], fmt_ukuran(f_out.stat().st_size))
+              if teks_readme != teks_awal:
+                  readme_path.write_text(teks_readme, encoding="utf-8")
+              print("README.md: statistik jumlah domain & ukuran diperiksa.")
 
-          if ada_gagal:
+          # ---------- Ringkasan ----------
+          # Gagal sebagian = cukup peringatan (file lama aman). Merah hanya kalau SEMUA gagal.
+          for f in gagal:
+              print(f"::warning::{f} gagal dibangun, file lama dipertahankan")
+          if not sukses:
               sys.exit(1)
           PY
 
-      # always(): kalau satu daftar gagal dibuild, daftar lain yang sukses tetap disimpan
+      # always(): kalau ada yang gagal, daftar lain yang sukses tetap disimpan
       - name: Simpan semua file ke repo WhaleList
         if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add README.md EazyLife-Core.txt EazyLife-Security.txt EazyLife-RouterTV.txt EazyLife-Family.txt EazyLife-AntiBypass.txt EazyLife-Max.txt EazyLife-Focus.txt EazyLife-IsekaiWall.txt EazyLife-NSFW.txt brands/
-          git diff --staged --quiet || (git commit -m "chore: update EazyLife lists" && git push)
+          git add -A
+          if git diff --staged --quiet; then
+            echo "Tidak ada perubahan untuk di-commit."
+            exit 0
+          fi
+          git commit -m "chore: update EazyLife lists"
+          for i in 1 2 3; do
+            if git pull --rebase && git push; then
+              exit 0
+            fi
+            echo "Push gagal, coba lagi ($i/3)..."
+            sleep 5
+          done
+          exit 1
