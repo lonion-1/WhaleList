@@ -12,8 +12,6 @@ Folder ini berisi daftar blokir versi *wildcard* polos (`*domain`) yang dioptima
   `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Core.txt`
 * **EazyLife Security (Disarankan — Malware & Phishing):**
   `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Security.txt`
-* **EazyLife Indo (Disarankan — Iklan & Pelacak Lokal):**
-  `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-Indo.txt`
 * **EazyLife IsekaiWall (Disarankan — Judol & Scam):**
   `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/EazyLife-IsekaiWall.txt`
 * **EazyLife Pro (Opsional — Ketat, RAM Menengah ke Atas):**
