@@ -17,7 +17,7 @@
 * **Zero Redundancy:** Menggabungkan berbagai sumber tepercaya, menghapus domain kembar, dan otomatis memangkas subdomain apabila domain induknya sudah diblokir.
 * **Modular & Ringan:** Dipisahkan antara kebutuhan harian, keamanan tingkat lanjut, perangkat *router*/Smart TV, hingga telemetri spesifik tiap merek perangkat (*brand*).
 * **Minim *False Positive*:** Menggunakan kurasi ketat yang aman diterapkan di level DNS tanpa merusak fungsi situs maupun aplikasi sehari-hari.
-* **Otomatis Setiap Hari:** Dibangun ulang setiap hari pukul `00:00 UTC` melalui GitHub Actions.
+* **Otomatis Setiap Hari:** Dibangun ulang setiap hari pukul `04:23 WIB` melalui GitHub Actions.
 * **Transparan:** Jumlah domain dan ukuran file di setiap tabel di bawah diperbarui otomatis pada tiap *build*, jadi kamu bisa memilih daftar yang sesuai dengan kapasitas perangkatmu.
 
 ---
