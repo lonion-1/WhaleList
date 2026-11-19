@@ -82,7 +82,7 @@ jobs:
                       ("HaGeZi Gambling", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt", "abp"),
                       ("HaGeZi NSFW", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/nsfw.txt", "abp"),
                       # Uncomment baris di bawah kalau URL IsekaiWall sudah diisi:
-                      # ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/NAMA-REPO-KELUARGA/main/NAMA-FILE.txt", "domains"),
+                      # ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "abp"),
                   ],
               },
               {
