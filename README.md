@@ -5,7 +5,7 @@
 **Koleksi *DNS blocklist* terkurasi, ringan, dan bebas duplikasi (*Zero Redundancy*) untuk perlindungan iklan, pelacak, dan ancaman siber di seluruh perangkat.**
 
 [![Build EazyLife](https://github.com/lonion-1/WhaleList/actions/workflows/build-eazylife.yml/badge.svg)](https://github.com/lonion-1/WhaleList/actions/workflows/build-eazylife.yml)
-![Update Schedule](https://img.shields.io/badge/Update-Harian%20(00%3A00%20UTC)-blue?style=flat)
+![Update Schedule](https://img.shields.io/badge/Update-Harian%20(04%3A23%20WIB)-blue?style=flat)
 ![Syntax](https://img.shields.io/badge/Format-Adblock%20(%7C%7Cdomain%5E)-success?style=flat)
 
 </div>
