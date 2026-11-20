@@ -1,5 +1,5 @@
 name: Request Custom Blocklist
-description: Gabungkan beberapa daftar EazyLife dan/atau URL blocklist luar menjadi 1 file praktis (Zero Redundancy).
+description: "Gabungkan beberapa daftar EazyLife dan/atau URL blocklist luar menjadi 1 file praktis (Zero Redundancy)."
 title: "[Custom List]: "
 labels: ["custom-request"]
 body:
@@ -13,7 +13,7 @@ body:
     id: filename
     attributes:
       label: Nama File Custom
-      description: Gunakan huruf kecil, angka, atau tanda hubung `-` saja (tanpa `.txt` dan tanpa spasi). Contoh: `hp-xiaomi`
+      description: "Gunakan huruf kecil, angka, atau tanda hubung `-` saja (tanpa `.txt` dan tanpa spasi). Contoh: `hp-xiaomi`"
       placeholder: hp-xiaomi
     validations:
       required: true
@@ -22,8 +22,8 @@ body:
     id: description
     attributes:
       label: Deskripsi Singkat
-      description: Jelaskan kegunaan racikan ini agar tercatat rapi di `custom/README.md`.
-      placeholder: Gabungan Core, Security, Anti-Judol, dan blokir telemetri Xiaomi untuk HP pribadi.
+      description: "Jelaskan kegunaan racikan ini agar tercatat rapi di `custom/README.md`."
+      placeholder: "Gabungan Core, Security, Anti-Judol, dan blokir telemetri Xiaomi untuk HP pribadi."
     validations:
       required: true
 
@@ -31,7 +31,7 @@ body:
     id: presets
     attributes:
       label: Pilih Daftar Bawaan WhaleList
-      description: Centang satu atau beberapa daftar yang ingin digabungkan.
+      description: "Centang satu atau beberapa daftar yang ingin digabungkan."
       options:
         - label: EazyLife Core
         - label: EazyLife Security
@@ -57,7 +57,7 @@ body:
     id: external_urls
     attributes:
       label: Tambahan URL List Luar (Opsional)
-      description: Tempel tautan mentah (*Raw URL*) dari sumber luar, **1 URL per baris**. Mendukung format Adblock (`||domain^`), Hosts (`0.0.0.0 domain`), Wildcard (`*.domain`), maupun domain polos.
+      description: "Tempel tautan mentah (*Raw URL*) dari sumber luar, **1 URL per baris**. Mendukung format Adblock (`||domain^`), Hosts (`0.0.0.0 domain`), Wildcard (`*.domain`), maupun domain polos."
       placeholder: |
         https://example.com/custom-blocklist.txt
     validations:
