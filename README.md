@@ -208,6 +208,7 @@ Seluruh daftar ini dapat berjalan berkat kontribusi luar biasa dari para pengelo
 | [Phishing Army](https://phishing.army/) | ![Phishing Army](https://img.shields.io/website?url=https%3A%2F%2Fphishing.army%2Fdownload%2Fphishing_army_blocklist.txt&up_message=Online%20%28Update%206%20Jam%29&down_message=Offline&label=Phishing%20Army&style=flat) |
 | [URLhaus by abuse.ch](https://urlhaus.abuse.ch/) | ![URLhaus](https://img.shields.io/website?url=https%3A%2F%2Furlhaus.abuse.ch%2Fdownloads%2Fhostfile%2F&up_message=Online%20%28Update%205%20Menit%29&down_message=Offline&label=URLhaus%20abuse.ch&style=flat) |
 | [StevenBlack's Hosts](https://github.com/StevenBlack/hosts) | ![StevenBlack Last Commit](https://img.shields.io/github/last-commit/StevenBlack/hosts?label=StevenBlack&style=flat) |
+| [EazyWeb](https://github.com/lonion-1/EazyWeb) | ![StevenBlack Last Commit](https://img.shields.io/github/last-commit/lonion-1/EazyWeb?label=EazyWeb&style=flat) |
 
 ---
 
