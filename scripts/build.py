@@ -22,7 +22,9 @@ REPO_URL = "https://github.com/lonion-1/WhaleList"
 
 WILDCARD = "*.{d}"
 MIN_RATIO = 0.7
-WAKTU = datetime.datetime.now(datetime.timezone.utc).strftime("%Y.%m.%d.%H%M")
+NOW_UTC = datetime.datetime.now(datetime.timezone.utc)
+WAKTU = NOW_UTC.strftime("%Y.%m.%d.%H%M")
+TANGGAL = NOW_UTC.strftime("%Y-%m-%d")
 
 # ---------- SUMBER HULU ----------
 HZ = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/"
@@ -183,7 +185,6 @@ def parse_domains(s):
 
 
 def parse_auto(s):
-    # Bersihkan komentar di samping baris
     s = re.split(r"\s*[#!]", s, maxsplit=1)[0].strip()
     if not s:
         return None
@@ -213,7 +214,7 @@ def fetch(url, tries=3):
     hasil = None
     for i in range(tries):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-Builder/5.1"})
+            req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-Builder/5.2"})
             with urllib.request.urlopen(req, timeout=60) as r:
                 hasil = r.read().decode("utf-8", errors="ignore").splitlines()
             break
@@ -224,7 +225,7 @@ def fetch(url, tries=3):
     return hasil
 
 
-def load_list(path):
+def load_allowlist(path):
     if not path.exists():
         return set()
     hasil = set()
@@ -232,10 +233,44 @@ def load_list(path):
         s = l.strip().lower()
         if not s or s.startswith(("!", "#")):
             continue
-        token = re.split(r"[\s#!]", s, maxsplit=1)[0]
+        token = re.split(r"[\s#!|]", s, maxsplit=1)[0]
         if token:
             hasil.add(token.removeprefix("||").removesuffix("^"))
     return hasil
+
+
+def load_deletelist_records(path):
+    """Membaca catatan domain yang sudah dihapus dari hulu."""
+    records = {}
+    if not path.exists():
+        return records
+    for l in path.read_text(encoding="utf-8").splitlines():
+        s = l.strip()
+        if not s or s.startswith(("!", "#")):
+            continue
+        parts = [p.strip() for p in s.split("|")]
+        dom = parts[0].lower().removeprefix("||").removesuffix("^")
+        if not dom:
+            continue
+        tgl = parts[1] if len(parts) > 1 and parts[1] else "manual"
+        src_list = parts[2] if len(parts) > 2 and parts[2] else "-"
+        records[dom] = (tgl, src_list)
+    return records
+
+
+def save_deletelist_records(path, records):
+    header = [
+        "# WhaleList Deletelist - Catatan Otomatis Domain yang Dihapus Sumber Hulu",
+        "# Format: domain | tanggal_hapus (UTC) | dari_list",
+        "# ------------------------------------------------------------------",
+        "",
+    ]
+    baris = [f"{dom} | {tgl} | {src}" for dom, (tgl, src) in sorted(records.items())]
+    teks_baru = "\n".join(header + baris) + "\n"
+    if path.exists() and path.read_text(encoding="utf-8") == teks_baru:
+        return False
+    path.write_text(teks_baru, encoding="utf-8")
+    return True
 
 
 def baca_aturan(path, komentar):
@@ -292,7 +327,14 @@ def recipe_to_target(slug, recipe):
     }
 
 
-def build_target(target, izin, hapus):
+def is_covered_by_set(domain, domain_set):
+    if domain in domain_set:
+        return True
+    bagian = domain.split(".")
+    return any(".".join(bagian[i:]) in domain_set for i in range(1, len(bagian) - 1))
+
+
+def build_target(target, izin):
     nama_file = target["file"]
     out_path = Path(nama_file)
     print(f"=== Membangun {nama_file} ===")
@@ -317,8 +359,8 @@ def build_target(target, izin, hapus):
         print(f"    +{len(domains) - sebelum} domain baru")
         berhasil.append(nama)
 
-    domains -= izin
-    domains -= hapus
+    # Terapkan Allowlist (hanya Allowlist yang menyaring hasil akhir)
+    domains = {d for d in domains if not is_covered_by_set(d, izin)}
 
     if not berhasil or len(domains) < target["min_domains"]:
         print(f"  GAGAL {nama_file}: hanya {len(domains)} domain dari {len(berhasil)} sumber.\n")
@@ -332,12 +374,26 @@ def build_target(target, izin, hapus):
             continue
         hasil.append(d)
 
+    lama_list = [l[2:-1] for l in baca_aturan(out_path, "!") if l.startswith("||") and l.endswith("^")]
+    lama_set = set(lama_list)
+
     # Pengaman anjlok drastis (hanya untuk list bawaan yang sudah ada sebelumnya)
     if not target.get("is_custom"):
-        lama_jml = sum(1 for l in baca_aturan(out_path, "!") if l.startswith("||"))
-        if lama_jml and len(hasil) < lama_jml * MIN_RATIO:
-            print(f"  GAGAL {nama_file}: anjlok dari {lama_jml} ke {len(hasil)} domain.\n")
+        if lama_set and len(hasil) < len(lama_set) * MIN_RATIO:
+            print(f"  GAGAL {nama_file}: anjlok dari {len(lama_set)} ke {len(hasil)} domain.\n")
             return None
+
+    # Deteksi domain yang dihapus oleh sumber hulu (hanya jika 100% sumber berhasil diunduh)
+    dihapus_hulu = set()
+    if not target.get("is_custom") and lama_set and len(berhasil) == len(target["sources"]):
+        hasil_set = set(hasil)
+        for d_lama in lama_set:
+            if is_covered_by_set(d_lama, izin):
+                continue
+            if not is_covered_by_set(d_lama, hasil_set):
+                dihapus_hulu.add(d_lama)
+        if dihapus_hulu:
+            print(f"  Terdeteksi {len(dihapus_hulu)} domain dihapus oleh hulu.")
 
     # Output 1: Format Adblock (||domain^)
     aturan = [f"||{d}^" for d in hasil]
@@ -370,6 +426,7 @@ def build_target(target, izin, hapus):
     return {
         "count": len(hasil),
         "size": fmt_ukuran(out_path.stat().st_size),
+        "deleted_upstream": dihapus_hulu,
     }
 
 
@@ -402,7 +459,7 @@ def update_custom_readme(recipes):
         "",
         "Kumpulan racikan *DNS blocklist* gabungan hasil permintaan pengguna & *maintainer* (bebas duplikasi / *Zero Redundancy* dan diperbarui otomatis setiap hari pukul `04:23 WIB`).",
         "",
-        f"> **Ingin membuat kombinasi sendiri?** Buka **[Form Request Custom Blocklist]({REPO_URL}/issues/new?template=custom-list.yml)** di tab *Issues*.",
+        f"> **Tidak sesuai dengan keinginan Anda?** Anda bisa membuatnya sendiri **[di sini]({REPO_URL}/issues/new?template=custom-list.yml)**!",
         "",
         "---",
         "",
@@ -462,7 +519,7 @@ def update_custom_readme(recipes):
             issue_num = info.get("issue_number")
             issue_ref = f"([#{issue_num}]({REPO_URL}/issues/{issue_num}))" if issue_num else ""
 
-            details.append(f"<details>")
+            details.append("<details>")
             details.append(f"<summary><b><code>custom/{slug}.txt</code></b> — {desc} {issue_ref}</summary>")
             details.append("<br>\n")
             details.append(f"* **Diminta oleh:** `@{req_by}` {issue_ref}")
@@ -487,39 +544,47 @@ def main():
     parser.add_argument("--only-custom", help="Bangun hanya 1 file custom berdasarkan slug")
     args = parser.parse_args()
 
-    izin = load_list(ALLOW)
-    hapus = load_list(DELETE)
+    izin = load_allowlist(ALLOW)
     if izin:
         print(f"Allowlist aktif: {len(izin)} domain diizinkan")
-    if hapus:
-        print(f"Deletelist aktif: {len(hapus)} domain dihapus")
 
     recipes = load_recipes()
 
-    # Mode khusus Issue: bangun hanya 1 custom list tertentu agar cepat
+    # Mode khusus Issue: bangun hanya 1 custom list tertentu
     if args.only_custom:
         slug = args.only_custom
         if slug not in recipes:
             print(f"Resep '{slug}' tidak ditemukan di {RECIPES_PATH}")
             sys.exit(1)
-        stats = build_target(recipe_to_target(slug, recipes[slug]), izin, hapus)
+        stats = build_target(recipe_to_target(slug, recipes[slug]), izin)
         if not stats:
             sys.exit(1)
         update_custom_readme(recipes)
-        print(f"CUSTOM_RESULT={json.dumps(stats)}")
+        stats_out = {"count": stats["count"], "size": stats["size"]}
+        print(f"CUSTOM_RESULT={json.dumps(stats_out)}")
         return
 
-    # Mode penuh (Jadwal Harian): bangun semua root, brand, dan custom
+    # Mode penuh (Jadwal Harian)
+    delete_records = load_deletelist_records(DELETE)
+    delete_changed = False
+
     sukses, gagal = [], []
     custom_targets = [recipe_to_target(slug, recipes[slug]) for slug in sorted(recipes.keys())]
     semua_target = ROOT_TARGETS + custom_targets
 
     for target in semua_target:
-        res = build_target(target, izin, hapus)
+        res = build_target(target, izin)
         if res:
             sukses.append(target["file"])
+            for dom in res["deleted_upstream"]:
+                delete_records[dom] = (TANGGAL, target["file"])
+                delete_changed = True
         else:
             gagal.append(target["file"])
+
+    if delete_changed or not DELETE.exists():
+        if save_deletelist_records(DELETE, delete_records):
+            print(f"Deletelist.txt: diperbarui ({len(delete_records)} total catatan domain dihapus hulu).")
 
     update_root_readme(ROOT_TARGETS)
     update_custom_readme(recipes)
@@ -533,4 +598,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main() 
+    main()
