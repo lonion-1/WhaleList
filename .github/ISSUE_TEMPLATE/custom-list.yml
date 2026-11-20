@@ -1,0 +1,64 @@
+name: Request Custom Blocklist
+description: Gabungkan beberapa daftar EazyLife dan/atau URL blocklist luar menjadi 1 file praktis (Zero Redundancy).
+title: "[Custom List]: "
+labels: ["custom-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🐋 Pembuat Custom List Otomatis
+        Pilih kombinasi daftar bawaan WhaleList atau tambahkan URL blocklist eksternal. Sistem akan menggabungkannya tanpa duplikasi (*Zero Redundancy*) dan memperbaruinya setiap hari.
+
+  - type: input
+    id: filename
+    attributes:
+      label: Nama File Custom
+      description: Gunakan huruf kecil, angka, atau tanda hubung `-` saja (tanpa `.txt` dan tanpa spasi). Contoh: `hp-xiaomi`
+      placeholder: hp-xiaomi
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Singkat
+      description: Jelaskan kegunaan racikan ini agar tercatat rapi di `custom/README.md`.
+      placeholder: Gabungan Core, Security, Anti-Judol, dan blokir telemetri Xiaomi untuk HP pribadi.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: presets
+    attributes:
+      label: Pilih Daftar Bawaan WhaleList
+      description: Centang satu atau beberapa daftar yang ingin digabungkan.
+      options:
+        - label: EazyLife Core
+        - label: EazyLife Security
+        - label: EazyLife Router & TV
+        - label: EazyLife Family
+        - label: EazyLife Anti-Bypass
+        - label: EazyLife Max
+        - label: EazyLife Focus
+        - label: EazyLife Isekai Wall
+        - label: EazyLife NSFW
+        - label: "Brand: Apple"
+        - label: "Brand: Windows"
+        - label: "Brand: Samsung"
+        - label: "Brand: Xiaomi"
+        - label: "Brand: Oppo & Realme"
+        - label: "Brand: Vivo"
+        - label: "Brand: Huawei"
+        - label: "Brand: Amazon"
+        - label: "Brand: LG webOS"
+        - label: "Brand: Roku"
+
+  - type: textarea
+    id: external_urls
+    attributes:
+      label: Tambahan URL List Luar (Opsional)
+      description: Tempel tautan mentah (*Raw URL*) dari sumber luar, **1 URL per baris**. Mendukung format Adblock (`||domain^`), Hosts (`0.0.0.0 domain`), Wildcard (`*.domain`), maupun domain polos.
+      placeholder: |
+        https://example.com/custom-blocklist.txt
+    validations:
+      required: false
