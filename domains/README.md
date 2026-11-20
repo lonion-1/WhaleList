@@ -69,4 +69,8 @@ Pilih **hanya** sesuai merek perangkat yang digunakan agar hemat RAM:
 
 ---
 
+> Coba periksa daftar kombinasi yang sudah tersedia lainnya **[di sini](./custom/README.md)**.
+
+---
+
 > 🙏 Terima kasih kepada **Ingo Zenz** atas proyek *open-source* **[PersonalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)** ([GitHub](https://github.com/IngoZenz/personaldnsfilter)).
