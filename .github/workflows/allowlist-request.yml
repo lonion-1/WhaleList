@@ -1,0 +1,307 @@
+name: Auto-Check & Process Allowlist Request
+# Copyright (c) 2026 <EazyWhale>
+# Licensed under the MIT License.
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: build-eazylife
+  cancel-in-progress: false
+
+jobs:
+  process-allowlist:
+    if: >
+      (
+        contains(github.event.issue.labels.*.name, 'allowlist-request') ||
+        startsWith(github.event.issue.title, '[Allowlist]:')
+      ) &&
+      (
+        github.event.action == 'opened' ||
+        (github.event.action == 'labeled' && github.event.label.name == 'approved')
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo WhaleList
+        uses: actions/checkout@v4
+
+      - name: Periksa Deletelist, Allowlist Hulu, & Proses
+        id: check
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          EVENT_ACTION: ${{ github.event.action }}
+          EVENT_LABEL: ${{ github.event.label.name }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.parse, urllib.request
+          from pathlib import Path
+
+          body = os.environ.get("ISSUE_BODY", "")
+          issue_num = os.environ.get("ISSUE_NUMBER", "0")
+          issue_user = os.environ.get("ISSUE_USER", "")
+          repo_owner = os.environ.get("REPO_OWNER", "")
+          action = os.environ.get("EVENT_ACTION", "")
+          label = os.environ.get("EVENT_LABEL", "")
+          gh_out = os.environ["GITHUB_OUTPUT"]
+
+          def out(k, v):
+              with open(gh_out, "a", encoding="utf-8") as f:
+                  f.write(f"{k}<<EOF\n{v}\nEOF\n")
+
+          RE_DOMAIN = re.compile(r"^(?=.{4,253}$)(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+(?:xn--[a-z0-9-]{1,59}|[a-z]{2,63})$")
+
+          def bersihkan_domain(raw):
+              s = raw.strip().lower()
+              if not s or s.startswith(("#", "!")):
+                  return None
+              s = s.removeprefix("@@").removeprefix("||").removeprefix("*.")
+              s = s.split("^")[0].split("$")[0].split("#")[0].strip()
+              if "://" in s:
+                  s = urllib.parse.urlparse(s).hostname or ""
+              elif "/" in s:
+                  s = s.split("/")[0]
+              s = s.strip(".")
+              return s if RE_DOMAIN.match(s) else None
+
+          def covered_by(domain, domain_set):
+              if domain in domain_set:
+                  return True
+              parts = domain.split(".")
+              return any(".".join(parts[i:]) in domain_set for i in range(1, len(parts) - 1))
+
+          # 1. Parse bagian "Daftar Domain Salah Blokir" dari Issue Form
+          sections = {}
+          current = None
+          for line in body.splitlines():
+              if line.startswith("### "):
+                  current = line[4:].strip()
+                  sections[current] = []
+              elif current is not None:
+                  sections[current].append(line)
+
+          raw_domains = sections.get("Daftar Domain Salah Blokir", [])
+          requested = []
+          invalid_lines = []
+          for line in raw_domains:
+              t = line.strip()
+              if not t or t == "_No response_":
+                  continue
+              d = bersihkan_domain(t)
+              if d:
+                  if d not in requested:
+                      requested.append(d)
+              else:
+                  invalid_lines.append(t)
+
+          if not requested:
+              msg = "❌ **Tidak ditemukan format domain yang valid.** Pastikan memasukkan minimal satu domain seperti `contoh.com`."
+              if invalid_lines:
+                  msg += "\n\nBaris tidak dikenali:\n" + "\n".join(f"- `{x}`" for x in invalid_lines)
+              out("reply_msg", msg)
+              out("should_close", "false")
+              out("file_updated", "false")
+              raise SystemExit(0)
+
+          # 2. Baca Allowlist.txt saat ini
+          allow_path = Path("Allowlist.txt")
+          existing_allow = set()
+          allow_lines = []
+          if allow_path.exists():
+              allow_lines = allow_path.read_text(encoding="utf-8").splitlines()
+              for l in allow_lines:
+                  s = l.strip().lower()
+                  if not s or s.startswith(("!", "#")):
+                      continue
+                  tok = re.split(r"[\s#!|]", s, maxsplit=1)[0].removeprefix("||").removesuffix("^")
+                  if tok:
+                      existing_allow.add(tok)
+
+          # 3. Baca Deletelist.txt (catatan domain yang sudah dihapus hulu)
+          del_path = Path("Deletelist.txt")
+          deletelist_map = {}
+          if del_path.exists():
+              for l in del_path.read_text(encoding="utf-8").splitlines():
+                  s = l.strip()
+                  if not s or s.startswith(("!", "#")):
+                      continue
+                  parts = [p.strip() for p in s.split("|")]
+                  dom = parts[0].lower().removeprefix("||").removesuffix("^")
+                  if dom:
+                      tgl = parts[1] if len(parts) > 1 else "-"
+                      src = parts[2] if len(parts) > 2 else "-"
+                      deletelist_map[dom] = (tgl, src)
+
+          # 4. Periksa aturan pengecualian (@@||domain^) di sumber hulu
+          UPSTREAM_URLS = [
+              ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt"),
+              ("EazyBlock", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt"),
+              ("HaGeZi Pro", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt"),
+              ("HaGeZi Pro++", "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt"),
+          ]
+          upstream_allowed = {}
+          for src_name, url in UPSTREAM_URLS:
+              try:
+                  req = urllib.request.Request(url, headers={"User-Agent": "EazyLife-AllowlistBot/1.0"})
+                  with urllib.request.urlopen(req, timeout=30) as r:
+                      for b in r.read().decode("utf-8", errors="ignore").splitlines():
+                          s = b.strip().lower()
+                          if not s.startswith("@@||"):
+                              continue
+                          m = re.match(r"^@@\|\|(?:\*\.)?([a-z0-9.-]+)\^", s)
+                          if m:
+                              d = m.group(1)
+                              if RE_DOMAIN.match(d) and d not in upstream_allowed:
+                                  upstream_allowed[d] = src_name
+              except Exception as e:
+                  print(f"Lewati cek {src_name}: {e}")
+
+          upstream_allowed_set = set(upstream_allowed.keys())
+
+          # 5. Klasifikasikan setiap domain yang diminta
+          already_ok = []
+          in_deletelist = []
+          in_upstream = []
+          needs_acc = []
+
+          is_approved_or_owner = (issue_user == repo_owner) or (action == "labeled" and label == "approved")
+
+          for d in requested:
+              if covered_by(d, existing_allow):
+                  already_ok.append(d)
+              elif d in deletelist_map:
+                  in_deletelist.append((d, deletelist_map[d]))
+              elif covered_by(d, upstream_allowed_set):
+                  src_hit = next((upstream_allowed[u] for u in upstream_allowed_set if d == u or d.endswith("." + u)), "Hulu")
+                  in_upstream.append((d, src_hit))
+              else:
+                  needs_acc.append(d)
+
+          # Tentukan domain mana yang langsung ditambahkan ke Allowlist.txt
+          to_add = [d for d, _ in in_upstream]
+          if is_approved_or_owner:
+              to_add.extend(needs_acc)
+              needs_acc = []
+
+          file_updated = False
+          if to_add:
+              if not allow_lines:
+                  allow_lines = [
+                      "# WhaleList Allowlist - Daftar Pengecualian Domain Aman (False Positive)",
+                      "# ---------------------------------------------------------------------",
+                      "",
+                  ]
+              for d in to_add:
+                  if not covered_by(d, existing_allow):
+                      allow_lines.append(f"{d} # Issue #{issue_num} (@{issue_user})")
+                      existing_allow.add(d)
+                      file_updated = True
+              if file_updated:
+                  allow_path.write_text("\n".join(allow_lines).rstrip() + "\n", encoding="utf-8")
+
+          # 6. Susun balasan ramah sesuai hasil pemeriksaan
+          blocks = []
+
+          if in_deletelist:
+              lines_del = [
+                  "🗑️ **Sudah Terhapus di Sumber Hulu (`Deletelist.txt`):**",
+                  "Domain berikut sudah ada dan tercatat terhapus dari sumber hulu di file `Deletelist.txt`, sehingga tidak lagi diblokir oleh WhaleList (silakan perbarui daftar filter di aplikasimu):",
+              ]
+              for d, (tgl, src) in in_deletelist:
+                  lines_del.append(f"* `{d}` *(dihapus pada `{tgl}` dari `{src}`)*")
+              blocks.append("\n".join(lines_del))
+
+          if in_upstream:
+              lines_up = [
+                  "✅ **Terverifikasi di Allowlist Hulu:**",
+                  "Baik, URL berikut ditemukan di daftar pengecualian (*allowlist*) sumber hulu sehingga akan langsung ditambahkan ke **`Allowlist.txt`**:",
+              ]
+              for d, src in in_upstream:
+                  lines_up.append(f"* `{d}` *(terdaftar di allowlist **{src}**)*")
+              blocks.append("\n".join(lines_up))
+
+          if is_approved_or_owner and to_add and not in_upstream:
+              lines_acc = [
+                  "✅ **Disetujui & Ditambahkan ke `Allowlist.txt`:**",
+              ]
+              for d in to_add:
+                  lines_acc.append(f"* `{d}`")
+              blocks.append("\n".join(lines_acc))
+
+          if already_ok:
+              lines_ok = [
+                  "ℹ️ **Sudah Ada di `Allowlist.txt`:**",
+              ]
+              for d in already_ok:
+                  lines_ok.append(f"* `{d}` *(sudah diizinkan sebelumnya)*")
+              blocks.append("\n".join(lines_ok))
+
+          if needs_acc:
+              lines_pend = [
+                  "⏳ **Menunggu Persetujuan Maintainer (`approved`):**",
+                  "Domain berikut belum terhapus di `Deletelist.txt` dan belum masuk ke allowlist hulu. Laporan ini masuk antrean peninjauan manual oleh **EazyWhale** (atau menunggu pembaruan dari sumber hulu):",
+              ]
+              for d in needs_acc:
+                  lines_pend.append(f"* `{d}`")
+              blocks.append("\n".join(lines_pend))
+
+          if invalid_lines:
+              blocks.append("⚠️ **Baris diabaikan karena bukan domain valid:** " + ", ".join(f"`{x}`" for x in invalid_lines))
+
+          should_close = len(needs_acc) == 0
+          if should_close:
+              blocks.append("🎉 Semua domain pada laporan ini sudah tertangani. Perubahan pada `Allowlist.txt` akan aktif penuh pada *build* harian berikutnya pukul `04:23 WIB`!")
+
+          out("reply_msg", "\n\n".join(blocks))
+          out("should_close", "true" if should_close else "false")
+          out("file_updated", "true" if file_updated else "false")
+          PY
+
+      - name: Commit & push Allowlist.txt
+        if: steps.check.outputs.file_updated == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Allowlist.txt
+          if ! git diff --staged --quiet; then
+            git commit -m "chore(allowlist): update Allowlist.txt (#${{ github.event.issue.number }})"
+            for i in 1 2 3; do
+              if git pull --rebase && git push; then
+                exit 0
+              fi
+              sleep 5
+            done
+            exit 1
+          fi
+
+      - name: Balas komentar & tutup Issue jika selesai
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const msg = `${{ steps.check.outputs.reply_msg }}`;
+            const shouldClose = `${{ steps.check.outputs.should_close }}` === 'true';
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: msg
+            });
+
+            if (shouldClose) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                state: 'closed',
+                state_reason: 'completed'
+              });
+            }
