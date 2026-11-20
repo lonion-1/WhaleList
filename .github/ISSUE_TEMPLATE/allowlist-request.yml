@@ -1,0 +1,30 @@
+name: Lapor Salah Blokir (Allowlist)
+description: "Laporkan domain/aplikasi sah yang tidak sengaja terblokir agar diperiksa dan dimasukkan ke Allowlist.txt."
+title: "[Allowlist]: "
+labels: ["allowlist-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 🛡️ Permintaan Allowlist (Salah Blokir / *False Positive*)
+        Masukkan domain yang keliru terblokir. Bot akan otomatis mengecek apakah domain tersebut sudah dihapus oleh hulu (`Deletelist.txt`) atau sudah masuk ke allowlist sumber hulu.
+
+  - type: textarea
+    id: domains
+    attributes:
+      label: Daftar Domain Salah Blokir
+      description: "Masukkan **1 domain per baris** (boleh domain polos seperti `contoh.com` atau tempel URL lengkap)."
+      placeholder: |
+        contoh.com
+        api.aplikasi-aman.id
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Keterangan / Aplikasi yang Terganggu
+      description: "Jelaskan singkat fungsi domain ini atau aplikasi yang error akibat terblokir."
+      placeholder: "Fitur pembayaran / login di aplikasi X gagal memuat saat EazyLife Core aktif."
+    validations:
+      required: true
