@@ -1,9 +1,9 @@
 ! Title: EazyLife Anti-Bypass - Encrypted DNS (DoH), VPN & Proxy Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.20.0224
+! Version: 2026.11.20.2123
 ! Expires: 1 day
-! Total Unique Domains: 16615
+! Total Unique Domains: 16618
 ! Sources: HaGeZi DoH/VPN/Proxy Bypass
 ! --------------------------------------------------
 
@@ -621,6 +621,7 @@
 ||3nkh5crxol.ch^
 ||3proxy.de^
 ||3proxy.us^
+||3r.ls.u.xjo.s7.h.88-205-694-406.ir^
 ||3wvve99e.com^
 ||4.baumgardner.us^
 ||4.theartieschaffer.com^
@@ -725,12 +726,12 @@
 ||5c6349ef4335997128aa2cbf110959a8.top^
 ||5f16g6zr.com^
 ||5g.o0o.re^
+||5go.hs.ydw.pf4.sgj.fi.t.reallygood.ir^
 ||5mdvpn.ru^
 ||5noers.xyz^
 ||5o0hrubf.com^
 ||5s1djhxk.com^
 ||5t5dfpvm.com^
-||5ti.do.ru7.lq.v.8v.ir.ir.ir.pd.8kmc.co.uk^
 ||6.theartieschaffer.com^
 ||6032d9bb53d549be8367e88ad95273fa.top^
 ||61.new1.ramkal12.uk^
@@ -779,6 +780,7 @@
 ||6dccdha4.com^
 ||6fbsn3q6.com^
 ||6gonfvdy.com^
+||6h.pe.3.fi.u.fp.66-84-5-947.ir^
 ||6zj7kxar.com^
 ||7164.ddns.net^
 ||72.theartieschaffer.com^
@@ -816,6 +818,7 @@
 ||789vpnapp.com^
 ||78e281a9.ru^
 ||79tnlqws.com^
+||7b.hp.d.f8b.so.y.coe.alo-alo.ir^
 ||7ba6ed7c5fa3eab04881e1722f9a42e74d64e81f.com^
 ||7c45b8ee2a19601f023836f7e22bae70ac80ca7f.com^
 ||7f8a85466c4219fa725c511ec0a32b15707710b1.com^
@@ -846,6 +849,7 @@
 ||8duc6yogvj.site^
 ||8f19246a8b2b8b9bf42d63d919f06bb0ece902da.com^
 ||8hujmi.csb.app^
+||8j.nm.dor.pd.dp.setado.ir^
 ||8mvnbml4uxmm.online^
 ||8o00imq7asda.mooo.com^
 ||8proxy.com^
@@ -894,13 +898,15 @@
 ||9827015.xyz^
 ||98cjl.com^
 ||98kjc.top^
-||99-99-63-75.ir^
 ||99.theartieschaffer.com^
 ||993999.xyz^
 ||998521.xyz^
 ||99catnet.com^
 ||99ftq.xyz^
+||9f.do.s.or.6j8.so.r.torbad.ir^
+||9jd.kvt.py6.fu.8g.so.h.5-6-7-8.ir^
 ||9nd0oy2n.com^
+||9ohdjo.me.7f.ckl.a3.h.172-63.ir^
 ||9sskdjs.shop^
 ||9thballs.camdvr.org^
 ||9vek2brp.com^
@@ -918,6 +924,7 @@
 ||a5.anotelinopalk.co.uk^
 ||a5135324.csie.io^
 ||a52ops.xyz^
+||a6.anotelinopalk.co.uk^
 ||a8op.com^
 ||a9a3ac50c2373ac7ff8f6116e562cb44.top^
 ||aaaaaaaaaaaaaaaaa.easterndns.com^
@@ -1850,7 +1857,6 @@
 ||aoxvpn666.com^
 ||aoxvpnapp.com^
 ||apache-iv.com^
-||aparat.com.filimo.com.namava.ir.telewebion.com.ghoostbusters.ir^
 ||apetwig.com^
 ||apexgate.site^
 ||apexofficial.accesscam.org^
@@ -2580,6 +2586,7 @@
 ||bhuosr.ipv64.net^
 ||bhupygnj.com^
 ||bi-tree.ru^
+||bia.hastim.co.uk^
 ||biba.ydns.eu^
 ||bichaatwdluxktdvrehv.supabase.co^
 ||bichvpn.ru^
@@ -2593,7 +2600,6 @@
 ||bigmoney.cc^
 ||bigquerycdn.com^
 ||bikeshopthe.org^
-||bimeh.my-moon.co.uk^
 ||bingle.icu^
 ||bingojiasu.com^
 ||binhexsolutions.co.uk^
@@ -2792,6 +2798,8 @@
 ||brd-sdk-app-packages.s3.amazonaws.com^
 ||breakwall.net^
 ||breatheandbend.yoga^
+||breeze.paperteapot.com^
+||breeze.velvetwindow.cc^
 ||bridgeschoolboulder.org^
 ||bright4good.eco^
 ||brightbanyan.academy^
@@ -4353,7 +4361,6 @@
 ||differentiate.ddnsgeek.com^
 ||digi.golgoli2.co.uk^
 ||digibitdesign.com^
-||digikala.com.torob.ir.divar.ir.basalam.com.eyfst.ir^
 ||digitallink.be^
 ||digitalproxyagent.online^
 ||diglet.org^
@@ -5259,6 +5266,7 @@
 ||dns.sneakypanda.org^
 ||dns.sogemoge.art^
 ||dns.soldier.terumi.club^
+||dns.speed-benz.co.uk^
 ||dns.spil.co.id^
 ||dns.spirio.fr^
 ||dns.srinivasrao.co.in^
@@ -6133,7 +6141,6 @@
 ||e1c3d12739b3a6a820bf63898f4bfcc393e30922.com^
 ||e2210cb7c4c99f22c5b34994401f48d2cb0c8cf0.com^
 ||e23a.mooo.com^
-||e3fand.fesgheli.co.uk^
 ||e5e8c12377d6919126cc1ba7be0c410e.top^
 ||e5v4.duckdns.org^
 ||e6cc37ec81b2dba2cf019464d53fdf1718868af8.com^
@@ -7171,7 +7178,6 @@
 ||freecanadavpn.com^
 ||freecityvpn.com^
 ||freeconnect.link^
-||freeconnect.lol^
 ||freediddy.buzz^
 ||freediddy.buzz.cdn.cloudflare.net^
 ||freednet.org^
@@ -7389,7 +7395,6 @@
 ||garlandisd.nseuropa.org^
 ||gas.education^
 ||gasketmelt.com^
-||gasolino.ir^
 ||gatcha.org^
 ||gatekeepthisfr.atamanco.eu^
 ||gatepro.duckdns.org^
@@ -7495,6 +7500,7 @@
 ||getkaring.org^
 ||getlantern.org^
 ||getlantern.org.s3-website-us-east-1.amazonaws.com^
+||getmalus.cn^
 ||getmalus.com^
 ||getmalus.net^
 ||getmdl.io^
@@ -7886,6 +7892,7 @@
 ||hakoda.wtf^
 ||hallowedhot.com^
 ||halopebble.com^
+||hamishe.hastim.co.uk^
 ||hammerhead-shark.wifizone.org^
 ||hammerhead.iot64.de^
 ||hamsconfederal.top^
@@ -7945,6 +7952,7 @@
 ||hdnsvn.duckdns.org^
 ||hdyun.cc^
 ||hdyun.icu^
+||he.le.y9.bst.xo.t.72-403-837-543.ir^
 ||headproxy.com^
 ||heala.cn^
 ||heavenorhell.ru^
@@ -7957,7 +7965,6 @@
 ||heibaovpn.com^
 ||heidonglinktools.com^
 ||heimaojiasu.com^
-||hel-hi.co.uk^
 ||helios-browser.ct.ws^
 ||helios-browser.rf.gd^
 ||helios-browser.vercel.app^
@@ -8412,7 +8419,6 @@
 ||hoseeel.com^
 ||hosegear.com^
 ||hoseway.com^
-||hosinjon.ir^
 ||host.jerry-lee.uk^
 ||host8.248.cloudhost.in.th^
 ||host94.rheingold.com.ua^
@@ -8763,6 +8769,7 @@
 ||iomlelco.com^
 ||ion.pm^
 ||ionprox.com^
+||ionvpn.online^
 ||iopgn.com^
 ||iopl.xyz^
 ||iosap2-static.b-cdn.net^
@@ -8816,21 +8823,22 @@
 ||iqbbhmzh.com^
 ||iqia.org^
 ||ir-ir.ataman.info^
+||ir-ir.connectina.co.uk^
 ||ir-ir.engematica.info^
 ||ir-ir.flipme.info^
 ||ir-ir.gnutella2.info^
+||ir-ir.goaphrodite.co.uk^
 ||ir-ir.grasic.info^
 ||ir-ir.grumpyoldmen.info^
+||ir-ir.makkers.co.uk^
 ||ir-ir.my-pv.info^
 ||ir-ir.naganuma.info^
 ||ir-ir.panhandleflyers.info^
-||ir-ir.rdenham.co.uk^
 ||ir-ir.rebol.info^
 ||ir-ir.simpleelegance-us.info^
 ||ir-ir.xeonxu.info^
 ||ir.ataman.info^
 ||ir.barhousefarm.co.uk^
-||ir.brettanderson.co.uk^
 ||ir.closcloud.co.uk^
 ||ir.genesbyjohn.info^
 ||ir.konstruktion.co.uk^
@@ -8838,9 +8846,7 @@
 ||ir.mediaad.co.uk^
 ||ir.mohearn.co.uk^
 ||ir.panhandleflyers.info^
-||ir.pcspeedyfix.co.uk^
 ||ir.peachsoft.co.uk^
-||ir.philgent.co.uk^
 ||ir.xeonxu.info^
 ||ir.xn--ds-bja.info^
 ||irckyb7t9a.com^
@@ -8857,8 +8863,6 @@
 ||irreflex.biretta.cloud-ip.cc^
 ||irrelevant.cc^
 ||is-a-fag.lol.cdn.cloudflare.net^
-||isaco.ir.jnxu.ir^
-||isaco.ir.setado.co.uk^
 ||isaiahshomework.keybusinessconnection.com^
 ||iscsihost.org^
 ||isecsolutions.ddns.net^
@@ -8868,7 +8872,6 @@
 ||isharkvpn.com^
 ||ishoujijichang.com^
 ||isityet.net^
-||isna.ir.asriran.com.varzesh3.com.yalandonyi.ir^
 ||isoclinal.zelator.cloud-ip.cc^
 ||isolacje.homeip.net^
 ||ispcapi.mcafee.com^
@@ -8970,6 +8973,7 @@
 ||jego.pro^
 ||jegocloud.com^
 ||jegovpn.com^
+||jei.fl.k4.cj.d.hyi.dj.deragbaz.ir^
 ||jelly-factory.com^
 ||jellypop.org^
 ||jellyvpn.com^
@@ -9069,7 +9073,6 @@
 ||jobiakaajhsgoodboy.ajh.boats.cdn.cloudflare.net^
 ||jobixtetoyuri.ames.website^
 ||jobjapan.com^
-||jodaeimanam.ir^
 ||joebidenisgay.giize.com^
 ||johnbingofelden.org^
 ||johneldenring.lol^
@@ -9305,7 +9308,6 @@
 ||khome.site^
 ||khosh-khande.lolauth.info^
 ||khpkadmig.click^
-||khune.ir.bcsadwtgd.info^
 ||kickassproxy.com^
 ||kideqf.com^
 ||kids.vietdns.vn^
@@ -10104,7 +10106,6 @@
 ||luxvpn.cc^
 ||luzubu.com^
 ||lvchavpn.click^
-||lwww.ir^
 ||ly-1.net^
 ||lyfesinks.com^
 ||lynksignal.com^
@@ -10166,7 +10167,6 @@
 ||mamas-garden-market.com^
 ||man.destroyerkisscover.com.br^
 ||man.info.north-kazakhstan.su.cdn.cloudflare.net^
-||manazinjamiram.ir^
 ||manchaland.clubskunk.com^
 ||mandarin.chinapoem.org^
 ||mangojiasu.com^
@@ -10426,7 +10426,6 @@
 ||moamao.shop^
 ||mobile-socket.culturegps.com^
 ||mobile.development.sanluix.org^
-||mobile.prxtg.top^
 ||mobilejump.mobi^
 ||mobilevpn.net^
 ||mobrain.xyz^
@@ -10569,6 +10568,7 @@
 ||mqdtsrle.com^
 ||mqkqwy1z.baylib.top.cdn.cloudflare.net^
 ||mqrxgzi4.com^
+||mr.ps.u6.goh.ic.m.99-99-63-75.ir^
 ||mramato2.myclarevision.com^
 ||mresquire.com^
 ||mrr-qa-static.b-cdn.net^
@@ -10632,6 +10632,7 @@
 ||my-safe-net.com^
 ||my.8484848.cn^
 ||my.englishpapers.online^
+||my.home.ir.bcsadwtgd.info^
 ||my.soft98.co.uk^
 ||my.worksheetsforteachers.org^
 ||my1337jog.run^
@@ -11208,6 +11209,7 @@
 ||nwea.veriler.com^
 ||nwm9dsqv.com^
 ||nwps.fi^
+||ny.lgu.d.f8.fi.r.93-22-74-38.ir^
 ||ny.pramanik.com^
 ||nyakawai.shop^
 ||nym.com^
@@ -11400,6 +11402,8 @@
 ||orbitbasalt.com^
 ||orbitqgr7v.info^
 ||orbitzinc.com^
+||orchid.paperteapot.com^
+||orchid.velvetwindow.cc^
 ||order.registration.abrdns.com^
 ||ordns.he.net^
 ||ore-dns.bitdefender.net^
@@ -11495,6 +11499,7 @@
 ||pakupaku.bounceme.net^
 ||paladinvpn.com^
 ||paleoy.com^
+||paltronicsvpn.com^
 ||pan.yuhui.eu.org^
 ||pancakes.group^
 ||pandaexpert.xyz^
@@ -11654,6 +11659,7 @@
 ||pf2oxqgk.com^
 ||pfckhora.com^
 ||pfypikij.com^
+||pge.ldi.7g.mk.fs.i.s8.h.kg.37-94-704-33.ir^
 ||pgglrz85.com^
 ||pgwwr.cn^
 ||phantom.lol^
@@ -11799,7 +11805,6 @@
 ||play.frogiee.one^
 ||play.frogiee.one.cdn.cloudflare.net^
 ||play.gghunter.space^
-||play.goole.com.craj.ir^
 ||play.jimmyqrg.com^
 ||play.schooloqy.com^
 ||play5r.com^
@@ -11833,6 +11838,8 @@
 ||plzwork.lat^
 ||pm7051-br.xyz^
 ||pmnt4bn50c-20c12.kxcdn.com^
+||pn.do.6x.sl.t.9b.80-55-83-16.ir^
+||png.lgi.cfe.8vr.xj.f8.b.128-273-66.ir^
 ||pngheader.amerid.abrdns.com^
 ||pnj.anotelinopalk.co.uk^
 ||pns2.sadraidc.com^
@@ -11852,6 +11859,7 @@
 ||polisitogel.contractors^
 ||polisitogel.hair^
 ||polisitogel.webcam^
+||poneny87.sorrelbay.xyz^
 ||pongbeeu.com^
 ||ponghive.org^
 ||ponyzinc.com^
@@ -11917,6 +11925,7 @@
 ||premium-vpn.app^
 ||premium-vpn.store^
 ||premium-web.info^
+||premium.speed-benz.co.uk^
 ||premiumproxy.net^
 ||premsocks.com^
 ||premzon.com^
@@ -12282,7 +12291,6 @@
 ||pumplex.com^
 ||punchb.xyz^
 ||punono.duckdns.org^
-||puot.mozitop.co.uk^
 ||pupil.learn.stevedewald.com^
 ||pupilproxy.com^
 ||puppyfood.info^
@@ -12571,7 +12579,6 @@
 ||real.paper.smashing.ws^
 ||real.theory.footynews.info^
 ||realityvpn.com^
-||reallygood.ir^
 ||realpurejs.com^
 ||realpurevpn.com^
 ||realvpn.io^
@@ -12700,6 +12707,7 @@
 ||riga91197.mooo.com^
 ||rikanvex.study^
 ||rimalmotors.com^
+||rimira82.ashwren.xyz^
 ||ring.clean.abrdns.com^
 ||ringvpn.com^
 ||rini.id.vn^
@@ -12801,7 +12809,6 @@
 ||ru-bropay.com^
 ||ru-planetvpn.com^
 ||ru-vpnly.net^
-||ru7.0f.be.l.dyn.ir.xy.n.com.a7.fo.8kmc.co.uk^
 ||rubyarcade.pages.dev^
 ||rubyfish.cn^
 ||rudolphdesigns.com^
@@ -12817,6 +12824,7 @@
 ||rushproxy.com^
 ||rushproxy.io^
 ||rusnet-android.click^
+||russia.knox-proxy.world^
 ||russia5992.duckdns.org^
 ||rusthelix.com^
 ||rusticsymmetry.com^
@@ -13122,13 +13130,11 @@
 ||servergo.pw^
 ||serverhoya.com^
 ||serverssh.net^
-||servertala.ir^
 ||service.broe.ru^
 ||services.newlifesanctuarychurch.com^
 ||servis4u.top^
 ||serviseapi.com^
 ||sescloud.club^
-||setado.ir^
 ||setupvpn.com^
 ||sevengain.com^
 ||sewage.myclarevision.com^
@@ -13248,7 +13254,6 @@
 ||shinevpn.com^
 ||shinevpn.net^
 ||shinevpn.org^
-||shipboard.ir^
 ||shitblocker.com^
 ||shiyongvpn.com^
 ||shoes.golgoli2.co.uk^
@@ -13427,7 +13432,6 @@
 ||snapgrime.com^
 ||snapillustrates.com^
 ||snapleafs.com^
-||snapp.ir.neshan.org.tapsi.ir.balad.ir.siyahsefidi.ir^
 ||snapxs.com^
 ||sndkcuf.lekun.me^
 ||sndkcuf2.lekun.me^
@@ -13496,8 +13500,6 @@
 ||sparkproxy.io^
 ||spbyjzu.cn^
 ||spearhead.bury.abrdns.com^
-||speed-speed.co.uk^
-||speed.runserver.co.uk^
 ||speedcat.info^
 ||speedcatjc.com^
 ||speedcn.in^
@@ -13689,7 +13691,6 @@
 ||storkswift.com^
 ||stormnighter.com^
 ||stormproxies.com^
-||strait-of-hormuz.ir.bcsadwtgd.info^
 ||strassmair.org^
 ||stratus.bugz.fr^
 ||stream-as.jp-osa-1.linodeobjects.com^
@@ -13891,6 +13892,7 @@
 ||szyrzyk.pl^
 ||t-dz.com^
 ||t-kuailian.com.cn^
+||t.lifestylethailand.com^
 ||t.yuhui.eu.org^
 ||t2c.240130034.xyz^
 ||t7t2qxvg.com^
@@ -14029,7 +14031,7 @@
 ||teyyw.com^
 ||tf8jqyca.com^
 ||tfckwhed.com^
-||tg.prxtg.top^
+||tfi.vp.4f.du.k.t6.di.d.hosinjon.ir^
 ||tgahv25bk2.site^
 ||tgdru.ipv64.net^
 ||tgvpn.help^
@@ -14132,7 +14134,6 @@
 ||tikvpn.in^
 ||tiltbee.com^
 ||tiltghost.com^
-||tim.pd.mi.v6.mgi.5s.n.p.wu.basketbalo.ir^
 ||time.70x4.ru^
 ||time.clean.abrdns.com^
 ||timedns.net^
@@ -14167,6 +14168,7 @@
 ||tixknq83.com^
 ||tizidajian.com^
 ||tj.jamesxue.xyz^
+||tjf.uif.8g.hd.uo.y.di.servervije.ir^
 ||tk2-404-43267.vs.sakura.ne.jp^
 ||tk31z.com^
 ||tkgf2.cn^
@@ -14248,7 +14250,6 @@
 ||tor2web.org^
 ||tor2web.ru^
 ||tor2web.to^
-||torbad.ir^
 ||torguard.biz^
 ||torguard.co^
 ||torguard.com^
@@ -14507,7 +14508,6 @@
 ||uku.im^
 ||ukvpns.blogspot.ru^
 ||ukvvbso.cn^
-||ulp.tz.9a.xu.cs.ir.jp.ir.ze8.ir.v6.8kmc.co.uk^
 ||ulta.am^
 ||ultimatearca.de^
 ||ultimatepro.us^
@@ -14516,6 +14516,7 @@
 ||ultrafastvpn.net^
 ||ultramatheducation.raspberryip.com^
 ||ultraproxy.biz^
+||ultraproxy.shop^
 ||ultrasurf.es^
 ||ultrasurf.us^
 ||ultrasurfing.com^
@@ -14910,6 +14911,7 @@
 ||vds2380673.my-ihor.ru^
 ||vdskn.duckdns.org^
 ||vdsn-nl-2.azatmutq.com^
+||ve.pd.8f.dp.g.st.48-59-27-52.ir^
 ||vector9nmb3.info^
 ||vectorvelvet.com^
 ||veeejiasu.com^
@@ -14994,6 +14996,7 @@
 ||vikingvpn.com^
 ||villalazza.stream^
 ||villi.shurakenas.ru^
+||ving.mozitop.co.uk^
 ||vinny-stinks-like-dudu.com^
 ||vipanol.app^
 ||vipdownloadmena.xyz^
@@ -15938,7 +15941,6 @@
 ||www.yowus.html-5.me^
 ||www.yuhui.eu.org^
 ||www.yuzutyan-3.ipv64.net^
-||www1www.ir^
 ||wwwportal.app.dontdrinkthekoolaid.duckdns.org^
 ||wwwportal.dontdrinkthekoolaid.duckdns.org^
 ||wwww-mmmm-1424.easterndns.com^
@@ -16190,7 +16192,6 @@
 ||xutebm.com^
 ||xv-client-json-configuration.s3.us-east-1.amazonaws.com^
 ||xvbelink.com^
-||xvif.0mhku.cst.8bfy5.hif6.9pn.ir^
 ||xvless.site^
 ||xvpn.io^
 ||xvpnsecurity.com^
@@ -16270,6 +16271,7 @@
 ||yexmorio.ru^
 ||yfn42.net^
 ||yfntg.net^
+||yfo.ogr.8fk.hd3.fi.c.ye.o.gasolino.ir^
 ||yfsite.net^
 ||yftg1.com^
 ||yfybest.net^
@@ -16380,6 +16382,7 @@
 ||yuzu-4.vpn64.de^
 ||yuzu-haifu.ipv64.net^
 ||yuzu.easterndns.com^
+||yv.od7.fk.h8.dl.pw.g.44-94-14-4.ir^
 ||ywctedke.com^
 ||ywtm5afvcjjihelual.online^
 ||yy.in6.to^
