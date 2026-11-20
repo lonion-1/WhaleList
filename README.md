@@ -22,6 +22,11 @@
 
 ---
 
+> 🛡️ **Butuh perlindungan dari Telepon Spam, Pinjol & SMS Judol di Android?** Gunakan proyek pendamping **[WhaleGuard — Benteng Privasi Telepon & SMS (SpamBlocker)](https://github.com/lonion-1/WhaleGuard)**.
+>
+
+---
+
 ## 📦 Daftar Utama (*Core Lists*)
 
 Gunakan daftar utama ini sebagai fondasi pemblokiran di DNS blocker pilihanmu:
@@ -69,6 +74,7 @@ Ingin privasi lebih ketat tanpa membebani perangkat dengan aturan yang tidak rel
 ---
 
 > **Pengguna `personalDNSfilter` (Android)?** Jika format Adblock (`||domain^`) tidak terbaca, kamu bisa langsung menyalin tautan versi *wildcard* (`*domain`) di **[Panduan & Daftar URL Wildcard](./domains/README.md)**.
+>
 > **Atau filter list tidak sesuai dengan keinginan Anda?** Coba periksa daftar kombinasi yang sudah tersedia **[di sini](./custom/README.md)**.
 
 ---
@@ -205,9 +211,8 @@ Seluruh daftar ini dapat berjalan berkat kontribusi luar biasa dari para pengelo
 
 ---
 
----
-
-### 🔗 Tautan Klien DNS Blocker
+### 🔗 Tautan Klien & Proyek Pendamping
+* **[WhaleGuard (SpamBlocker Rules Indonesia)](https://github.com/lonion-1/WhaleGuard)**
 * [NextDNS](https://nextdns.io/)
 * [personalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)
 * [AdGuard](https://adguard.com/en/welcome.html) / [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)
