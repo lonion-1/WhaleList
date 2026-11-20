@@ -82,7 +82,7 @@ jobs:
                       hz("Light", "light.txt"), ABPINDO, hz("Fake", "fake.txt"),
                       PHISHING_ARMY, URLHAUS,
                       hz("Gambling", "gambling.txt"), hz("NSFW", "nsfw.txt"),
-                       ISEKAI,
+                      ISEKAI,
                   ],
               },
               {
@@ -189,7 +189,7 @@ jobs:
               return hasil
 
           def load_list(path):
-              # Terima domain polos maupun format Adblock (||domain^)
+              # Terima domain polos maupun format Adblock (||domain^), abaikan komentar inline
               if not path.exists():
                   return set()
               hasil = set()
@@ -197,7 +197,9 @@ jobs:
                   s = l.strip().lower()
                   if not s or s.startswith(("!", "#")):
                       continue
-                  hasil.add(s.removeprefix("||").removesuffix("^"))
+                  token = re.split(r"[\s#!]", s, maxsplit=1)[0]
+                  if token:
+                      hasil.add(token.removeprefix("||").removesuffix("^"))
               return hasil
 
           def baca_aturan(path, komentar):
@@ -286,7 +288,7 @@ jobs:
               ubah_abp = simpan(out_path, header_abp, aturan, "!")
 
               # --- Output 2: format personalDNSfilter (wildcard) ---
-              baris_dns = [item for d in hasil for item in (d, f"*.{d}")]
+              baris_dns = [item for d in hasil for item in (d, WILDCARD.format(d=d))]
               header_dns = [
                   f"# Title: {target['title']} (personalDNSfilter Wildcard)",
                   f"# Version: {WAKTU}",
