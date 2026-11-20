@@ -2,19 +2,19 @@ name: Auto-Merge Valid Domain PR
 
 on:
   pull_request_target:
-    types: [opened, synchronize, reopened]
+    types: [opened, synchronize, reopened, ready_for_review]
 
 permissions:
   contents: write
   pull-requests: write
 
-# Satu run per PR; run lama dibatalkan kalau ada push baru
 concurrency:
   group: auto-merge-pr-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
   validasi-dan-merge:
+    if: ${{ !github.event.pull_request.draft }}
     runs-on: ubuntu-latest
     steps:
       - name: Cek file yang diubah (Keamanan Mutlak)
@@ -22,20 +22,18 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            // Ambil SEMUA file (paginasi), bukan hanya 30 pertama
             const files = await github.paginate(github.rest.pulls.listFiles, {
               owner: context.repo.owner,
               repo: context.repo.repo,
               pull_number: context.issue.number,
               per_page: 100,
             });
-            // Daftar file yang boleh di-auto-merge tanpa persetujuan manual
-            const fileAman = ['Allowlist.txt', 'EazyBlock.txt'];
+            const fileAman = ['Allowlist.txt', 'Deletelist.txt', 'EazyBlock.txt'];
             const semuaAman = files.length > 0 && files.every(f =>
-              fileAman.includes(f.filename) && f.status !== 'renamed'
+              fileAman.includes(f.filename) && ['modified', 'added'].includes(f.status)
             );
             if (!semuaAman) {
-              core.setFailed('PR menyentuh file sistem/lainnya. Butuh review manual dari EazyWhale.');
+              core.setFailed('PR menyentuh file sistem/lainnya atau menghapus file. Butuh review manual dari EazyWhale.');
             }
 
       - name: Checkout isi PR
@@ -44,34 +42,61 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
           persist-credentials: false
 
-      - name: Validasi format domain
+      - name: Validasi diff & format domain
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
         run: |
+          git fetch --no-tags --depth=1 origin "$BASE_SHA"
           python3 - <<'PY'
-          import re, sys
+          import os, re, subprocess, sys
           from pathlib import Path
 
-          RE_DOMAIN = re.compile(r"^(?:\|\|)?(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+[a-z]{2,63}\^?$")
-          # Lindungi domain vital agar tidak iseng diblokir di EazyBlock.txt
+          # Wajib ||domain^ utuh ATAU domain polos (mendukung TLD punycode xn--)
+          RE_RULE = re.compile(
+              r"^(?:"
+              r"\|\|(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+(?:xn--[a-z0-9-]{1,59}|[a-z]{2,63})\^"
+              r"|"
+              r"(?:[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?\.)+(?:xn--[a-z0-9-]{1,59}|[a-z]{2,63})"
+              r")$"
+          )
+
+          # Lindungi domain vital agar tidak iseng diblokir
           ANTI_ISENG = {"google.com", "youtube.com", "github.com", "whatsapp.com", "cloudflare.com"}
 
           def dilindungi(domain):
-              # Cocok persis ATAU subdomain (mis. accounts.google.com)
               return any(domain == d or domain.endswith("." + d) for d in ANTI_ISENG)
 
-          for nama_file in ["Allowlist.txt", "EazyBlock.txt"]:
+          base_sha = os.environ["BASE_SHA"]
+          target_files = ["Allowlist.txt", "Deletelist.txt", "EazyBlock.txt"]
+
+          for nama_file in target_files:
               p = Path(nama_file)
               if not p.exists():
                   continue
+
+              # 1. Cegah penghapusan baris aturan yang sudah ada tanpa review manual
+              diff = subprocess.check_output(
+                  ["git", "diff", "--unified=0", base_sha, "HEAD", "--", nama_file],
+                  text=True,
+              )
+              for dline in diff.splitlines():
+                  if dline.startswith("-") and not dline.startswith("---"):
+                      isi_lama = dline[1:].strip()
+                      if isi_lama and not isi_lama.startswith(("!", "#")):
+                          sys.exit(f"PR menghapus aturan di {nama_file} ({isi_lama}). Butuh review manual EazyWhale.")
+
+              # 2. Validasi seluruh isi file (format + anti-iseng)
               for no, baris in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
                   s = baris.strip().lower()
                   if not s or s.startswith(("!", "#")):
                       continue
-                  if not RE_DOMAIN.match(s):
+                  if not RE_RULE.match(s):
                       sys.exit(f"Format tidak valid di {nama_file} baris {no}: {baris}")
                   bersih = s.removeprefix("||").removesuffix("^")
-                  if nama_file == "EazyBlock.txt" and dilindungi(bersih):
+                  if nama_file in ("EazyBlock.txt", "Deletelist.txt") and dilindungi(bersih):
                       sys.exit(f"Domain dilindungi tidak boleh diblokir: {bersih}")
-          print("Semua baris valid dan aman!")
+
+          print("Semua baris baru valid, aman, dan tidak ada aturan lama yang dihapus!")
           PY
 
       - name: Auto-Approve & Merge PR
@@ -87,7 +112,6 @@ jobs:
               event: 'APPROVE',
               body: '🐋 Validasi format domain lulus otomatis. Terima kasih atas kontribusinya!'
             });
-            // Merge dikunci ke commit yang sudah divalidasi
             await github.rest.pulls.merge({
               owner: context.repo.owner,
               repo: context.repo.repo,
