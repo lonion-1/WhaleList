@@ -1,0 +1,244 @@
+name: Auto-Build Custom List from Issue
+# Copyright (c) 2026 <EazyWhale>
+# Licensed under the MIT License.
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: build-eazylife
+  cancel-in-progress: false
+
+jobs:
+  # 1. Jika orang lain membuka request, beri info menunggu persetujuan Owner
+  notify-pending:
+    if: >
+      contains(github.event.issue.labels.*.name, 'custom-request') &&
+      github.event.action == 'opened' &&
+      github.event.issue.user.login != github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - name: Balas menunggu persetujuan
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: "👋 Halo! Permintaan *custom blocklist* kamu sudah masuk antrean dan menunggu persetujuan maintainer (label `approved`) sebelum diproses otomatis oleh bot."
+            });
+
+  # 2. Eksekusi langsung jika dibuat Owner ATAU sudah diberi label 'approved'
+  process-custom-list:
+    if: >
+      contains(github.event.issue.labels.*.name, 'custom-request') &&
+      (
+        (github.event.action == 'opened' && github.event.issue.user.login == github.repository_owner) ||
+        (github.event.action == 'labeled' && github.event.label.name == 'approved')
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repo WhaleList
+        uses: actions/checkout@v4
+
+      - name: Parsing formulir Issue & validasi input
+        id: parse
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, sys, urllib.parse
+          from pathlib import Path
+
+          body = os.environ.get("ISSUE_BODY", "")
+          issue_num = int(os.environ.get("ISSUE_NUMBER", "0"))
+          issue_user = os.environ.get("ISSUE_USER", "unknown")
+          gh_out = os.environ["GITHUB_OUTPUT"]
+
+          def out(k, v):
+              with open(gh_out, "a", encoding="utf-8") as f:
+                  f.write(f"{k}<<EOF\n{v}\nEOF\n")
+
+          # Pisahkan bagian berdasarkan header ### dari GitHub Issue Form
+          sections = {}
+          current = None
+          for line in body.splitlines():
+              if line.startswith("### "):
+                  current = line[4:].strip()
+                  sections[current] = []
+              elif current is not None:
+                  sections[current].append(line)
+
+          raw_name = "\n".join(sections.get("Nama File Custom", [])).strip()
+          raw_desc = "\n".join(sections.get("Deskripsi Singkat", [])).strip()
+          raw_presets = sections.get("Pilih Daftar Bawaan WhaleList", [])
+          raw_urls = "\n".join(sections.get("Tambahan URL List Luar (Opsional)", [])).strip()
+
+          if raw_desc == "_No response_":
+              raw_desc = ""
+          if raw_urls == "_No response_":
+              raw_urls = ""
+
+          # Sanitasi nama file (hanya huruf kecil, angka, -, _)
+          slug = raw_name.removesuffix(".txt").strip().lower()
+          slug = re.sub(r"[^a-z0-9_-]+", "-", slug).strip("-_")
+
+          if not slug or len(slug) > 50:
+              out("valid", "false")
+              out("error_msg", "❌ **Nama file tidak valid.** Gunakan huruf kecil, angka, atau tanda hubung `-` (maksimal 50 karakter).")
+              sys.exit(0)
+
+          # Ambil checkbox yang dicentang
+          presets = []
+          for line in raw_presets:
+              m = re.match(r"^\s*-\s*\[[xX]\]\s*(.+)$", line)
+              if m:
+                  presets.append(m.group(1).strip())
+
+          # Validasi URL eksternal
+          external_urls = []
+          bad_urls = []
+          for line in raw_urls.splitlines():
+              u = line.strip()
+              if not u or u.startswith("#"):
+                  continue
+              p = urllib.parse.urlparse(u)
+              host = (p.hostname or "").lower()
+              if p.scheme not in ("http", "https") or not host or host in ("localhost", "0.0.0.0") or host.startswith(("127.", "10.", "192.168.", "169.254.")):
+                  bad_urls.append(u)
+              else:
+                  external_urls.append(u)
+
+          if bad_urls:
+              out("valid", "false")
+              out("error_msg", f"❌ **URL luar tidak valid atau diblokir:**\n" + "\n".join(f"- `{u}`" for u in bad_urls))
+              sys.exit(0)
+
+          if not presets and not external_urls:
+              out("valid", "false")
+              out("error_msg", "❌ **Pilihan kosong.** Centang minimal satu daftar bawaan WhaleList atau masukkan minimal satu URL list luar.")
+              sys.exit(0)
+
+          # Simpan ke custom/recipes.json
+          recipes_path = Path("custom/recipes.json")
+          recipes_path.parent.mkdir(parents=True, exist_ok=True)
+          recipes = json.loads(recipes_path.read_text(encoding="utf-8")) if recipes_path.exists() else {}
+
+          recipes[slug] = {
+              "description": raw_desc or "Custom blocklist gabungan",
+              "presets": presets,
+              "external_urls": external_urls,
+              "requested_by": issue_user,
+              "issue_number": issue_num,
+          }
+          recipes_path.write_text(json.dumps(recipes, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+          out("valid", "true")
+          out("slug", slug)
+          out("has_antibypass", "true" if "EazyLife Anti-Bypass" in presets else "false")
+          PY
+
+      - name: Bangun file custom & update custom/README.md
+        id: build
+        if: steps.parse.outputs.valid == 'true'
+        run: |
+          OUTPUT=$(python3 scripts/build.py --only-custom "${{ steps.parse.outputs.slug }}")
+          echo "$OUTPUT"
+          STATS_JSON=$(echo "$OUTPUT" | grep "^CUSTOM_RESULT=" | cut -d= -f2-)
+          if [ -z "$STATS_JSON" ]; then
+            echo "build_ok=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "build_ok=true" >> "$GITHUB_OUTPUT"
+            echo "stats=$STATS_JSON" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit & push hasil custom list
+        if: steps.parse.outputs.valid == 'true' && steps.build.outputs.build_ok == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add custom/ domains/custom/
+          if ! git diff --staged --quiet; then
+            git commit -m "feat(custom): build custom/${{ steps.parse.outputs.slug }}.txt (#${{ github.event.issue.number }})"
+            for i in 1 2 3; do
+              if git pull --rebase && git push; then
+                exit 0
+              fi
+              sleep 5
+            done
+            exit 1
+          fi
+
+      - name: Balas komentar & tutup Issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const valid = `${{ steps.parse.outputs.valid }}` === 'true';
+            const buildOk = `${{ steps.build.outputs.build_ok }}` === 'true';
+            const slug = `${{ steps.parse.outputs.slug }}`;
+            const hasAntiBypass = `${{ steps.parse.outputs.has_antibypass }}` === 'true';
+            const repoFull = `${{ github.repository }}`;
+
+            if (!valid) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: `${{ steps.parse.outputs.error_msg }}\n\nSilakan perbaiki isi Issue ini atau buat ulang.`
+              });
+              return;
+            }
+
+            if (!buildOk) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: "⚠️ **Gagal membangun file custom.** Kemungkinan URL sumber eksternal tidak dapat diakses atau tidak mengandung domain yang valid. Periksa log GitHub Actions untuk detailnya."
+              });
+              return;
+            }
+
+            const stats = JSON.parse(`${{ steps.build.outputs.stats }}`);
+            const rawUrl = `https://raw.githubusercontent.com/${repoFull}/main/custom/${slug}.txt`;
+            const wildcardUrl = `https://raw.githubusercontent.com/${repoFull}/main/domains/custom/${slug}.txt`;
+            const readmeUrl = `https://github.com/${repoFull}/blob/main/custom/README.md`;
+
+            let warning = "";
+            if (hasAntiBypass) {
+              warning = "\n> ⚠️ **Peringatan Anti-Bypass:** Jangan gunakan daftar ini langsung di HP/Browser dengan *Private DNS / Secure DNS* aktif karena akan memutus koneksi DNS perangkatmu. Gunakan khusus di Router / AdGuard Home / Pi-hole.\n";
+            }
+
+            const comment = [
+              `✅ **Custom blocklist \`custom/${slug}.txt\` berhasil dibuat!**`,
+              "",
+              `* **Total Domain Unik:** \`${stats.count.toLocaleString('id-ID')}\` domain (${stats.size})`,
+              `* **Format Adblock / AdGuard / Pi-hole:**\n  \`\`\`text\n  ${rawUrl}\n  \`\`\``,
+              `* **Format Wildcard (\`personalDNSfilter\`):**\n  \`\`\`text\n  ${wildcardUrl}\n  \`\`\``,
+              warning,
+              `Daftar ini juga sudah tercatat di **[custom/README.md](${readmeUrl})** dan akan diperbarui otomatis setiap hari pukul \`04:23 WIB\`.`
+            ].join("\n");
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: comment
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'completed'
+            }); 
