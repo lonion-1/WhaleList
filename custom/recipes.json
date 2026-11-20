@@ -1,0 +1,13 @@
+{
+  "eazylife-mixingcore": {
+    "description": "Penggabungan EazyLife-Core, EazyLife-Security, EazyLife-IsekaiWall",
+    "presets": [
+      "EazyLife Core",
+      "EazyLife Security",
+      "EazyLife Isekai Wall"
+    ],
+    "external_urls": [],
+    "requested_by": "lonion-1",
+    "issue_number": 2
+  }
+}
