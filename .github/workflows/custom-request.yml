@@ -18,7 +18,10 @@ jobs:
   # 1. Jika orang lain membuka request, beri info menunggu persetujuan Owner
   notify-pending:
     if: >
-      contains(github.event.issue.labels.*.name, 'custom-request') &&
+      (
+        contains(github.event.issue.labels.*.name, 'custom-request') ||
+        startsWith(github.event.issue.title, '[Custom List]:')
+      ) &&
       github.event.action == 'opened' &&
       github.event.issue.user.login != github.repository_owner
     runs-on: ubuntu-latest
@@ -37,7 +40,10 @@ jobs:
   # 2. Eksekusi langsung jika dibuat Owner ATAU sudah diberi label 'approved'
   process-custom-list:
     if: >
-      contains(github.event.issue.labels.*.name, 'custom-request') &&
+      (
+        contains(github.event.issue.labels.*.name, 'custom-request') ||
+        startsWith(github.event.issue.title, '[Custom List]:')
+      ) &&
       (
         (github.event.action == 'opened' && github.event.issue.user.login == github.repository_owner) ||
         (github.event.action == 'labeled' && github.event.label.name == 'approved')
@@ -241,4 +247,4 @@ jobs:
               issue_number: context.issue.number,
               state: 'closed',
               state_reason: 'completed'
-            }); 
+            });
