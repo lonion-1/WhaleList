@@ -212,3 +212,15 @@ Seluruh daftar ini dapat berjalan berkat kontribusi luar biasa dari para pengelo
 * [personalDNSfilter](https://www.zenz-solutions.de/personaldnsfilter-wp/)
 * [AdGuard](https://adguard.com/en/welcome.html) / [AdGuard Home](https://adguard.com/en/adguard-home/overview.html)
 * [Pi-hole](https://pi-hole.net/)
+
+---
+
+<div align="center">
+  <sub>🐾 Dirancang & diracik bersama oleh komunitas di seluruh dunia</sub><br>
+  <sub>🔥 <b>SAYA AKAN LAWAN</b></sub>
+</div>
+<div align="right">
+  <sub>love kiss… kiss… EazyWhale 🐳</sub><br>
+</div>
+
+---
