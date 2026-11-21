@@ -1,6 +1,6 @@
 # Title: EazyLife NSFW - Adult Content Blocker (Optional) (personalDNSfilter Wildcard)
-# Version: 2026.11.20.2123
-# Count: 87887
+# Version: 2026.11.21.0229
+# Count: 87988
 # Sources: HaGeZi NSFW
 
 0-0.asia
@@ -3503,6 +3503,14 @@
 *.91aijubei.com
 91aijule.cn
 *.91aijule.cn
+91aijule.com
+*.91aijule.com
+91aijumi.com
+*.91aijumi.com
+91aijuxing.com
+*.91aijuxing.com
+91aijuyun.com
+*.91aijuyun.com
 91aise.xyz
 *.91aise.xyz
 91av.cyou
@@ -3569,16 +3577,24 @@
 *.91juhai.com
 91jukanba.com
 *.91jukanba.com
+91julai.com
+*.91julai.com
 91jule.com
 *.91jule.com
+91julin.com
+*.91julin.com
 91jupian.com
 *.91jupian.com
+91juqu.com
+*.91juqu.com
 91jutai.com
 *.91jutai.com
 91jutang.com
 *.91jutang.com
 91juxuan.com
 *.91juxuan.com
+91juyun.com
+*.91juyun.com
 91jxporn.com
 *.91jxporn.com
 91mei.xyz
@@ -6451,6 +6467,8 @@ ai-porno.net
 *.ai-porno.net
 ai-porno.top
 *.ai-porno.top
+ai-pornzone.com
+*.ai-pornzone.com
 ai-rahat.com
 *.ai-rahat.com
 ai-sex-chat.net
@@ -6819,6 +6837,8 @@ aiporngeneration.com
 *.aiporngeneration.com
 aiporngenerator.co.uk
 *.aiporngenerator.co.uk
+aiporngenerator.tv
+*.aiporngenerator.tv
 aipornginger.com
 *.aipornginger.com
 aiporngranny.com
@@ -12549,6 +12569,8 @@ asian-hd-sex.com
 *.asian-hd-sex.com
 asian-hd.org
 *.asian-hd.org
+asian-japanporn.com
+*.asian-japanporn.com
 asian-matures.com
 *.asian-matures.com
 asian-porn-tube.org
@@ -13435,6 +13457,8 @@ asianshooters.com
 *.asianshooters.com
 asiansingles.com
 *.asiansingles.com
+asiansjav.com
+*.asiansjav.com
 asiansluts.click
 *.asiansluts.click
 asianslutz.com
@@ -13485,6 +13509,8 @@ asianteenie.com
 *.asianteenie.com
 asianteenpics.com
 *.asianteenpics.com
+asianteenpics.net
+*.asianteenpics.net
 asianteenporn.beauty
 *.asianteenporn.beauty
 asianteenporn.co
@@ -14373,6 +14399,8 @@ auntymaza.cc
 *.auntymaza.cc
 auntymaza.center
 *.auntymaza.center
+auntymaza.chat
+*.auntymaza.chat
 auntymaza.city
 *.auntymaza.city
 auntymaza.cloud
@@ -14399,6 +14427,8 @@ auntymaza.lol
 *.auntymaza.lol
 auntymaza.ltd
 *.auntymaza.ltd
+auntymaza.mba
+*.auntymaza.mba
 auntymaza.online
 *.auntymaza.online
 auntymaza.org
@@ -15203,6 +15233,8 @@ ayurvedickamalpailwanvanaspati.com
 *.ayurvedickamalpailwanvanaspati.com
 ayyasporno.com
 *.ayyasporno.com
+az-porno.fun
+*.az-porno.fun
 az-sexe.com
 *.az-sexe.com
 azalynbeauty.com
@@ -17825,6 +17857,8 @@ bdsmx-porn.com
 *.bdsmx-porn.com
 bdsmx.tube
 *.bdsmx.tube
+bdsmxxx.pro
+*.bdsmxxx.pro
 bdsmxxxmovies.com
 *.bdsmxxxmovies.com
 bdsmxxxtubes.com
@@ -20891,6 +20925,8 @@ bigtitavenue.com
 *.bigtitavenue.com
 bigtitbitches.com
 *.bigtitbitches.com
+bigtitcams.com
+*.bigtitcams.com
 bigtitcreampie.com
 *.bigtitcreampie.com
 bigtithitomi.com
@@ -22669,6 +22705,8 @@ bokepcrot.health
 *.bokepcrot.health
 bokepcrot.host
 *.bokepcrot.host
+bokepcrot.info
+*.bokepcrot.info
 bokepcrot.land
 *.bokepcrot.land
 bokepcrot.pizza
@@ -23253,6 +23291,8 @@ bollywoodxcam.com
 *.bollywoodxcam.com
 bollywoodxxx.pro
 *.bollywoodxxx.pro
+boloji.com
+*.boloji.com
 bolshie-siski.video
 *.bolshie-siski.video
 bolt4u.com
@@ -24879,6 +24919,8 @@ brasilvr.com
 *.brasilvr.com
 brassbabesbikes.com
 *.brassbabesbikes.com
+bratcams.com
+*.bratcams.com
 bratperversions.com
 *.bratperversions.com
 brattiebattbeauty.com
@@ -26097,8 +26139,6 @@ bustyfats.com
 *.bustyfats.com
 bustyfilmes.com
 *.bustyfilmes.com
-bustyful.com
-*.bustyful.com
 bustygalleries.com
 *.bustygalleries.com
 bustygia.com
@@ -31725,6 +31765,8 @@ celebritiesfi.xyz
 *.celebritiesfi.xyz
 celebritiesnetworth.org
 *.celebritiesnetworth.org
+celebritieszone.com
+*.celebritieszone.com
 celebrity-beauty.com
 *.celebrity-beauty.com
 celebrity-captures.com
@@ -32975,10 +33017,6 @@ chicagoexecutivesprinters.com
 *.chicagoexecutivesprinters.com
 chicagofanoutfit.com
 *.chicagofanoutfit.com
-chicagofireexperiences.com
-*.chicagofireexperiences.com
-chicagofireseating.com
-*.chicagofireseating.com
 chicagoflatroofingservice.com
 *.chicagoflatroofingservice.com
 chicagoforks.com
@@ -33145,6 +33183,8 @@ chicanostudiesdepartment.com
 *.chicanostudiesdepartment.com
 chicanostudiesdepartment.xyz
 *.chicanostudiesdepartment.xyz
+chicas123.com
+*.chicas123.com
 chicasbikini.blogspot.com
 *.chicasbikini.blogspot.com
 chicaschampagne.com
@@ -33269,6 +33309,8 @@ chilisexvidz.com
 *.chilisexvidz.com
 chill-gay12.top
 *.chill-gay12.top
+chill-gay13.top
+*.chill-gay13.top
 chillicams.com
 *.chillicams.com
 chillywife.xyz
@@ -40579,6 +40621,8 @@ desixclip.com
 *.desixclip.com
 desixclip.net
 *.desixclip.net
+desixhub.digital
+*.desixhub.digital
 desixnxx.info
 *.desixnxx.info
 desixnxx.mobi
@@ -41535,6 +41579,8 @@ dirtydaddysgirls.com
 *.dirtydaddysgirls.com
 dirtydating.com
 *.dirtydating.com
+dirtydatinglive.com
+*.dirtydatinglive.com
 dirtydeedgrading.com
 *.dirtydeedgrading.com
 dirtydeeds.club
@@ -46445,6 +46491,8 @@ eroscenter-frankfurt.com
 *.eroscenter-frankfurt.com
 eroscenter42.de
 *.eroscenter42.de
+eroscenter55.de
+*.eroscenter55.de
 erosceny.ru
 *.erosceny.ru
 eroscripts.com
@@ -46739,8 +46787,6 @@ eroticdive.top
 *.eroticdive.top
 eroticdollar.com
 *.eroticdollar.com
-eroticdrumband.com
-*.eroticdrumband.com
 eroticen.com
 *.eroticen.com
 eroticen.net
@@ -55083,6 +55129,8 @@ freemature.pics
 *.freemature.pics
 freemature.tube
 *.freemature.tube
+freematurebbw.com
+*.freematurebbw.com
 freematurebutts.com
 *.freematurebutts.com
 freematurecams.net
@@ -55449,6 +55497,8 @@ freepornemperor.com
 *.freepornemperor.com
 freepornenergy.com
 *.freepornenergy.com
+freepornerotica.com
+*.freepornerotica.com
 freepornever.com
 *.freepornever.com
 freepornfaces.com
@@ -58803,6 +58853,8 @@ gay-xmovies.com
 *.gay-xmovies.com
 gay-xnx-clips.com
 *.gay-xnx-clips.com
+gay-xtapes.com
+*.gay-xtapes.com
 gay-xxx.icu
 *.gay-xxx.icu
 gay-xxx.me
@@ -62179,6 +62231,8 @@ genzun.cn
 *.genzun.cn
 geocitiesforever.com
 *.geocitiesforever.com
+geokj.com
+*.geokj.com
 georgeis.gay
 *.georgeis.gay
 georgeskhourybeautycenter.com
@@ -62463,6 +62517,8 @@ getthelube.com
 *.getthelube.com
 gettingdick.com
 *.gettingdick.com
+gettingnaughty.pro
+*.gettingnaughty.pro
 gettranny.com
 *.gettranny.com
 getupclose.com
@@ -63487,6 +63543,8 @@ gizmoxxx.com
 *.gizmoxxx.com
 gjcam.com
 *.gjcam.com
+gkaproductions.com
+*.gkaproductions.com
 gkelectronics.in
 *.gkelectronics.in
 gladyocio.xyz
@@ -67697,6 +67755,8 @@ hdfuckporn.com
 *.hdfuckporn.com
 hdfuckporno.online
 *.hdfuckporno.online
+hdgaiju.com
+*.hdgaiju.com
 hdgay.net
 *.hdgay.net
 hdgaychat.com
@@ -74401,6 +74461,8 @@ hugetitslist.com
 *.hugetitslist.com
 hugetitsmom.com
 *.hugetitsmom.com
+hugetitsphotos.com
+*.hugetitsphotos.com
 hugetitspics.net
 *.hugetitspics.net
 hugetitsporn.pics
@@ -74861,6 +74923,8 @@ i-love-nana.com
 *.i-love-nana.com
 i-o-h.net
 *.i-o-h.net
+i-stripper.net
+*.i-stripper.net
 i-strippers.com
 *.i-strippers.com
 i-strips.com
@@ -76269,6 +76333,8 @@ indiafuck.net
 *.indiafuck.net
 indiafuns.com
 *.indiafuns.com
+indiammssex.com
+*.indiammssex.com
 indiamobiletube.com
 *.indiamobiletube.com
 indian-bajaj-south-church-road-gaya.com
@@ -78539,6 +78605,8 @@ izinporno21.shop
 *.izinporno21.shop
 izisex.net
 *.izisex.net
+izispicy.com
+*.izispicy.com
 izle.blogspot.com
 *.izle.blogspot.com
 izleporno.biz
@@ -82631,10 +82699,14 @@ kamababa.org.im
 *.kamababa.org.im
 kamababa.org.in
 *.kamababa.org.in
+kamababa.store
+*.kamababa.store
 kamababa.stream
 *.kamababa.stream
 kamababa.us
 *.kamababa.us
+kamababa.vip
+*.kamababa.vip
 kamababa.website
 *.kamababa.website
 kamababa1.com
@@ -82647,8 +82719,20 @@ kamababa12.com
 *.kamababa12.com
 kamababa14.com
 *.kamababa14.com
+kamababa19.com
+*.kamababa19.com
+kamababa20.com
+*.kamababa20.com
+kamababa22.com
+*.kamababa22.com
+kamababa24.com
+*.kamababa24.com
+kamababa26.com
+*.kamababa26.com
 kamababa8.com
 *.kamababa8.com
+kamababadesi.com
+*.kamababadesi.com
 kamababahd.com
 *.kamababahd.com
 kamababatv.com
@@ -82657,6 +82741,8 @@ kamababaviral.com
 *.kamababaviral.com
 kamababax.com
 *.kamababax.com
+kamababax.skin
+*.kamababax.skin
 kamakathalu.com
 *.kamakathalu.com
 kamakhyashakti.com
@@ -82751,6 +82837,8 @@ kanliao27.com
 *.kanliao27.com
 kanliao28.com
 *.kanliao28.com
+kanmadoujuge.com
+*.kanmadoujuge.com
 kanmanwang.com
 *.kanmanwang.com
 kannadapornvideos.com
@@ -86177,6 +86265,8 @@ latenightflirt.com
 *.latenightflirt.com
 latenzien.nl
 *.latenzien.nl
+latestdesimms.com
+*.latestdesimms.com
 latestgovt-jobs.com
 *.latestgovt-jobs.com
 latesthentai.com
@@ -97107,6 +97197,8 @@ milfcentral.com
 *.milfcentral.com
 milfcerca.it
 *.milfcerca.it
+milfchat.live
+*.milfchat.live
 milfchatwebcams.com
 *.milfchatwebcams.com
 milfclit.com
@@ -97631,6 +97723,8 @@ milfxxx.mom
 *.milfxxx.mom
 milfxxx.net
 *.milfxxx.net
+milfxxx.online
+*.milfxxx.online
 milfxxx.video
 *.milfxxx.video
 milfxxx.xyz
@@ -98417,6 +98511,8 @@ mmsbaba.com
 *.mmsbaba.com
 mmsbaba.vip
 *.mmsbaba.vip
+mmsbabes.com
+*.mmsbabes.com
 mmsbazzar.com
 *.mmsbazzar.com
 mmsbazzar.ink
@@ -98461,6 +98557,8 @@ mmsnt.com
 *.mmsnt.com
 mmspornvideo.com
 *.mmspornvideo.com
+mmsraja.com
+*.mmsraja.com
 mmsseen.com
 *.mmsseen.com
 mmstown.com
@@ -105181,6 +105279,8 @@ noahidedating.com
 *.noahidedating.com
 noahwcanales.com
 *.noahwcanales.com
+noaporn.com
+*.noaporn.com
 nobelgroup.cn
 *.nobelgroup.cn
 nobiliserotica.com
@@ -106447,6 +106547,8 @@ nudephotos.ru
 *.nudephotos.ru
 nudepics.co
 *.nudepics.co
+nudepics.com
+*.nudepics.com
 nudepicshd.com
 *.nudepicshd.com
 nudepicsnow.com
@@ -107615,8 +107717,26 @@ oilyhandjob.sbs
 *.oilyhandjob.sbs
 oilysex.cyou
 *.oilysex.cyou
+oim.baby
+*.oim.baby
+oim.beauty
+*.oim.beauty
+oim.homes
+*.oim.homes
+oim.lat
+*.oim.lat
+oim.lol
+*.oim.lol
+oim.monster
+*.oim.monster
+oim.pics
+*.oim.pics
+oim.quest
+*.oim.quest
 oinam.mom
 *.oinam.mom
+oio.autos
+*.oio.autos
 oio.baby
 *.oio.baby
 oio.beauty
@@ -107627,6 +107747,18 @@ oio.lat
 *.oio.lat
 oio.monster
 *.oio.monster
+oioi.autos
+*.oioi.autos
+oioi.baby
+*.oioi.baby
+oioi.beauty
+*.oioi.beauty
+oioi.click
+*.oioi.click
+oioi.homes
+*.oioi.homes
+oioi.quest
+*.oioi.quest
 oiporno.mobi
 *.oiporno.mobi
 oixxx.com
@@ -108279,6 +108411,22 @@ omgteens.com
 *.omgteens.com
 omgyes.com
 *.omgyes.com
+omh.autos
+*.omh.autos
+omh.baby
+*.omh.baby
+omh.beauty
+*.omh.beauty
+omh.ceo
+*.omh.ceo
+omh.homes
+*.omh.homes
+omh.lat
+*.omh.lat
+omh.monster
+*.omh.monster
+omh.quest
+*.omh.quest
 omiporno.com
 *.omiporno.com
 ommyescorts.com
@@ -110215,6 +110363,8 @@ pakato.mobi
 *.pakato.mobi
 pakfam.org.cn
 *.pakfam.org.cn
+pakimms.com
+*.pakimms.com
 pakisex.one
 *.pakisex.one
 pakisexhub.com
@@ -117399,6 +117549,8 @@ pornjealous.com
 *.pornjealous.com
 pornjerry.com
 *.pornjerry.com
+pornjhub.com
+*.pornjhub.com
 pornjimbo.com
 *.pornjimbo.com
 pornjimbo.ru
@@ -118411,6 +118563,8 @@ porno-sztarok.hu
 *.porno-sztarok.hu
 porno-tok.com
 *.porno-tok.com
+porno-tok.top
+*.porno-tok.top
 porno-torent.com
 *.porno-torent.com
 porno-tracker.com
@@ -118427,6 +118581,8 @@ porno-trans4.top
 *.porno-trans4.top
 porno-transiki8.top
 *.porno-transiki8.top
+porno-transiki9.top
+*.porno-transiki9.top
 porno-trash.net
 *.porno-trash.net
 porno-tube.pro
@@ -123549,6 +123705,8 @@ pornvideos-side.com
 *.pornvideos-side.com
 pornvideos-step.com
 *.pornvideos-step.com
+pornvideos-top.com
+*.pornvideos-top.com
 pornvideos-tour.com
 *.pornvideos-tour.com
 pornvideos-true.com
@@ -131473,6 +131631,8 @@ safetyproud.com
 *.safetyproud.com
 safetyservedsweet.com
 *.safetyservedsweet.com
+safforms.com
+*.safforms.com
 sagaraart.newgrounds.com
 *.sagaraart.newgrounds.com
 sageporn.com
@@ -132645,6 +132805,8 @@ seattlogos.com
 *.seattlogos.com
 sebastians.mom
 *.sebastians.mom
+sebokep.asia
+*.sebokep.asia
 sebokep.com
 *.sebokep.com
 sebokep.lol
@@ -134343,6 +134505,8 @@ sexalarab4.life
 *.sexalarab4.life
 sexalarab42.life
 *.sexalarab42.life
+sexalarab43.life
+*.sexalarab43.life
 sexalarabi.best
 *.sexalarabi.best
 sexalarabi.cam
@@ -135271,6 +135435,8 @@ sexdollpornhd.com
 *.sexdollpornhd.com
 sexdollqueen.com
 *.sexdollqueen.com
+sexdolls-factory-pictures.com
+*.sexdolls-factory-pictures.com
 sexdolls-shop.com
 *.sexdolls-shop.com
 sexdolls.cz
@@ -140407,6 +140573,8 @@ sheikhtubemills.com
 *.sheikhtubemills.com
 sheikhwaqarimran.com
 *.sheikhwaqarimran.com
+sheinsex.com
+*.sheinsex.com
 sheisnerdy.com
 *.sheisnerdy.com
 sheispornstar.com
@@ -141201,8 +141369,6 @@ shopdecathlon.com
 *.shopdecathlon.com
 shoperotic.com.au
 *.shoperotic.com.au
-shopflirtation.com
-*.shopflirtation.com
 shopidigital.com
 *.shopidigital.com
 shopikkoo.com
@@ -144095,12 +144261,16 @@ spicevids.com
 *.spicevids.com
 spicevidsgay.com
 *.spicevidsgay.com
+spicy-ai.com
+*.spicy-ai.com
 spicy-aroma.com
 *.spicy-aroma.com
 spicy-box.com
 *.spicy-box.com
 spicy-fuck.com
 *.spicy-fuck.com
+spicy-gum.com
+*.spicy-gum.com
 spicy-porn.com
 *.spicy-porn.com
 spicy-pumpkin.itch.io
@@ -144127,6 +144297,8 @@ spicyblackgirls.com
 *.spicyblackgirls.com
 spicybunnies.com
 *.spicybunnies.com
+spicycam.net
+*.spicycam.net
 spicycamgirl.webcam
 *.spicycamgirl.webcam
 spicychat.ai
@@ -144141,6 +144313,10 @@ spicygen.ai
 *.spicygen.ai
 spicyhardcore.com
 *.spicyhardcore.com
+spicyhotmoms.com
+*.spicyhotmoms.com
+spicyj.com
+*.spicyj.com
 spicyjapanesexxx.com
 *.spicyjapanesexxx.com
 spicylab.org
@@ -144157,8 +144333,12 @@ spicymatureencounters.com
 *.spicymatureencounters.com
 spicymaturepussy.com
 *.spicymaturepussy.com
+spicymilfs.com
+*.spicymilfs.com
 spicymms.com
 *.spicymms.com
+spicymmsx.guru
+*.spicymmsx.guru
 spicyplumpers.com
 *.spicyplumpers.com
 spicypop.newgrounds.com
@@ -146269,6 +146449,8 @@ superporn.online
 *.superporn.online
 superporn19.sbs
 *.superporn19.sbs
+superporn19.top
+*.superporn19.top
 superporn26.sbs
 *.superporn26.sbs
 superpornchat.com
@@ -147371,6 +147553,8 @@ sxxxy.club
 *.sxxxy.club
 sxyland.com
 *.sxyland.com
+sxymaal.com
+*.sxymaal.com
 sxypix.com
 *.sxypix.com
 sxyporn.org
@@ -153703,6 +153887,8 @@ topescortitalia.it
 *.topescortitalia.it
 topescortmalta.com
 *.topescortmalta.com
+topescortmilano.it
+*.topescortmilano.it
 topescortnews.eu
 *.topescortnews.eu
 topescortroma.it
@@ -158371,6 +158557,8 @@ uzsex.com.ru
 *.uzsex.com.ru
 uzsexhub.site
 *.uzsexhub.site
+uzxxx.xyz
+*.uzxxx.xyz
 v-anal.info
 *.v-anal.info
 v-anale.best
@@ -160225,10 +160413,14 @@ viralharami.com
 *.viralharami.com
 viralhubporn.com
 *.viralhubporn.com
+viralkand.info
+*.viralkand.info
 viralkand.watch
 *.viralkand.watch
 viralmms.com
 *.viralmms.com
+viralmms.site
+*.viralmms.site
 viralnude.com
 *.viralnude.com
 viralpanu.com
@@ -165073,6 +165265,8 @@ xcelebx.com
 *.xcelebx.com
 xchar.ai
 *.xchar.ai
+xchat.com
+*.xchat.com
 xchat.tv
 *.xchat.tv
 xchatcz.com
@@ -170959,6 +171153,8 @@ xxxmilfs.net
 *.xxxmilfs.net
 xxxmilfs.top
 *.xxxmilfs.top
+xxxmms.com
+*.xxxmms.com
 xxxmoby.com
 *.xxxmoby.com
 xxxmom.net
@@ -171029,6 +171225,8 @@ xxxmovies-like.com
 *.xxxmovies-like.com
 xxxmovies-love.com
 *.xxxmovies-love.com
+xxxmovies-mature.com
+*.xxxmovies-mature.com
 xxxmovies-ok.com
 *.xxxmovies-ok.com
 xxxmovies-okay.com
@@ -171775,6 +171973,8 @@ xxxszex.org
 *.xxxszex.org
 xxxtaboo.net
 *.xxxtaboo.net
+xxxtamil.top
+*.xxxtamil.top
 xxxtasty.com
 *.xxxtasty.com
 xxxtds.com
@@ -173735,6 +173935,8 @@ younggaytwinks.net
 *.younggaytwinks.net
 younggirlporn.com
 *.younggirlporn.com
+younggirlsxxx.pro
+*.younggirlsxxx.pro
 younggunsxxx.com
 *.younggunsxxx.com
 younghqporn.com

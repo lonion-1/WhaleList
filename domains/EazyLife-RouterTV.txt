@@ -1,6 +1,6 @@
 # Title: EazyLife Router & Smart TV - Lightweight & Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.20.2123
-# Count: 92668
+# Version: 2026.11.21.0229
+# Count: 92638
 # Sources: HaGeZi Light, ABPindo, HaGeZi Native Samsung, HaGeZi Native LG webOS, HaGeZi Native Xiaomi, HaGeZi Native Roku, HaGeZi Native Amazon
 
 0--d.com
@@ -3099,6 +3099,8 @@
 *.2ujcmo-launches.appsflyersdk.com
 2ujcmo-register.appsflyersdk.com
 *.2ujcmo-register.appsflyersdk.com
+2v6pb5xbhunnmy8o.cfd
+*.2v6pb5xbhunnmy8o.cfd
 2veo.com
 *.2veo.com
 2vkczz-cdn-settings.appsflyersdk.com
@@ -5789,8 +5791,6 @@
 *.7228.eu
 7230b342-gwbfzy7a.cname.ebis.ne.jp
 *.7230b342-gwbfzy7a.cname.ebis.ne.jp
-723467278234573.sbs
-*.723467278234573.sbs
 7246ae5b07.com
 *.7246ae5b07.com
 72730.com
@@ -5909,8 +5909,6 @@
 *.7846kugkrc425475gli7zkkpe.cfd
 78587924.xyz
 *.78587924.xyz
-7894623.lat
-*.7894623.lat
 7898a9d175.com
 *.7898a9d175.com
 789bet11.com
@@ -6469,8 +6467,6 @@
 *.85yfpm-launches.appsflyersdk.com
 864feb57ruary.com
 *.864feb57ruary.com
-8674321.top
-*.8674321.top
 868ecc605e.com
 *.868ecc605e.com
 86k3uw8q98.com
@@ -12403,6 +12399,8 @@ ads-1202260457.us-east-1.elb.amazonaws.com
 *.ads-1202260457.us-east-1.elb.amazonaws.com
 ads-1821218336.ap-southeast-1.elb.amazonaws.com
 *.ads-1821218336.ap-southeast-1.elb.amazonaws.com
+ads-277240063.us-east-1.elb.amazonaws.com
+*.ads-277240063.us-east-1.elb.amazonaws.com
 ads-abc.com
 *.ads-abc.com
 ads-adv.top
@@ -12473,6 +12471,8 @@ ads-chi-nfl.yinzcam.com
 *.ads-chi-nfl.yinzcam.com
 ads-cloud.rovio.com
 *.ads-cloud.rovio.com
+ads-cogocast-net-1727671867.us-east-1.elb.amazonaws.com
+*.ads-cogocast-net-1727671867.us-east-1.elb.amazonaws.com
 ads-collector.luizalabs.com
 *.ads-collector.luizalabs.com
 ads-config-engine-noneu.truecaller.com
@@ -16931,6 +16931,8 @@ afrdtech.com
 *.afrdtech.com
 afreshpendulousdisturbing.com
 *.afreshpendulousdisturbing.com
+africanarealestate.com
+*.africanarealestate.com
 africanmango.pl
 *.africanmango.pl
 africapay-financement.fr
@@ -17001,8 +17003,6 @@ agelzcxqccfxo.space
 *.agelzcxqccfxo.space
 agence-sg.fr
 *.agence-sg.fr
-agencjadeva.pl
-*.agencjadeva.pl
 agency2.ru
 *.agency2.ru
 agency360.io
@@ -34461,6 +34461,8 @@ avdego.net
 *.avdego.net
 avelixa.net
 *.avelixa.net
+avendroka.biz
+*.avendroka.biz
 avenidageranic.cyou
 *.avenidageranic.cyou
 avenir-crypto.com
@@ -40029,6 +40031,8 @@ botulinopaquedoodle.cyou
 *.botulinopaquedoodle.cyou
 botulintrembly.cyou
 *.botulintrembly.cyou
+bouclierpopulaire.biz
+*.bouclierpopulaire.biz
 bouffesagamimckay.cyou
 *.bouffesagamimckay.cyou
 boughwarrior.com
@@ -40667,6 +40671,8 @@ brightsport.com
 *.brightsport.com
 brightstackuv.info
 *.brightstackuv.info
+brightstorm-core.online
+*.brightstorm-core.online
 brigsgunster.com
 *.brigsgunster.com
 briguefidibus.com
@@ -40849,6 +40855,8 @@ browsekeeper.com
 *.browsekeeper.com
 browser-addons.com
 *.browser-addons.com
+browser-api-au.heytapmobile.com
+*.browser-api-au.heytapmobile.com
 browser-api-br.heytapmobile.com
 *.browser-api-br.heytapmobile.com
 browser-api-fr.heytapmobile.com
@@ -40881,6 +40889,8 @@ browser-http-intake.logs.datadoghq.com
 *.browser-http-intake.logs.datadoghq.com
 browser-http-intake.logs.datadoghq.eu
 *.browser-http-intake.logs.datadoghq.eu
+browser-intake-datadoghq.eu.intern.schreinereistumpf.de
+*.browser-intake-datadoghq.eu.intern.schreinereistumpf.de
 browser-intake-ddog-gov.com
 *.browser-intake-ddog-gov.com
 browser-sdk-fr.heytapmobile.com
@@ -41301,8 +41311,6 @@ buestyle.com
 *.buestyle.com
 buf-lemonde-fr-cddc.at-o.net
 *.buf-lemonde-fr-cddc.at-o.net
-buggingshovesthatch.cfd
-*.buggingshovesthatch.cfd
 buggykinoosdogfish.cyou
 *.buggykinoosdogfish.cyou
 bugleczmoidgxo.com
@@ -41865,6 +41873,8 @@ by2.uservoice.com
 *.by2.uservoice.com
 byarjsfxfrove.space
 *.byarjsfxfrove.space
+bybit.work
+*.bybit.work
 bybnjqlujudhm.site
 *.bybnjqlujudhm.site
 bybs2e-cdn-settings.appsflyersdk.com
@@ -49277,14 +49287,8 @@ com-numerbiletu283993712.sbs
 *.com-numerbiletu283993712.sbs
 com-numerbiletu32193912.sbs
 *.com-numerbiletu32193912.sbs
-com-numerbiletu3821831923.sbs
-*.com-numerbiletu3821831923.sbs
 com-numerbiletu812319931.sbs
 *.com-numerbiletu812319931.sbs
-com-numerbiletu831909123.sbs
-*.com-numerbiletu831909123.sbs
-com-numerbiletu8319239123.sbs
-*.com-numerbiletu8319239123.sbs
 com.112.2o7.net
 *.com.112.2o7.net
 com.122.2o7.net
@@ -49711,8 +49715,6 @@ congratulateddepositioneasiest.com
 *.congratulateddepositioneasiest.com
 congressonlineproject.org
 *.congressonlineproject.org
-conibuseporloggi.godaddysites.com
-*.conibuseporloggi.godaddysites.com
 conjoinmollusk.click
 *.conjoinmollusk.click
 conjunctionboatdistribution.com
@@ -49795,6 +49797,8 @@ connexion-document.web.app
 *.connexion-document.web.app
 connexity.net
 *.connexity.net
+connext-fd-gnbrate4fjhjb3f7.z01.azurefd.net
+*.connext-fd-gnbrate4fjhjb3f7.z01.azurefd.net
 connextra.com
 *.connextra.com
 connexus.net.au
@@ -50043,6 +50047,8 @@ control.tvinteractive.tv
 *.control.tvinteractive.tv
 control2.tvinteractive.tv
 *.control2.tvinteractive.tv
+controlaffliction.com
+*.controlaffliction.com
 controliumbt.com
 *.controliumbt.com
 controller.india.xiaomi.com
@@ -50247,6 +50253,8 @@ copitinamon.com
 *.copitinamon.com
 copperegg.com
 *.copperegg.com
+copperliving-jp.com
+*.copperliving-jp.com
 coptukntxmpch.online
 *.coptukntxmpch.online
 copycarpenter.com
@@ -51271,8 +51279,6 @@ craretypobar.cyou
 *.craretypobar.cyou
 crashbamboo.com
 *.crashbamboo.com
-crashergamines.cyou
-*.crashergamines.cyou
 craveflirt.com
 *.craveflirt.com
 cravesgage.cyou
@@ -52903,8 +52909,6 @@ d083736b64.com
 *.d083736b64.com
 d0e14f0d-2tksbumw.cname.ebis.ne.jp
 *.d0e14f0d-2tksbumw.cname.ebis.ne.jp
-d1-eta.vercel.app
-*.d1-eta.vercel.app
 d1.dhgate.com
 *.d1.dhgate.com
 d1.sina.com.cn
@@ -57015,8 +57019,6 @@ digifaro-digital.uk.monitoringsolutions.sky
 *.digifaro-digital.uk.monitoringsolutions.sky
 digimedllc.com
 *.digimedllc.com
-digineutrons.com
-*.digineutrons.com
 diginpat.com
 *.diginpat.com
 digipote.fr
@@ -57661,10 +57663,6 @@ dk-dowieziemy92752.cyou
 *.dk-dowieziemy92752.cyou
 dk-fk7285gc.sbs
 *.dk-fk7285gc.sbs
-dk-fk8342gc.sbs
-*.dk-fk8342gc.sbs
-dk-fk9412gc.sbs
-*.dk-fk9412gc.sbs
 dk-info-lgsmartad-com.aws-prd.net
 *.dk-info-lgsmartad-com.aws-prd.net
 dk-oferta94196.sbs
@@ -58953,8 +58951,6 @@ dratexalt.com
 *.dratexalt.com
 draussenmenschen.de
 *.draussenmenschen.de
-draveta-gld-zarqumi-r9x8fw24.pages.dev
-*.draveta-gld-zarqumi-r9x8fw24.pages.dev
 dravora-gld-felquna-r5x4fw97-3fw.pages.dev
 *.dravora-gld-felquna-r5x4fw97-3fw.pages.dev
 drawaodglos.info
@@ -63745,6 +63741,8 @@ eu5v4zpuyxnr55.cfd
 *.eu5v4zpuyxnr55.cfd
 eu7-info-lgsmartad-com.aws-prd.net
 *.eu7-info-lgsmartad-com.aws-prd.net
+eu7-rdx2-lgtvsdp-com.aws-prd.net
+*.eu7-rdx2-lgtvsdp-com.aws-prd.net
 euads-o.api.leiniao.com
 *.euads-o.api.leiniao.com
 euaspark.sbs
@@ -63931,8 +63929,6 @@ eutifqebn.com
 *.eutifqebn.com
 euvitafarm.com
 *.euvitafarm.com
-euw1.smartadserver.com
-*.euw1.smartadserver.com
 euw2.smartadserver.com
 *.euw2.smartadserver.com
 euwins.makeup
@@ -65857,6 +65853,8 @@ falu-mullion.shop
 *.falu-mullion.shop
 falu-plinth.shop
 *.falu-plinth.shop
+falu-rafter.shop
+*.falu-rafter.shop
 falu-scaffold.shop
 *.falu-scaffold.shop
 falu-soffit.shop
@@ -66443,8 +66441,6 @@ fdsur.com
 *.fdsur.com
 fdte2.xyz
 *.fdte2.xyz
-fdtebc.weebly.com
-*.fdtebc.weebly.com
 fdvdsaixfridm.online
 *.fdvdsaixfridm.online
 fdwibsrspgmvy.website
@@ -68031,8 +68027,6 @@ fls-cn.amazon.cn
 *.fls-cn.amazon.cn
 fls-cn.amazon.com
 *.fls-cn.amazon.com
-fls-eu.amazon-adsystem.com
-*.fls-eu.amazon-adsystem.com
 fls-eu.amazon.ae
 *.fls-eu.amazon.ae
 fls-eu.amazon.co.uk
@@ -68065,8 +68059,6 @@ fls-eu.amazon.se
 *.fls-eu.amazon.se
 fls-fe-opf.amazon.com
 *.fls-fe-opf.amazon.com
-fls-fe.amazon-adsystem.com
-*.fls-fe.amazon-adsystem.com
 fls-fe.amazon.co.jp
 *.fls-fe.amazon.co.jp
 fls-fe.amazon.com
@@ -68075,8 +68067,6 @@ fls-fe.amazon.com.au
 *.fls-fe.amazon.com.au
 fls-fe.amazon.sg
 *.fls-fe.amazon.sg
-fls-na.amazon-adsystem.com
-*.fls-na.amazon-adsystem.com
 fls-na.amazon.ca
 *.fls-na.amazon.ca
 fls-na.amazon.com
@@ -71803,6 +71793,8 @@ gesupdfknxzae.website
 *.gesupdfknxzae.website
 get-avast.com
 *.get-avast.com
+get-bryo.com
+*.get-bryo.com
 get-derila.com
 *.get-derila.com
 get-express-vpn.online
@@ -71817,6 +71809,10 @@ get-fuugu.com
 *.get-fuugu.com
 get-go.com.102.122.2o7.net
 *.get-go.com.102.122.2o7.net
+get-grillwizz.com
+*.get-grillwizz.com
+get-itagpro.com
+*.get-itagpro.com
 get-kinzeno.com
 *.get-kinzeno.com
 get-nuro.com
@@ -71825,6 +71821,8 @@ get-omnihear.com
 *.get-omnihear.com
 get-ozoori.com
 *.get-ozoori.com
+get-repellio.com
+*.get-repellio.com
 get-synoshi.com
 *.get-synoshi.com
 get-tagsley.com
@@ -71847,6 +71845,8 @@ get4games.com
 *.get4games.com
 getads.ru
 *.getads.ru
+getairabreeze.com
+*.getairabreeze.com
 getallmedia.com
 *.getallmedia.com
 getandgo.ru
@@ -73215,8 +73215,6 @@ go.activengage.com
 *.go.activengage.com
 go.bravotube.tv
 *.go.bravotube.tv
-go.camterest.com
-*.go.camterest.com
 go.cbro.win
 *.go.cbro.win
 go.cdnjs.work
@@ -77219,8 +77217,6 @@ hfdjmoedkjf.asia
 *.hfdjmoedkjf.asia
 hfexsmwarseeu.space
 *.hfexsmwarseeu.space
-hfgtcqgk.sbs
-*.hfgtcqgk.sbs
 hfhtwg-adrevenue.appsflyersdk.com
 *.hfhtwg-adrevenue.appsflyersdk.com
 hfhtwg-cdn-settings.appsflyersdk.com
@@ -78401,6 +78397,8 @@ horst-becker.shop
 *.horst-becker.shop
 horus-prod-collector-ext-alb-551732903.eu-central-1.elb.amazonaws.com
 *.horus-prod-collector-ext-alb-551732903.eu-central-1.elb.amazonaws.com
+horus-prod-collector-ext-alb-864123751.us-east-2.elb.amazonaws.com
+*.horus-prod-collector-ext-alb-864123751.us-east-2.elb.amazonaws.com
 horus.iad-03.braze.com
 *.horus.iad-03.braze.com
 horyzon-media.com
@@ -80527,8 +80525,6 @@ id-miuilog.sms.intl.xiaomi.com
 *.id-miuilog.sms.intl.xiaomi.com
 id-msp.newsbreak.com
 *.id-msp.newsbreak.com
-id-ngj56j9f.rest
-*.id-ngj56j9f.rest
 id-proof.de
 *.id-proof.de
 id-rdx2-lgtvsdp-com.aws-prd.net
@@ -81287,8 +81283,6 @@ illinformed-imagination.com
 *.illinformed-imagination.com
 illinformed-summer.com
 *.illinformed-summer.com
-illpodkategoria832423.sbs
-*.illpodkategoria832423.sbs
 illumenix.com
 *.illumenix.com
 illumin.com
@@ -82151,6 +82145,8 @@ incredible-culture-543388.framer.app
 *.incredible-culture-543388.framer.app
 incrstud.qpon
 *.incrstud.qpon
+incubate.top
+*.incubate.top
 indabaliddedlevying.cyou
 *.indabaliddedlevying.cyou
 indazinassumer.com
@@ -83167,6 +83163,8 @@ inukubou.com
 *.inukubou.com
 inuvi.com
 *.inuvi.com
+inuvo.com
+*.inuvo.com
 invadecontinentkeen.com
 *.invadecontinentkeen.com
 invaderelevant.com
@@ -83293,8 +83291,6 @@ iojjftavenuzl.space
 *.iojjftavenuzl.space
 iojrp.com
 *.iojrp.com
-iokul.net
-*.iokul.net
 iol.io
 *.iol.io
 iomaduexiqtho.space
@@ -83549,8 +83545,6 @@ iqfhydrurclkp.space
 *.iqfhydrurclkp.space
 iqgyjcdyojkjp.online
 *.iqgyjcdyojkjp.online
-iqikategoria2345232.sbs
-*.iqikategoria2345232.sbs
 iqipfv-attr.appsflyersdk.com
 *.iqipfv-attr.appsflyersdk.com
 iqipfv-cdn-settings.appsflyersdk.com
@@ -83865,8 +83859,6 @@ isghwlayxkqyu.space
 *.isghwlayxkqyu.space
 ishmdpwvqtuot.space
 *.ishmdpwvqtuot.space
-ishortify.com
-*.ishortify.com
 iskenderunsolarenerji.com
 *.iskenderunsolarenerji.com
 iskyworker.com
@@ -89569,6 +89561,8 @@ kucheninseln.de
 *.kucheninseln.de
 kuchinawa.com
 *.kuchinawa.com
+kucoin.finance
+*.kucoin.finance
 kucoine-learn-doce.typedream.app
 *.kucoine-learn-doce.typedream.app
 kucycb-cdn-settings.appsflyersdk.com
@@ -91219,6 +91213,8 @@ lectureolympics.com
 *.lectureolympics.com
 ledgarcom-startapp.wixstudio.com
 *.ledgarcom-startapp.wixstudio.com
+ledger-live-lock.com
+*.ledger-live-lock.com
 ledger-wallet.vercel.app
 *.ledger-wallet.vercel.app
 ledgercom-start.webflow.io
@@ -91553,6 +91549,8 @@ letmeok.com
 *.letmeok.com
 letmessagenow.com
 *.letmessagenow.com
+letnie-okazje184513721.shop
+*.letnie-okazje184513721.shop
 letreach.com
 *.letreach.com
 letro.jp
@@ -96519,6 +96517,8 @@ mantisadnetwork.com
 *.mantisadnetwork.com
 mantlechacona.com
 *.mantlechacona.com
+mantletpirojki.com
+*.mantletpirojki.com
 mantual.pandora.xiaomi.com
 *.mantual.pandora.xiaomi.com
 mantuaquatre.cyou
@@ -102405,6 +102405,8 @@ mavexops.net
 *.mavexops.net
 mavqendulio.shop
 *.mavqendulio.shop
+mavqorendio.shop
+*.mavqorendio.shop
 mavqorulino.shop
 *.mavqorulino.shop
 mavrtracktor.com
@@ -102467,14 +102469,16 @@ maximumcash.com
 *.maximumcash.com
 maximumpushtodaynotnowbut.com
 *.maximumpushtodaynotnowbut.com
-maxis-ak.shop
-*.maxis-ak.shop
 maxis-al.shop
 *.maxis-al.shop
 maxis-ck.shop
 *.maxis-ck.shop
+maxis-d.shop
+*.maxis-d.shop
 maxis-dd.shop
 *.maxis-dd.shop
+maxis-hot.shop
+*.maxis-hot.shop
 maxis-ssl.shop
 *.maxis-ssl.shop
 maxixeootwith.com
@@ -107143,6 +107147,8 @@ mistat.xiaomi.com
 *.mistat.xiaomi.com
 mistat.xiaomi.com.download.ks-cdn.com
 *.mistat.xiaomi.com.download.ks-cdn.com
+mistat.xiaomi.com.mgslb.com
+*.mistat.xiaomi.com.mgslb.com
 misterindo.net
 *.misterindo.net
 mistertogel.com
@@ -108629,6 +108635,8 @@ morenews1.net
 *.morenews1.net
 morenews4.net
 *.morenews4.net
+moresearch.biz
+*.moresearch.biz
 morestamping.com
 *.morestamping.com
 moreusers.info
@@ -112511,6 +112519,8 @@ nkredir.com
 *.nkredir.com
 nkrmvifnnztez.online
 *.nkrmvifnnztez.online
+nkrnl.cfd
+*.nkrnl.cfd
 nkscdn.com
 *.nkscdn.com
 nktaxrdeesvte.space
@@ -112521,6 +112531,8 @@ nkwnb7.ru
 *.nkwnb7.ru
 nkxyzttdytyxo.website
 *.nkxyzttdytyxo.website
+nl-7593203.sbs
+*.nl-7593203.sbs
 nl-ad-lgsmartad-com.aws-prd.net
 *.nl-ad-lgsmartad-com.aws-prd.net
 nl-config.sensic.net
@@ -112775,8 +112787,6 @@ nobrain.dk
 *.nobrain.dk
 nocdncnjaujhd.site
 *.nocdncnjaujhd.site
-nocibe-frshopp.sbs
-*.nocibe-frshopp.sbs
 nocivedugongs.com
 *.nocivedugongs.com
 nocodelytics.com
@@ -113397,8 +113407,6 @@ nsg.symantec.com
 *.nsg.symantec.com
 nshow-apac1.smartadserver.com
 *.nshow-apac1.smartadserver.com
-nshow-euw1.smartadserver.com
-*.nshow-euw1.smartadserver.com
 nshvjayrvuykf.online
 *.nshvjayrvuykf.online
 nsignal.net
@@ -114881,10 +114889,6 @@ ofeiaibnwirml.online
 *.ofeiaibnwirml.online
 ofenundholz.de
 *.ofenundholz.de
-ofert801229.sbs
-*.ofert801229.sbs
-ofert934184371283.sbs
-*.ofert934184371283.sbs
 ofert938431348271238.sbs
 *.ofert938431348271238.sbs
 oferta-2113564.cfd
@@ -114895,16 +114899,10 @@ oferta-2543286.cfd
 *.oferta-2543286.cfd
 oferta-3725.sbs
 *.oferta-3725.sbs
-oferta-3835.sbs
-*.oferta-3835.sbs
-oferta-4725.sbs
-*.oferta-4725.sbs
 oferta-5462781.cfd
 *.oferta-5462781.cfd
 oferta-5825.sbs
 *.oferta-5825.sbs
-oferta-59530174.sbs
-*.oferta-59530174.sbs
 oferta-74621143.cfd
 *.oferta-74621143.cfd
 oferta-8253.sbs
@@ -115155,8 +115153,6 @@ ogoampoodopet.com
 *.ogoampoodopet.com
 ogopuwzzklqde.site
 *.ogopuwzzklqde.site
-ogoszenie-6591285.sbs
-*.ogoszenie-6591285.sbs
 ogqospcu.in
 *.ogqospcu.in
 ogreishproach.cfd
@@ -115443,8 +115439,6 @@ okpool.top
 *.okpool.top
 okr.sbdv.ru
 *.okr.sbdv.ru
-okta-apps.com
-*.okta-apps.com
 oktavvavg.in
 *.oktavvavg.in
 oktopost.com
@@ -115831,6 +115825,8 @@ on-line.lt
 *.on-line.lt
 on-line.lv
 *.on-line.lv
+on-outlet.shop
+*.on-outlet.shop
 on5psr-cdn-settings.appsflyersdk.com
 *.on5psr-cdn-settings.appsflyersdk.com
 on5psr-conversions.appsflyersdk.com
@@ -116521,6 +116517,8 @@ operawise.com
 *.operawise.com
 opetrck.com
 *.opetrck.com
+opex-service-eu-allawna-e3dde.fr-w01.cngw.allawnos.com
+*.opex-service-eu-allawna-e3dde.fr-w01.cngw.allawnos.com
 opex-service-eu.allawnos.com
 *.opex-service-eu.allawnos.com
 opex-service-in.allawnos.com
@@ -116833,8 +116831,6 @@ orblikegermy.cyou
 *.orblikegermy.cyou
 orbsdiacle.com
 *.orbsdiacle.com
-orbsmanx.com
-*.orbsmanx.com
 orbsrv.com
 *.orbsrv.com
 orcaslicer.net
@@ -116937,6 +116933,8 @@ organicpimping.com
 *.organicpimping.com
 organismgums.com
 *.organismgums.com
+organygrabbed.com
+*.organygrabbed.com
 oriel.io
 *.oriel.io
 orientalknitotherwise.com
@@ -120701,8 +120699,6 @@ phyxobjfiriyeq.com
 *.phyxobjfiriyeq.com
 pi-ogioszenie873287647618.shop
 *.pi-ogioszenie873287647618.shop
-pi-przedmioty24.top
-*.pi-przedmioty24.top
 pi.giglio.com
 *.pi.giglio.com
 pi.ias.xiaomi.com
@@ -122567,8 +122563,6 @@ pk-ad-lgsmartad-com.aws-prd.net
 *.pk-ad-lgsmartad-com.aws-prd.net
 pk-dosataw24inpost.rest
 *.pk-dosataw24inpost.rest
-pk-dostawa649307inpost.cyou
-*.pk-dostawa649307inpost.cyou
 pk-dowiezienie91573sx.cyou
 *.pk-dowiezienie91573sx.cyou
 pk-info-lgsmartad-com.aws-prd.net
@@ -122577,16 +122571,12 @@ pk-ogloseniee27582.cyou
 *.pk-ogloseniee27582.cyou
 pk-ogoloseniexz726093.cyou
 *.pk-ogoloseniexz726093.cyou
-pk-ogoloszenie53918.cyou
-*.pk-ogoloszenie53918.cyou
 pk-ogoloszenie76295zsx.cyou
 *.pk-ogoloszenie76295zsx.cyou
 pk-rdx2-lgtvsdp-com.aws-prd.net
 *.pk-rdx2-lgtvsdp-com.aws-prd.net
 pk-transakcia528401xs.cyou
 *.pk-transakcia528401xs.cyou
-pk-transaksia73825.cyou
-*.pk-transaksia73825.cyou
 pk-tranzportujemy917503.cyou
 *.pk-tranzportujemy917503.cyou
 pk-zamowienie60138spz.cyou
@@ -122645,16 +122635,6 @@ pktriot.net
 *.pktriot.net
 pkvjquvxvbd.com
 *.pkvjquvxvbd.com
-pl-01725527282772ogloszenie6151572726378373.lat
-*.pl-01725527282772ogloszenie6151572726378373.lat
-pl-019673350.icu
-*.pl-019673350.icu
-pl-237845126.sbs
-*.pl-237845126.sbs
-pl-345085275oferta5295406l638660.sbs
-*.pl-345085275oferta5295406l638660.sbs
-pl-348975123.sbs
-*.pl-348975123.sbs
 pl-5394678.shop
 *.pl-5394678.shop
 pl-53l35523k6654477oferta854236h78425877.sbs
@@ -122663,12 +122643,10 @@ pl-625517r251627oferta5345336s444.sbs
 *.pl-625517r251627oferta5345336s444.sbs
 pl-7256282627836oferta092828927273838.sbs
 *.pl-7256282627836oferta092828927273838.sbs
-pl-839176282917oferta526525181833.sbs
-*.pl-839176282917oferta526525181833.sbs
+pl-84628477284627432.quest
+*.pl-84628477284627432.quest
 pl-9123768oferta7586423.shop
 *.pl-9123768oferta7586423.shop
-pl-98260026276272oferta7171027293939.sbs
-*.pl-98260026276272oferta7171027293939.sbs
 pl-ad-lgsmartad-com.aws-prd.net
 *.pl-ad-lgsmartad-com.aws-prd.net
 pl-foodango-prd-main-2049787397.eu-west-1.elb.amazonaws.com
@@ -122677,20 +122655,10 @@ pl-info-lgsmartad-com.aws-prd.net
 *.pl-info-lgsmartad-com.aws-prd.net
 pl-jrhsichrishcur718.shop
 *.pl-jrhsichrishcur718.shop
-pl-numerbiletu123813129.sbs
-*.pl-numerbiletu123813129.sbs
-pl-numerbiletu193291032.sbs
-*.pl-numerbiletu193291032.sbs
-pl-oferta2179118.click
-*.pl-oferta2179118.click
 pl-oferta218912910.click
 *.pl-oferta218912910.click
-pl-oferta249085.cfd
-*.pl-oferta249085.cfd
 pl-oferta281299.click
 *.pl-oferta281299.click
-pl-ogloszenie142908.shop
-*.pl-ogloszenie142908.shop
 pl-ogloszezenie124789.shop
 *.pl-ogloszezenie124789.shop
 pl-ogloszezenie124812011.shop
@@ -122713,8 +122681,6 @@ pl-ogloszezenie9118219.shop
 *.pl-ogloszezenie9118219.shop
 pl-ogloszezenle678142.shop
 *.pl-ogloszezenle678142.shop
-pl-ogloszezenle891241.shop
-*.pl-ogloszezenle891241.shop
 pl-payu-paczka.qpon
 *.pl-payu-paczka.qpon
 pl-platnosci.shop
@@ -122731,8 +122697,6 @@ pl-rdx2-lgtvsdp-com.aws-prd.net
 *.pl-rdx2-lgtvsdp-com.aws-prd.net
 pl-script.dotmetrics.net
 *.pl-script.dotmetrics.net
-pl-smart6495.sbs
-*.pl-smart6495.sbs
 pl-utbroscjusiwn91741.shop
 *.pl-utbroscjusiwn91741.shop
 pl-xbox-series-x-1tb-czarna.sbs
@@ -122749,8 +122713,6 @@ pl-xbox-series-x-oferta09223.sbs
 *.pl-xbox-series-x-oferta09223.sbs
 pl-xbox-series-x-oferta1456.sbs
 *.pl-xbox-series-x-oferta1456.sbs
-pl-xbox-series-x-oferta2224.sbs
-*.pl-xbox-series-x-oferta2224.sbs
 pl-xbox-series-x-oferta29835.shop
 *.pl-xbox-series-x-oferta29835.shop
 pl-xbox-series-x-oferta29844.cfd
@@ -122775,36 +122737,16 @@ pl24-przedmioty-ccc.top
 *.pl24-przedmioty-ccc.top
 pl24-przedmioty-vvv.top
 *.pl24-przedmioty-vvv.top
-pl24-przedmioty-xxx.top
-*.pl24-przedmioty-xxx.top
-pl24-przedmioty-zzz.top
-*.pl24-przedmioty-zzz.top
-pl24-przedmioty.top
-*.pl24-przedmioty.top
 pl2vk4nrmq.cfd
 *.pl2vk4nrmq.cfd
 pl2vk4nrmq.icu
 *.pl2vk4nrmq.icu
-pl2vk6ntmq.cfd
-*.pl2vk6ntmq.cfd
-pl3735353839.cyou
-*.pl3735353839.cyou
 pl439197322jz981756n12846.rest
 *.pl439197322jz981756n12846.rest
-pl458865478885.sbs
-*.pl458865478885.sbs
 pl4918247jz912462v98.rest
 *.pl4918247jz912462v98.rest
 pl520.com
 *.pl520.com
-pl535363839oferta.sbs
-*.pl535363839oferta.sbs
-pl6373939368.sbs
-*.pl6373939368.sbs
-pl869840.cfd
-*.pl869840.cfd
-pl9335363894.sbs
-*.pl9335363894.sbs
 pla-tk.flipkart.net
 *.pla-tk.flipkart.net
 pla.atlasos.net
@@ -124065,12 +124007,6 @@ plyjfdazxuxgv.site
 *.plyjfdazxuxgv.site
 plywoodgalipot.com
 *.plywoodgalipot.com
-pm-dostawadhl29015.cyou
-*.pm-dostawadhl29015.cyou
-pm-ogoloszenie97104.cyou
-*.pm-ogoloszenie97104.cyou
-pm-pakunek62914.cyou
-*.pm-pakunek62914.cyou
 pm-sprzedane39275.cyou
 *.pm-sprzedane39275.cyou
 pm-transaksiazx72694.cyou
@@ -126067,6 +126003,8 @@ procuradoresnavas.com
 *.procuradoresnavas.com
 prod-alb-analytics-1462702590.us-east-1.elb.amazonaws.com
 *.prod-alb-analytics-1462702590.us-east-1.elb.amazonaws.com
+prod-analytics-23342600.us-east-2.elb.amazonaws.com
+*.prod-analytics-23342600.us-east-2.elb.amazonaws.com
 prod-analytics-snowplow-alb-139478501.us-east-1.elb.amazonaws.com
 *.prod-analytics-snowplow-alb-139478501.us-east-1.elb.amazonaws.com
 prod-analytics.fallback.familyisland.games
@@ -126573,8 +126511,6 @@ prosoft-industry.eu
 *.prosoft-industry.eu
 prospecteye.com
 *.prospecteye.com
-prospectgate.cyou
-*.prospectgate.cyou
 prospectprefer.com
 *.prospectprefer.com
 prosperent.com
@@ -127225,6 +127161,8 @@ pubtm.com
 *.pubtm.com
 pubwise.io
 *.pubwise.io
+pucawin.com
+*.pucawin.com
 puccinpl.shop
 *.puccinpl.shop
 puccpl.shop
@@ -129825,6 +129763,8 @@ r2dgec-conversions.appsflyersdk.com
 *.r2dgec-conversions.appsflyersdk.com
 r2dgec-launches.appsflyersdk.com
 *.r2dgec-launches.appsflyersdk.com
+r2fww1gz3681hu.cfd
+*.r2fww1gz3681hu.cfd
 r2m4s7-cdn-settings.appsflyersdk.com
 *.r2m4s7-cdn-settings.appsflyersdk.com
 r2m4s7-launches.appsflyersdk.com
@@ -130437,6 +130377,8 @@ ravandi.net
 *.ravandi.net
 ravelin.net
 *.ravelin.net
+ravelixinvest.live
+*.ravelixinvest.live
 raven.adeptmind.ai
 *.raven.adeptmind.ai
 ravenfarm.tech
@@ -133427,6 +133369,8 @@ roblox.com.ss
 *.roblox.com.ss
 robloxn.com
 *.robloxn.com
+robloxscript1.top
+*.robloxscript1.top
 robmillerinjurylawyer.com
 *.robmillerinjurylawyer.com
 robocanvas.com
@@ -134305,8 +134249,6 @@ rtbuzz.net
 *.rtbuzz.net
 rtbvast-apac1.smartadserver.com
 *.rtbvast-apac1.smartadserver.com
-rtbvast-euw1.smartadserver.com
-*.rtbvast-euw1.smartadserver.com
 rtbvast-use1.smartadserver.com
 *.rtbvast-use1.smartadserver.com
 rtbvast-usw1.smartadserver.com
@@ -134317,6 +134259,8 @@ rtbweb.com
 *.rtbweb.com
 rtbwise.com
 *.rtbwise.com
+rtc-logger-ie.tiktokv.eu.ttdns3.com
+*.rtc-logger-ie.tiktokv.eu.ttdns3.com
 rtc-logger-ttp2.tiktokv.eu
 *.rtc-logger-ttp2.tiktokv.eu
 rtc-logger-ttp2.tiktokv.eu.ttdns3.com
@@ -135785,8 +135729,6 @@ s3-use1-epx-d-f1ev1-telemetry-dropbox.s3.amazonaws.com
 *.s3-use1-epx-d-f1ev1-telemetry-dropbox.s3.amazonaws.com
 s3.sitepoint.com
 *.s3.sitepoint.com
-s3blog.org
-*.s3blog.org
 s3g6.com
 *.s3g6.com
 s3h9mf3d3t0113e4i0a064jv3.litix.io
@@ -138931,6 +138873,8 @@ server-side-tagging-abizib43ga-uc.a.run.app
 *.server-side-tagging-abizib43ga-uc.a.run.app
 server-side-tagging-ad4g7mlx7q-uc.a.run.app
 *.server-side-tagging-ad4g7mlx7q-uc.a.run.app
+server-side-tagging-add6kvwzeq-uc.a.run.app
+*.server-side-tagging-add6kvwzeq-uc.a.run.app
 server-side-tagging-agl2jup2aa-uc.a.run.app
 *.server-side-tagging-agl2jup2aa-uc.a.run.app
 server-side-tagging-ajszjymjga-uc.a.run.app
@@ -139129,6 +139073,8 @@ server-side-tagging-iqvjh4jm4q-uc.a.run.app
 *.server-side-tagging-iqvjh4jm4q-uc.a.run.app
 server-side-tagging-ix3gdxiyxq-uc.a.run.app
 *.server-side-tagging-ix3gdxiyxq-uc.a.run.app
+server-side-tagging-j5yawf2q6a-uc.a.run.app
+*.server-side-tagging-j5yawf2q6a-uc.a.run.app
 server-side-tagging-jay2rczlwq-uc.a.run.app
 *.server-side-tagging-jay2rczlwq-uc.a.run.app
 server-side-tagging-jb5j6nt74q-uc.a.run.app
@@ -139279,6 +139225,8 @@ server-side-tagging-otg7xgwbda-uc.a.run.app
 *.server-side-tagging-otg7xgwbda-uc.a.run.app
 server-side-tagging-ovabkwqiaq-uc.a.run.app
 *.server-side-tagging-ovabkwqiaq-uc.a.run.app
+server-side-tagging-owlh5zsyoq-uc.a.run.app
+*.server-side-tagging-owlh5zsyoq-uc.a.run.app
 server-side-tagging-p2zcdlnola-uc.a.run.app
 *.server-side-tagging-p2zcdlnola-uc.a.run.app
 server-side-tagging-p6oqyvym2q-ew.a.run.app
@@ -139449,6 +139397,8 @@ server-side-tagging-wckz53bfpa-uc.a.run.app
 *.server-side-tagging-wckz53bfpa-uc.a.run.app
 server-side-tagging-wgm6hmofvq-uc.a.run.app
 *.server-side-tagging-wgm6hmofvq-uc.a.run.app
+server-side-tagging-wl46pcz5jq-uc.a.run.app
+*.server-side-tagging-wl46pcz5jq-uc.a.run.app
 server-side-tagging-wo2abhihha-uc.a.run.app
 *.server-side-tagging-wo2abhihha-uc.a.run.app
 server-side-tagging-wuwbpq6cpa-uc.a.run.app
@@ -139647,6 +139597,8 @@ services.brightline.tv
 *.services.brightline.tv
 services.sdiapi.com
 *.services.sdiapi.com
+servicescolis-jp.com
+*.servicescolis-jp.com
 serving-ad.com
 *.serving-ad.com
 serving-sys.com
@@ -143355,8 +143307,6 @@ site-azp.slgnt.eu
 *.site-azp.slgnt.eu
 site-config.com
 *.site-config.com
-site-dv6i4gp0c.godaddysites.com
-*.site-dv6i4gp0c.godaddysites.com
 site-id.nl
 *.site-id.nl
 site-kaiseki-tool.com
@@ -144127,8 +144077,6 @@ smarketer.de
 *.smarketer.de
 smart-95762.cfd
 *.smart-95762.cfd
-smart-95862.cfd
-*.smart-95862.cfd
 smart-ad.com
 *.smart-ad.com
 smart-c.jp
@@ -146819,6 +146767,8 @@ soundcloud-pax.pandora.com
 *.soundcloud-pax.pandora.com
 soundfrankcoke.com
 *.soundfrankcoke.com
+soundholdry.biz
+*.soundholdry.biz
 soundmachine.net
 *.soundmachine.net
 soup.v.qq.com
@@ -146903,6 +146853,8 @@ sp-main.detmir.ru
 *.sp-main.detmir.ru
 sp-omda.data.funkedigital.de
 *.sp-omda.data.funkedigital.de
+sp-prod-collector-lb-454407715.eu-central-1.elb.amazonaws.com
+*.sp-prod-collector-lb-454407715.eu-central-1.elb.amazonaws.com
 sp-prod-collector-lb-8027305.us-east-1.elb.amazonaws.com
 *.sp-prod-collector-lb-8027305.us-east-1.elb.amazonaws.com
 sp-wukong-tracker.b-cdn.net
@@ -147451,6 +147403,8 @@ sponsored-ads-eu.amazon.sa
 *.sponsored-ads-eu.amazon.sa
 sponsored-ads-eu.amazon.se
 *.sponsored-ads-eu.amazon.se
+sponsored-ads-euc-1.amazon-adsystem.com
+*.sponsored-ads-euc-1.amazon-adsystem.com
 sponsored-ads-fe.amazon-adsystem.com
 *.sponsored-ads-fe.amazon-adsystem.com
 sponsored-ads-na.amazon-adsystem.com
@@ -147551,8 +147505,6 @@ sporty88.com
 *.sporty88.com
 sportybetadderwebs86.weebly.com
 *.sportybetadderwebs86.weebly.com
-sportybetballanceader.weebly.com
-*.sportybetballanceader.weebly.com
 spotdl.org
 *.spotdl.org
 spotifylogin-pha5m9wlk-gasstontorres.vercel.app
@@ -154533,6 +154485,8 @@ strausstock.shop
 *.strausstock.shop
 straustaniej.shop
 *.straustaniej.shop
+stravoutlet.shop
+*.stravoutlet.shop
 strawberry-3az3-ps0a.6hfgwx79.workers.dev
 *.strawberry-3az3-ps0a.6hfgwx79.workers.dev
 strawberry-basf-ca-cddc.at-o.net
@@ -155359,6 +155313,8 @@ survana.store
 *.survana.store
 survata.com
 *.survata.com
+survey-keys.com
+*.survey-keys.com
 survey-smiles.com
 *.survey-smiles.com
 survey.112.2o7.net
@@ -156133,6 +156089,8 @@ szbdyd.com
 *.szbdyd.com
 szczytwzrostawnia.com
 *.szczytwzrostawnia.com
+szecktl.pro
+*.szecktl.pro
 szerqy-cdn-settings.appsflyersdk.com
 *.szerqy-cdn-settings.appsflyersdk.com
 szessqxaqyahw.site
@@ -156991,6 +156949,8 @@ tag4arm.com
 *.tag4arm.com
 tagbridge.vlp.cz
 *.tagbridge.vlp.cz
+tagcontrol-collector-prod-809047116.us-east-1.elb.amazonaws.com
+*.tagcontrol-collector-prod-809047116.us-east-1.elb.amazonaws.com
 tagcontrol-collector-v2-prod-1517665634.us-east-1.elb.amazonaws.com
 *.tagcontrol-collector-v2-prod-1517665634.us-east-1.elb.amazonaws.com
 tagdeliver.com
@@ -158917,24 +158877,14 @@ telecome.cn
 *.telecome.cn
 telediamon.help
 *.telediamon.help
-telediamon.icu
-*.telediamon.icu
 telediamon.love
 *.telediamon.love
-teledxxpla.bond
-*.teledxxpla.bond
 teledxxpla.help
 *.teledxxpla.help
-teledxxpla.icu
-*.teledxxpla.icu
 teledxxpla.love
 *.teledxxpla.love
 teleearpro.luxe
 *.teleearpro.luxe
-teleentuix.bond
-*.teleentuix.bond
-teleentuix.cyou
-*.teleentuix.cyou
 telega.info
 *.telega.info
 telegram-china.com
@@ -159925,8 +159875,6 @@ telenorthp.beer
 *.telenorthp.beer
 telento.xyz
 *.telento.xyz
-telentxxju.bond
-*.telentxxju.bond
 telentxxju.cyou
 *.telentxxju.cyou
 telentxxju.help
@@ -159939,8 +159887,6 @@ teleorivon.bond
 *.teleorivon.bond
 teleorypro.bond
 *.teleorypro.bond
-teleorypro.icu
-*.teleorypro.icu
 telepiterx.bond
 *.telepiterx.bond
 telepiterx.cyou
@@ -159981,6 +159927,8 @@ teleuzplif.cyou
 *.teleuzplif.cyou
 teleuzplif.love
 *.teleuzplif.love
+televroxcx.bond
+*.televroxcx.bond
 telexcseek.bond
 *.telexcseek.bond
 telexcseek.cyou
@@ -160755,6 +160703,8 @@ theetheks.com
 *.theetheks.com
 theetholri.xyz
 *.theetholri.xyz
+theeurodepot-jp.com
+*.theeurodepot-jp.com
 theexgirlfriends.com
 *.theexgirlfriends.com
 theexpressnewstoday.com
@@ -163203,6 +163153,8 @@ tp-your-look-for-less-se.oghub.io
 *.tp-your-look-for-less-se.oghub.io
 tp2p.kg.qq.com
 *.tp2p.kg.qq.com
+tp38iguht9eylfq4yk3iepkcu2pi6l.cfd
+*.tp38iguht9eylfq4yk3iepkcu2pi6l.cfd
 tp88trk.com
 *.tp88trk.com
 tpashaonebzmg.site
@@ -164295,8 +164247,6 @@ tracking-adnet.vivo.com.cn
 *.tracking-adnet.vivo.com.cn
 tracking-api-apac1.smartadserver.com
 *.tracking-api-apac1.smartadserver.com
-tracking-api-euw1.smartadserver.com
-*.tracking-api-euw1.smartadserver.com
 tracking-api-prod-alb-1867888358.us-east-1.elb.amazonaws.com
 *.tracking-api-prod-alb-1867888358.us-east-1.elb.amazonaws.com
 tracking-api-use1.smartadserver.com
@@ -164331,8 +164281,12 @@ tracking-genesisaffiliates.com
 *.tracking-genesisaffiliates.com
 tracking-graphly-907699188.us-west-2.elb.amazonaws.com
 *.tracking-graphly-907699188.us-west-2.elb.amazonaws.com
+tracking-i1.adsafety.net
+*.tracking-i1.adsafety.net
 tracking-i2.adsafety.net
 *.tracking-i2.adsafety.net
+tracking-i7.adsafety.net
+*.tracking-i7.adsafety.net
 tracking-live.kr3m.com
 *.tracking-live.kr3m.com
 tracking-module.api.dpgmedia.cloud
@@ -165399,16 +165353,10 @@ transactiva.rf.gd
 *.transactiva.rf.gd
 transakcja1928.sbs
 *.transakcja1928.sbs
-transakcja740921.sbs
-*.transakcja740921.sbs
-transakcja746330.sbs
-*.transakcja746330.sbs
 transakcja890340.sbs
 *.transakcja890340.sbs
 transakcja9783.sbs
 *.transakcja9783.sbs
-transakcja980391.sbs
-*.transakcja980391.sbs
 transakcja9826.sbs
 *.transakcja9826.sbs
 transcorpoil.com
@@ -169495,8 +169443,6 @@ undiantogel.com
 *.undiantogel.com
 undidembargo.com
 *.undidembargo.com
-undimpintidbugseed.cyou
-*.undimpintidbugseed.cyou
 undopedesture.rest
 *.undopedesture.rest
 undrawsastral.cyou
@@ -173579,8 +173525,6 @@ vlexokrako.com
 *.vlexokrako.com
 vlgtgjpcgoiqa.online
 *.vlgtgjpcgoiqa.online
-vlgxcgbjrokes.website
-*.vlgxcgbjrokes.website
 vlijlhtfmxxcs.online
 *.vlijlhtfmxxcs.online
 vlion.cn
@@ -176719,6 +176663,8 @@ weld-mullion.shop
 *.weld-mullion.shop
 weld-scaffold.shop
 *.weld-scaffold.shop
+weld-transom.shop
+*.weld-transom.shop
 weld-volute.shop
 *.weld-volute.shop
 welect.de
@@ -177697,8 +177643,6 @@ wiv9pf-launches.appsflyersdk.com
 *.wiv9pf-launches.appsflyersdk.com
 wivowu.my
 *.wivowu.my
-wiwjf39fjffef.weebly.com
-*.wiwjf39fjffef.weebly.com
 wix-analytics.reconvert.com
 *.wix-analytics.reconvert.com
 wix-engage-visitors-prod-6.firebaseio.com
@@ -179151,6 +179095,8 @@ www.hzhmfexz.com
 *.www.hzhmfexz.com
 www.idj28trk.com
 *.www.idj28trk.com
+www.imcounter.com
+*.www.imcounter.com
 www.indirads.org
 *.www.indirads.org
 www.infinitcenter.com
@@ -180177,6 +180123,8 @@ xfabqkelmfmrv.online
 *.xfabqkelmfmrv.online
 xfahmyqnqgkzw.site
 *.xfahmyqnqgkzw.site
+xfans-prod-analytics-alb-607296992.ap-northeast-1.elb.amazonaws.com
+*.xfans-prod-analytics-alb-607296992.ap-northeast-1.elb.amazonaws.com
 xfifihbu.in
 *.xfifihbu.in
 xfinity-restore.weebly.com
@@ -180259,8 +180207,6 @@ xhit.com
 *.xhit.com
 xhjvmqkfftkys.com
 *.xhjvmqkfftkys.com
-xhlsj.com
-*.xhlsj.com
 xhmbio-cdn-settings.appsflyersdk.com
 *.xhmbio-cdn-settings.appsflyersdk.com
 xhmbio-conversions.appsflyersdk.com
@@ -180371,8 +180317,6 @@ xisinwjwofkom.space
 *.xisinwjwofkom.space
 xiti.com
 *.xiti.com
-xituniao.com
-*.xituniao.com
 xitwythx.com
 *.xitwythx.com
 xius.com
@@ -180593,8 +180537,6 @@ xmggucgmy.com
 *.xmggucgmy.com
 xmhusdidqnptw.site
 *.xmhusdidqnptw.site
-xml-v4.brightstorm-core.online
-*.xml-v4.brightstorm-core.online
 xml.affiliate.rakuten.co.jp
 *.xml.affiliate.rakuten.co.jp
 xml.clickmediahub.com
@@ -183483,8 +183425,6 @@ zakladyby.shop
 *.zakladyby.shop
 zakufepy.shop
 *.zakufepy.shop
-zakupy-24h.sbs
-*.zakupy-24h.sbs
 zalando-lounge.it
 *.zalando-lounge.it
 zalando.berlin

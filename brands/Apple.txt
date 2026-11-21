@@ -1,9 +1,9 @@
 ! Title: EazyLife Brand - Apple Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.0908
+! Version: 2026.11.21.0229
 ! Expires: 1 day
-! Total Unique Domains: 104
+! Total Unique Domains: 105
 ! Sources: HaGeZi Native Apple
 ! --------------------------------------------------
 
@@ -85,6 +85,7 @@
 ||prod-event-relay-sports-api.v.aaplimg.com^
 ||prod-event-relay-stocks-api.v.aaplimg.com^
 ||prod-event-relay-weather-api.v.aaplimg.com^
+||prod-event-relay-web-api.v.aaplimg.com^
 ||prod-iwork-events.v.aaplimg.com^
 ||prod-news-notification-events.v.aaplimg.com^
 ||proxy-skadnetwork.apple.com^

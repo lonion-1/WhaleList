@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - LG webOS Smart TV Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.0731
-# Count: 460
+# Version: 2026.11.21.0229
+# Count: 461
 # Sources: HaGeZi Native LG webOS Smart TV
 
 ads.lgtvcommon.com
@@ -299,6 +299,8 @@ et-rdx2-lgtvsdp-com.aws-prd.net
 *.et-rdx2-lgtvsdp-com.aws-prd.net
 eu7-info-lgsmartad-com.aws-prd.net
 *.eu7-info-lgsmartad-com.aws-prd.net
+eu7-rdx2-lgtvsdp-com.aws-prd.net
+*.eu7-rdx2-lgtvsdp-com.aws-prd.net
 fi-ad-lgsmartad-com.aws-prd.net
 *.fi-ad-lgsmartad-com.aws-prd.net
 fi-info-lgsmartad-com.aws-prd.net

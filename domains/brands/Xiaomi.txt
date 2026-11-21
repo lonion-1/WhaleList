@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Xiaomi Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.0731
-# Count: 410
+# Version: 2026.11.21.0229
+# Count: 411
 # Sources: HaGeZi Native Xiaomi
 
 11-c3.bigdata.ctc.neo.xiaomi.com
@@ -481,6 +481,8 @@ mistat.xiaomi.com
 *.mistat.xiaomi.com
 mistat.xiaomi.com.download.ks-cdn.com
 *.mistat.xiaomi.com.download.ks-cdn.com
+mistat.xiaomi.com.mgslb.com
+*.mistat.xiaomi.com.mgslb.com
 miui-l7-data-other-c3.pt.miui.com
 *.miui-l7-data-other-c3.pt.miui.com
 miui-l7-data-other.pt.miui.com

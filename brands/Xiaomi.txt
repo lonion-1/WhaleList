@@ -1,9 +1,9 @@
 ! Title: EazyLife Brand - Xiaomi Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.0908
+! Version: 2026.11.21.0229
 ! Expires: 1 day
-! Total Unique Domains: 410
+! Total Unique Domains: 411
 ! Sources: HaGeZi Native Xiaomi
 ! --------------------------------------------------
 
@@ -246,6 +246,7 @@
 ||mistat.rus.xiaomi.com.ksyna.net^
 ||mistat.xiaomi.com^
 ||mistat.xiaomi.com.download.ks-cdn.com^
+||mistat.xiaomi.com.mgslb.com^
 ||miui-l7-data-other-c3.pt.miui.com^
 ||miui-l7-data-other.pt.miui.com^
 ||miui.net^

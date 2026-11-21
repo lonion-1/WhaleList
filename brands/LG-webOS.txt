@@ -1,10 +1,10 @@
-! Title: EazyLife Brand - LG webOS Smart TV Telemetry Blocker
+! Title: EazyLife Brand - LG webOS Smart TV Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.1459
+! Version: 2026.11.21.0229
 ! Expires: 1 day
-! Total Unique Domains: 460
-! Sources: HaGeZi Native LG webOS
+! Total Unique Domains: 461
+! Sources: HaGeZi Native LG webOS Smart TV
 ! --------------------------------------------------
 
 ||ads.lgtvcommon.com^
@@ -155,6 +155,7 @@
 ||et-info-lgsmartad-com.aws-prd.net^
 ||et-rdx2-lgtvsdp-com.aws-prd.net^
 ||eu7-info-lgsmartad-com.aws-prd.net^
+||eu7-rdx2-lgtvsdp-com.aws-prd.net^
 ||fi-ad-lgsmartad-com.aws-prd.net^
 ||fi-info-lgsmartad-com.aws-prd.net^
 ||fi-rdx2-lgtvsdp-com.aws-prd.net^

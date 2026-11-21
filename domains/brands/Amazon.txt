@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Amazon & Fire TV Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.0731
-# Count: 382
+# Version: 2026.11.21.0229
+# Count: 380
 # Sources: HaGeZi Native Amazon & Fire TV
 
 3px.axp.amazon-adsystem.com
@@ -333,8 +333,6 @@ fls-cn.amazon.cn
 *.fls-cn.amazon.cn
 fls-cn.amazon.com
 *.fls-cn.amazon.com
-fls-eu.amazon-adsystem.com
-*.fls-eu.amazon-adsystem.com
 fls-eu.amazon.ae
 *.fls-eu.amazon.ae
 fls-eu.amazon.co.uk
@@ -367,8 +365,6 @@ fls-eu.amazon.se
 *.fls-eu.amazon.se
 fls-fe-opf.amazon.com
 *.fls-fe-opf.amazon.com
-fls-fe.amazon-adsystem.com
-*.fls-fe.amazon-adsystem.com
 fls-fe.amazon.co.jp
 *.fls-fe.amazon.co.jp
 fls-fe.amazon.com
@@ -377,8 +373,6 @@ fls-fe.amazon.com.au
 *.fls-fe.amazon.com.au
 fls-fe.amazon.sg
 *.fls-fe.amazon.sg
-fls-na.amazon-adsystem.com
-*.fls-na.amazon-adsystem.com
 fls-na.amazon.ca
 *.fls-na.amazon.ca
 fls-na.amazon.com
@@ -565,6 +559,8 @@ sponsored-ads-eu.amazon.sa
 *.sponsored-ads-eu.amazon.sa
 sponsored-ads-eu.amazon.se
 *.sponsored-ads-eu.amazon.se
+sponsored-ads-euc-1.amazon-adsystem.com
+*.sponsored-ads-euc-1.amazon-adsystem.com
 sponsored-ads-fe.amazon-adsystem.com
 *.sponsored-ads-fe.amazon-adsystem.com
 sponsored-ads-na.amazon-adsystem.com

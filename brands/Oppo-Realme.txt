@@ -1,10 +1,10 @@
 ! Title: EazyLife Brand - Oppo & Realme Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.0908
+! Version: 2026.11.21.0229
 ! Expires: 1 day
-! Total Unique Domains: 530
-! Sources: HaGeZi Native Oppo/Realme
+! Total Unique Domains: 532
+! Sources: HaGeZi Native Oppo & Realme
 ! --------------------------------------------------
 
 ||ad-growth-in.heytapmobile.com^
@@ -57,6 +57,7 @@
 ||bdapi-ads-in.heytapmobile.com^
 ||bdapi-ads-sg.heytapmobile.com^
 ||br.ekatox.com^
+||browser-api-au.heytapmobile.com^
 ||browser-api-br.heytapmobile.com^
 ||browser-api-fr.heytapmobile.com^
 ||browser-api-gl-01.heytapmobile.com^
@@ -474,6 +475,7 @@
 ||omes-sec.heytapmobile.com^
 ||oop-installer-gl.heytapmobile.com^
 ||opay.heytapmobile.com^
+||opex-service-eu-allawna-e3dde.fr-w01.cngw.allawnos.com^
 ||opex-service-eu.allawnos.com^
 ||opex-service-in.allawnos.com^
 ||opex-service-sg.allawnos.com^

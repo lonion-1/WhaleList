@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Oppo & Realme Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.0731
-# Count: 530
+# Version: 2026.11.21.0229
+# Count: 532
 # Sources: HaGeZi Native Oppo & Realme
 
 ad-growth-in.heytapmobile.com
@@ -103,6 +103,8 @@ bdapi-ads-sg.heytapmobile.com
 *.bdapi-ads-sg.heytapmobile.com
 br.ekatox.com
 *.br.ekatox.com
+browser-api-au.heytapmobile.com
+*.browser-api-au.heytapmobile.com
 browser-api-br.heytapmobile.com
 *.browser-api-br.heytapmobile.com
 browser-api-fr.heytapmobile.com
@@ -937,6 +939,8 @@ oop-installer-gl.heytapmobile.com
 *.oop-installer-gl.heytapmobile.com
 opay.heytapmobile.com
 *.opay.heytapmobile.com
+opex-service-eu-allawna-e3dde.fr-w01.cngw.allawnos.com
+*.opex-service-eu-allawna-e3dde.fr-w01.cngw.allawnos.com
 opex-service-eu.allawnos.com
 *.opex-service-eu.allawnos.com
 opex-service-in.allawnos.com

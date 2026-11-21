@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Apple Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.0731
-# Count: 104
+# Version: 2026.11.21.0229
+# Count: 105
 # Sources: HaGeZi Native Apple
 
 acfeedbackws.icloud.com
@@ -159,6 +159,8 @@ prod-event-relay-stocks-api.v.aaplimg.com
 *.prod-event-relay-stocks-api.v.aaplimg.com
 prod-event-relay-weather-api.v.aaplimg.com
 *.prod-event-relay-weather-api.v.aaplimg.com
+prod-event-relay-web-api.v.aaplimg.com
+*.prod-event-relay-web-api.v.aaplimg.com
 prod-iwork-events.v.aaplimg.com
 *.prod-iwork-events.v.aaplimg.com
 prod-news-notification-events.v.aaplimg.com
