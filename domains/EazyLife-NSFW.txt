@@ -1,6 +1,6 @@
 # Title: EazyLife NSFW - Adult Content Blocker (Optional) (personalDNSfilter Wildcard)
-# Version: 2026.11.22.1058
-# Count: 87403
+# Version: 2026.11.22.2123
+# Count: 87389
 # Sources: HaGeZi NSFW
 
 0-0.asia
@@ -709,8 +709,6 @@
 *.18japanxxx.shop
 18japanxxxx.shop
 *.18japanxxxx.shop
-18jav.info
-*.18jav.info
 18jav.tv
 *.18jav.tv
 18jtv.com
@@ -4727,6 +4725,8 @@ adult-bondage-fetish.com
 *.adult-bondage-fetish.com
 adult-book-lounge.site
 *.adult-book-lounge.site
+adult-c.com
+*.adult-c.com
 adult-cam-sites.net
 *.adult-cam-sites.net
 adult-cams.net
@@ -13093,8 +13093,6 @@ asianpornmovies.com
 *.asianpornmovies.com
 asianpornok.com
 *.asianpornok.com
-asianpornolab.com
-*.asianpornolab.com
 asianpornone.com
 *.asianpornone.com
 asianpornp.com
@@ -19623,6 +19621,8 @@ bestpornsites.biz
 *.bestpornsites.biz
 bestpornsites.club
 *.bestpornsites.club
+bestpornsites.co.uk
+*.bestpornsites.co.uk
 bestpornsites.guide
 *.bestpornsites.guide
 bestpornsites.love
@@ -26845,8 +26845,6 @@ callgirldelhi.info
 *.callgirldelhi.info
 callgirldelhi.org
 *.callgirldelhi.org
-callgirldwarka.in
-*.callgirldwarka.in
 callgirlescortsservice.in
 *.callgirlescortsservice.in
 callgirlficker.com
@@ -29715,6 +29713,8 @@ camsexpromotion.com
 *.camsexpromotion.com
 camsexsearch.com
 *.camsexsearch.com
+camsexseiten.com
+*.camsexseiten.com
 camsexsite.com
 *.camsexsite.com
 camsexuk.com
@@ -31023,8 +31023,6 @@ casalinhodaazenha.com
 *.casalinhodaazenha.com
 cascosporn.com
 *.cascosporn.com
-casereddisp.com
-*.casereddisp.com
 caseyloves.com
 *.caseyloves.com
 caseyporn.com
@@ -46509,8 +46507,6 @@ eroticbiznetwork.com
 *.eroticbiznetwork.com
 eroticblue.net
 *.eroticblue.net
-eroticchaos.com
-*.eroticchaos.com
 eroticchubby.com
 *.eroticchubby.com
 eroticcomagazine.com
@@ -51195,6 +51191,8 @@ femdomora.com
 *.femdomora.com
 femdompin.com
 *.femdompin.com
+femdomplanet.org
+*.femdomplanet.org
 femdomporn.wiki
 *.femdomporn.wiki
 femdompornsites.com
@@ -64701,8 +64699,6 @@ granny-freeporn.com
 *.granny-freeporn.com
 granny-fuck.net
 *.granny-fuck.net
-granny-movies.com
-*.granny-movies.com
 granny-porn.me
 *.granny-porn.me
 granny-pornmovies.com
@@ -65429,8 +65425,6 @@ grokbikini.com
 *.grokbikini.com
 groknsfw.com
 *.groknsfw.com
-grokonlyfans.com
-*.grokonlyfans.com
 grometsplaza.net
 *.grometsplaza.net
 gromochat.com
@@ -74007,8 +74001,6 @@ hugecock-hdporn.com
 *.hugecock-hdporn.com
 hugecockbreak.com
 *.hugecockbreak.com
-hugecocktv.com
-*.hugecocktv.com
 hugedick.com
 *.hugedick.com
 hugedick.vip
@@ -75525,8 +75517,6 @@ imeighteentoday.com
 *.imeighteentoday.com
 imeng.xyz
 *.imeng.xyz
-imerchandise.ru
-*.imerchandise.ru
 imfailure.com
 *.imfailure.com
 img.favsite.jp
@@ -79451,8 +79441,6 @@ javdose.com
 *.javdose.com
 javdragon.com
 *.javdragon.com
-javdude.win
-*.javdude.win
 javeamor.com
 *.javeamor.com
 javelm.com
@@ -80621,8 +80609,6 @@ jiinchoi.com
 *.jiinchoi.com
 jijidh.com
 *.jijidh.com
-jijidh.xyz
-*.jijidh.xyz
 jijissweets.com
 *.jijissweets.com
 jikansulefarms.com
@@ -81491,8 +81477,6 @@ juicyjavs.com
 *.juicyjavs.com
 juicylist.top
 *.juicylist.top
-juicymaturepussy.com
-*.juicymaturepussy.com
 juicymoms.net
 *.juicymoms.net
 juicynudists.com
@@ -86165,8 +86149,6 @@ leaknudes.com
 *.leaknudes.com
 leaknudes.net
 *.leaknudes.net
-leaknudes0.com
-*.leaknudes0.com
 leakonly.com
 *.leakonly.com
 leakporner.com
@@ -98913,8 +98895,6 @@ moniturbate.com
 *.moniturbate.com
 monkeyanimalporn.com
 *.monkeyanimalporn.com
-monkeygirls.xyz
-*.monkeygirls.xyz
 monkeymommycrafts.com
 *.monkeymommycrafts.com
 monporno.fr
@@ -103321,6 +103301,8 @@ neurogay.com
 *.neurogay.com
 neurotechnia.com
 *.neurotechnia.com
+nevadaescorts.us
+*.nevadaescorts.us
 nevadaonebeauty.com
 *.nevadaonebeauty.com
 nevenvn.itch.io
@@ -109365,6 +109347,8 @@ ournamehere.com
 *.ournamehere.com
 ournaughtygirls.com
 *.ournaughtygirls.com
+ouroerotico.com
+*.ouroerotico.com
 oursecretflirts.com
 *.oursecretflirts.com
 oursexgames.com
@@ -110965,8 +110949,6 @@ perverttube.com
 *.perverttube.com
 pervertvonbraun.com
 *.pervertvonbraun.com
-pervertxxx.com
-*.pervertxxx.com
 perverzija.com
 *.perverzija.com
 pervgate.com
@@ -111211,8 +111193,6 @@ phim69.xxx
 *.phim69.xxx
 phim69xxx.com
 *.phim69xxx.com
-phimguru.com
-*.phimguru.com
 phimhay47.net
 *.phimhay47.net
 phimheo.app
@@ -114619,8 +114599,6 @@ pornclip.net
 *.pornclip.net
 pornclip.one
 *.pornclip.one
-pornclip.org
-*.pornclip.org
 porncliphub.com
 *.porncliphub.com
 pornclips-gay.com
@@ -130491,6 +130469,8 @@ russianschoolgirls.top
 *.russianschoolgirls.top
 russiansex.club
 *.russiansex.club
+russiansexxx.net
+*.russiansexxx.net
 russiansexyladies.com
 *.russiansexyladies.com
 russiansgirls.net
@@ -130817,8 +130797,6 @@ safadetes.com
 *.safadetes.com
 safadinhastube.xyz
 *.safadinhastube.xyz
-safadinhos.net
-*.safadinhos.net
 safariloverswte.com
 *.safariloverswte.com
 safarisex.com
@@ -136613,6 +136591,8 @@ sexpornpictures.com
 *.sexpornpictures.com
 sexporns.pro
 *.sexporns.pro
+sexpornvip.com
+*.sexpornvip.com
 sexpornxxx.video
 *.sexpornxxx.video
 sexpose.com
@@ -138439,8 +138419,6 @@ sexy.to
 *.sexy.to
 sexy.xxxblog.jp
 *.sexy.xxxblog.jp
-sexy24.net
-*.sexy24.net
 sexy355.com
 *.sexy355.com
 sexy4arab.com
@@ -155771,8 +155749,6 @@ turkporno57.cfd
 *.turkporno57.cfd
 turkporno59.cfd
 *.turkporno59.cfd
-turkporno6.cfd
-*.turkporno6.cfd
 turkporno66.cfd
 *.turkporno66.cfd
 turkporno67.cfd
@@ -156893,8 +156869,6 @@ undressninja.com
 *.undressninja.com
 undresswith.ai
 *.undresswith.ai
-undrg-vds.lol
-*.undrg-vds.lol
 unebaise.com
 *.unebaise.com
 unfaithful.mom
@@ -171769,8 +171743,6 @@ xxxxvideos.cc
 *.xxxxvideos.cc
 xxxxvideos.club
 *.xxxxvideos.club
-xxxxvideos.fun
-*.xxxxvideos.fun
 xxxxx.video
 *.xxxxx.video
 xxxxx.wang

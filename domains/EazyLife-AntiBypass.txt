@@ -1,6 +1,6 @@
 # Title: EazyLife Anti-Bypass - Encrypted DNS (DoH), VPN & Proxy Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.22.1058
-# Count: 16727
+# Version: 2026.11.22.2123
+# Count: 16720
 # Sources: HaGeZi DoH/VPN/Proxy Bypass
 
 000000555.xyz
@@ -9663,8 +9663,6 @@ dns.garymarek.me
 *.dns.garymarek.me
 dns.gayanalysing.co.uk
 *.dns.gayanalysing.co.uk
-dns.gearworks.app
-*.dns.gearworks.app
 dns.geohide.ru
 *.dns.geohide.ru
 dns.ghost.pm
@@ -16945,8 +16943,6 @@ hotvpn.help
 *.hotvpn.help
 hotvpn.info
 *.hotvpn.info
-hours.newlifesanctuarychurch.com
-*.hours.newlifesanctuarychurch.com
 houwangjiasu.com
 *.houwangjiasu.com
 hoverfc.com
@@ -19337,8 +19333,6 @@ kuailian-coc.com.cn
 *.kuailian-coc.com.cn
 kuailian-dlxz.com.cn
 *.kuailian-dlxz.com.cn
-kuailian-hk.com
-*.kuailian-hk.com
 kuailian-it.com
 *.kuailian-it.com
 kuailian-k.com
@@ -23477,8 +23471,6 @@ pezishka.com
 *.pezishka.com
 pf2oxqgk.com
 *.pf2oxqgk.com
-pfckhora.com
-*.pfckhora.com
 pfypikij.com
 *.pfypikij.com
 pgglrz85.com
@@ -23989,8 +23981,6 @@ pq7hdf.com
 *.pq7hdf.com
 pqh.ddns.net
 *.pqh.ddns.net
-pqmrbzwq.com
-*.pqmrbzwq.com
 pqov.top
 *.pqov.top
 pr0xy.com
@@ -28961,8 +28951,6 @@ tubevpn.help
 *.tubevpn.help
 tudat1001.duckdns.org
 *.tudat1001.duckdns.org
-tuffled-getit-pleaselaugh.newlifesanctuarychurch.com
-*.tuffled-getit-pleaselaugh.newlifesanctuarychurch.com
 tuffmango.edu.showmyhomes.com
 *.tuffmango.edu.showmyhomes.com
 tujenasnaszato.xyz
@@ -33441,8 +33429,6 @@ zwytzjjz.com
 *.zwytzjjz.com
 zxcvb.pp.ua
 *.zxcvb.pp.ua
-zxtwpkso.com
-*.zxtwpkso.com
 zylor.xyz
 *.zylor.xyz
 zymorae.ru

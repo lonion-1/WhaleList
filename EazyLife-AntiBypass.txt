@@ -1,9 +1,9 @@
 ! Title: EazyLife Anti-Bypass - Encrypted DNS (DoH), VPN & Proxy Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.22.1058
+! Version: 2026.11.22.2123
 ! Expires: 1 day
-! Total Unique Domains: 16727
+! Total Unique Domains: 16720
 ! Sources: HaGeZi DoH/VPN/Proxy Bypass
 ! --------------------------------------------------
 
@@ -4837,7 +4837,6 @@
 ||dns.gamban.com^
 ||dns.garymarek.me^
 ||dns.gayanalysing.co.uk^
-||dns.gearworks.app^
 ||dns.geohide.ru^
 ||dns.ghost.pm^
 ||dns.gi.co.id^
@@ -8478,7 +8477,6 @@
 ||hotspotvpn.com^
 ||hotvpn.help^
 ||hotvpn.info^
-||hours.newlifesanctuarychurch.com^
 ||houwangjiasu.com^
 ||hoverfc.com^
 ||how.learn.harimurti.web.id^
@@ -9674,7 +9672,6 @@
 ||kuailian-cn.com^
 ||kuailian-coc.com.cn^
 ||kuailian-dlxz.com.cn^
-||kuailian-hk.com^
 ||kuailian-it.com^
 ||kuailian-k.com^
 ||kuailian-ki.com^
@@ -11744,7 +11741,6 @@
 ||petros-es.co.uk^
 ||pezishka.com^
 ||pf2oxqgk.com^
-||pfckhora.com^
 ||pfypikij.com^
 ||pgglrz85.com^
 ||pgwwr.cn^
@@ -12000,7 +11996,6 @@
 ||ppy02-9tg585ql.top^
 ||pq7hdf.com^
 ||pqh.ddns.net^
-||pqmrbzwq.com^
 ||pqov.top^
 ||pr0xy.com^
 ||prairievistamiddle.org^
@@ -14486,7 +14481,6 @@
 ||tubeprox.com^
 ||tubevpn.help^
 ||tudat1001.duckdns.org^
-||tuffled-getit-pleaselaugh.newlifesanctuarychurch.com^
 ||tuffmango.edu.showmyhomes.com^
 ||tujenasnaszato.xyz^
 ||tukinos.ru^
@@ -16726,7 +16720,6 @@
 ||zwyr157wwiu6eior.com^
 ||zwytzjjz.com^
 ||zxcvb.pp.ua^
-||zxtwpkso.com^
 ||zylor.xyz^
 ||zymorae.ru^
 ||zymverto.ru^
