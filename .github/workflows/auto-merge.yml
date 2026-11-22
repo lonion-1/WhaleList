@@ -60,41 +60,53 @@ jobs:
               r")$"
           )
 
-          # Lindungi domain vital agar tidak iseng diblokir
+          # Lindungi domain vital & TLD umum agar tidak iseng diblokir / di-allowlist massal
           ANTI_ISENG = {"google.com", "youtube.com", "github.com", "whatsapp.com", "cloudflare.com"}
+          PUBLIC_SUFFIX = {
+              "co.id", "my.id", "biz.id", "web.id", "or.id", "ac.id", "sch.id", "go.id",
+              "co.uk", "com.au", "com.sg", "com.my", "co.jp", "co.kr", "com.vn", "co.th", "com.ph",
+          }
 
           def dilindungi(domain):
               return any(domain == d or domain.endswith("." + d) for d in ANTI_ISENG)
 
           base_sha = os.environ["BASE_SHA"]
           target_files = ["Allowlist.txt", "Deletelist.txt", "EazyBlock.txt"]
+          ada_tambahan = False
 
           for nama_file in target_files:
               p = Path(nama_file)
               if not p.exists():
                   continue
 
-              # 1. Cegah penghapusan baris aturan yang sudah ada tanpa review manual
               diff = subprocess.check_output(
                   ["git", "diff", "--unified=0", base_sha, "HEAD", "--", nama_file],
                   text=True,
               )
+
               for dline in diff.splitlines():
+                  # 1. Cegah penghapusan baris aturan lama tanpa review manual
                   if dline.startswith("-") and not dline.startswith("---"):
                       isi_lama = dline[1:].strip()
                       if isi_lama and not isi_lama.startswith(("!", "#")):
                           sys.exit(f"PR menghapus aturan di {nama_file} ({isi_lama}). Butuh review manual EazyWhale.")
 
-              # 2. Validasi seluruh isi file (format + anti-iseng)
-              for no, baris in enumerate(p.read_text(encoding="utf-8").splitlines(), 1):
-                  s = baris.strip().lower()
-                  if not s or s.startswith(("!", "#")):
-                      continue
-                  if not RE_RULE.match(s):
-                      sys.exit(f"Format tidak valid di {nama_file} baris {no}: {baris}")
-                  bersih = s.removeprefix("||").removesuffix("^")
-                  if nama_file in ("EazyBlock.txt", "Deletelist.txt") and dilindungi(bersih):
-                      sys.exit(f"Domain dilindungi tidak boleh diblokir: {bersih}")
+                  # 2. Validasi HANYA baris baru (+) agar format komentar/pipa lama tidak bentrok
+                  if dline.startswith("+") and not dline.startswith("+++"):
+                      s = dline[1:].strip().lower()
+                      if not s or s.startswith(("!", "#")):
+                          continue
+                      if not RE_RULE.match(s):
+                          sys.exit(f"Format baris baru tidak valid di {nama_file}: {dline[1:]}")
+                      bersih = s.removeprefix("||").removesuffix("^")
+                      if bersih in PUBLIC_SUFFIX:
+                          sys.exit(f"TLD publik tidak boleh dimasukkan sendirian: {bersih}")
+                      if nama_file in ("EazyBlock.txt", "Deletelist.txt") and dilindungi(bersih):
+                          sys.exit(f"Domain dilindungi tidak boleh diblokir: {bersih}")
+                      ada_tambahan = True
+
+          if not ada_tambahan:
+              sys.exit("PR tidak menambahkan aturan domain baru yang valid.")
 
           print("Semua baris baru valid, aman, dan tidak ada aturan lama yang dihapus!")
           PY
