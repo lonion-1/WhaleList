@@ -42,7 +42,7 @@ jobs:
           EVENT_LABEL: ${{ github.event.label.name }}
         run: |
           python3 - <<'PY'
-          import json, os, re, urllib.parse, urllib.request
+          import os, re, urllib.parse, urllib.request
           from pathlib import Path
 
           body = os.environ.get("ISSUE_BODY", "")
@@ -277,6 +277,7 @@ jobs:
               if git pull --rebase && git push; then
                 exit 0
               fi
+              git rebase --abort 2>/dev/null || true
               sleep 5
             done
             exit 1
@@ -284,10 +285,13 @@ jobs:
 
       - name: Balas komentar & tutup Issue jika selesai
         uses: actions/github-script@v7
+        env:
+          REPLY_MSG: ${{ steps.check.outputs.reply_msg }}
+          SHOULD_CLOSE: ${{ steps.check.outputs.should_close }}
         with:
           script: |
-            const msg = `${{ steps.check.outputs.reply_msg }}`;
-            const shouldClose = `${{ steps.check.outputs.should_close }}` === 'true';
+            const msg = process.env.REPLY_MSG || '';
+            const shouldClose = process.env.SHOULD_CLOSE === 'true';
 
             await github.rest.issues.createComment({
               owner: context.repo.owner,
