@@ -1,6 +1,6 @@
 # Title: EazyLife Anti-Bypass - Encrypted DNS (DoH), VPN & Proxy Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.23.0149
-# Count: 16516
+# Version: 2026.11.23.2123
+# Count: 16479
 # Sources: HaGeZi DoH/VPN/Proxy Bypass
 
 000000555.xyz
@@ -2217,8 +2217,6 @@ activefkey.store
 *.activefkey.store
 activitysforscience.space.cdn.cloudflare.net
 *.activitysforscience.space.cdn.cloudflare.net
-activpn.com
-*.activpn.com
 actmobile.com
 *.actmobile.com
 ad-blocking.eu.org
@@ -4045,8 +4043,6 @@ auronvpn.com
 *.auronvpn.com
 auronvpn.site
 *.auronvpn.site
-auroraest.com
-*.auroraest.com
 aurorajiasu.com
 *.aurorajiasu.com
 aurorastork.com
@@ -4271,8 +4267,6 @@ bananakun.camdvr.org
 *.bananakun.camdvr.org
 bananakun.zapto.org
 *.bananakun.zapto.org
-bananaspeed.site
-*.bananaspeed.site
 bananavpn.com
 *.bananavpn.com
 bancuh.com
@@ -4323,8 +4317,6 @@ barnabech.fr
 *.barnabech.fr
 bartproxies.com
 *.bartproxies.com
-bartvpn.com
-*.bartvpn.com
 bas-ranmmm.nas64.de
 *.bas-ranmmm.nas64.de
 base.goal.computersforpeace.net
@@ -5501,8 +5493,6 @@ bouquetberlin.org
 *.bouquetberlin.org
 box.seidenstrabe.com
 *.box.seidenstrabe.com
-bpn.wtf
-*.bpn.wtf
 bqinoiq.com
 *.bqinoiq.com
 bqkqixr.com
@@ -5971,8 +5961,6 @@ canvas-math-tools.firebaseapp.com
 *.canvas-math-tools.firebaseapp.com
 canvas-math-tools.web.app
 *.canvas-math-tools.web.app
-canvas.mom
-*.canvas.mom
 canvasarts.org
 *.canvasarts.org
 canvasarts.org.cdn.cloudflare.net
@@ -5991,8 +5979,6 @@ capybaravpn.app
 *.capybaravpn.app
 car.registration.abrdns.com
 *.car.registration.abrdns.com
-carebuzz.com
-*.carebuzz.com
 carebuzz.io
 *.carebuzz.io
 careersandjobs.org
@@ -6069,8 +6055,6 @@ caytitf.com
 *.caytitf.com
 cb.gripe
 *.cb.gripe
-cbr2ozbx.online
-*.cbr2ozbx.online
 cc2.v8er.net
 *.cc2.v8er.net
 ccadguard.dynu.net
@@ -8697,8 +8681,6 @@ discordvpn.cloudsearch.workers.dev
 *.discordvpn.cloudsearch.workers.dev
 discordvpn.com
 *.discordvpn.com
-disinformer.mooo.com
-*.disinformer.mooo.com
 disjwhdhdhxujw.easterndns.com
 *.disjwhdhdhxujw.easterndns.com
 diskcrmvpn.co.cc
@@ -9941,8 +9923,6 @@ dns.mateo.ovh
 *.dns.mateo.ovh
 dns.mathewakhil.online
 *.dns.mathewakhil.online
-dns.matthias-prost.com
-*.dns.matthias-prost.com
 dns.maybe.icu
 *.dns.maybe.icu
 dns.mayr.ws
@@ -9987,8 +9967,6 @@ dns.mikrotikrumahan.my.id
 *.dns.mikrotikrumahan.my.id
 dns.millernetwork.uk
 *.dns.millernetwork.uk
-dns.miyun1.com
-*.dns.miyun1.com
 dns.mnet-online.de
 *.dns.mnet-online.de
 dns.mni.li
@@ -10083,8 +10061,6 @@ dns.netvpn.net
 *.dns.netvpn.net
 dns.neubsi.at
 *.dns.neubsi.at
-dns.neutopia.org
-*.dns.neutopia.org
 dns.nextdns.io
 *.dns.nextdns.io
 dns.nguyendn.com
@@ -11765,6 +11741,8 @@ dot.360.cn
 *.dot.360.cn
 dot.886675.xyz
 *.dot.886675.xyz
+dot.centraleu.pi-dns.com
+*.dot.centraleu.pi-dns.com
 dot.cleardns.io
 *.dot.cleardns.io
 dot.cox.net
@@ -13903,8 +13881,6 @@ fitnessdepotprices.com
 *.fitnessdepotprices.com
 fittfi.ddnsgeek.com
 *.fittfi.ddnsgeek.com
-fivefootoneiscrazyngl.groups.id
-*.fivefootoneiscrazyngl.groups.id
 fivestarontop.pages.dev
 *.fivestarontop.pages.dev
 fivestarsmobi.net
@@ -14165,8 +14141,6 @@ fredic.us
 *.fredic.us
 free-planet-vpn.com
 *.free-planet-vpn.com
-free-planet-vpn.net
-*.free-planet-vpn.net
 free-proxy.cz
 *.free-proxy.cz
 free-proxy.xyz
@@ -14187,8 +14161,6 @@ free-vpn.pro
 *.free-vpn.pro
 free-vpn.xyz
 *.free-vpn.xyz
-free-vpnplanet-ru.net
-*.free-vpnplanet-ru.net
 free-webproxy.com
 *.free-webproxy.com
 free.shecan.ir
@@ -17147,8 +17119,6 @@ ilovecnforeverfreevpn.com
 *.ilovecnforeverfreevpn.com
 ilovecnvpn.com
 *.ilovecnvpn.com
-ilovecrocs.space
-*.ilovecrocs.space
 iloveforeverfreevpn.com
 *.iloveforeverfreevpn.com
 ilovefreefqvpn.com
@@ -18185,8 +18155,6 @@ jumpvpn.mom
 *.jumpvpn.mom
 juniorvpn.xyz
 *.juniorvpn.xyz
-jupitrdns.com
-*.jupitrdns.com
 jupon.karrozzin.cloud-ip.cc
 *.jupon.karrozzin.cloud-ip.cc
 juproxy.com
@@ -19007,8 +18975,6 @@ krym-toury.ru
 *.krym-toury.ru
 krypton-tau.vercel.app
 *.krypton-tau.vercel.app
-kryptovpn.kryptotel.net
-*.kryptovpn.kryptotel.net
 ks7aoe.site
 *.ks7aoe.site
 ksd-resource.sababat.com
@@ -19017,8 +18983,6 @@ ksfodsgq.com
 *.ksfodsgq.com
 ksho.uk
 *.ksho.uk
-kslsivnv.com
-*.kslsivnv.com
 kstdownload.com
 *.kstdownload.com
 ksuu.loan
@@ -19097,8 +19061,6 @@ kuailian-vpn.com
 *.kuailian-vpn.com
 kuailian-we.com
 *.kuailian-we.com
-kuailian-win.com
-*.kuailian-win.com
 kuailian-wp.com
 *.kuailian-wp.com
 kuailian-zo.com
@@ -22447,8 +22409,6 @@ okgfw.top
 *.okgfw.top
 oklubnika.ru
 *.oklubnika.ru
-okproxy.com
-*.okproxy.com
 okryjovnik.ru
 *.okryjovnik.ru
 okvpn.io
@@ -22509,8 +22469,6 @@ onesy.top
 *.onesy.top
 onevpn.com
 *.onevpn.com
-onion.ca
-*.onion.ca
 onion.cab
 *.onion.cab
 onion.casa
@@ -23125,8 +23083,6 @@ peremen.space
 *.peremen.space
 peremen.website
 *.peremen.website
-perfect-privacy.com
-*.perfect-privacy.com
 perfectlying.com
 *.perfectlying.com
 performance.gosami.xyz
@@ -23431,8 +23387,6 @@ platovpn.homes
 *.platovpn.homes
 platovpn.net
 *.platovpn.net
-platovpn.org
-*.platovpn.org
 platovpn.ru
 *.platovpn.ru
 platovpn.site
@@ -24937,8 +24891,6 @@ ratecuts.us
 *.ratecuts.us
 ratmist.com
 *.ratmist.com
-ravoapp.com
-*.ravoapp.com
 rayneau.fr
 *.rayneau.fr
 rayobyte.com
@@ -27177,8 +27129,6 @@ stealthtunnel.net
 *.stealthtunnel.net
 stealthvpn.com
 *.stealthvpn.com
-steamstatic.xyz
-*.steamstatic.xyz
 steelwrites.com
 *.steelwrites.com
 steering.nextdns.io
@@ -27245,8 +27195,6 @@ streisand.blog
 *.streisand.blog
 streisand.pics
 *.streisand.pics
-streisandvpn.biz
-*.streisandvpn.biz
 strong.hosiyaman.info
 *.strong.hosiyaman.info
 strongvpn.com
@@ -28651,8 +28599,6 @@ turmericrecipes.com
 *.turmericrecipes.com
 turtle.happyforever.com
 *.turtle.happyforever.com
-tuskythehusky.tech
-*.tuskythehusky.tech
 tution.bury.abrdns.com
 *.tution.bury.abrdns.com
 tutor.idea.shand.org
@@ -28777,8 +28723,6 @@ ubstvpn.click
 *.ubstvpn.click
 ubtv.space
 *.ubtv.space
-ubyis.top
-*.ubyis.top
 uc.robby.blue
 *.uc.robby.blue
 udal.karrozzin.cloud-ip.cc
@@ -29407,8 +29351,6 @@ v2ny.org
 *.v2ny.org
 v2ny.pro
 *.v2ny.pro
-v2ny.top
-*.v2ny.top
 v2ny.vip
 *.v2ny.vip
 v2ny.xyz
@@ -29579,8 +29521,6 @@ vapor.onl
 *.vapor.onl
 vapor.techno.pics
 *.vapor.techno.pics
-vaporgithub.pages.dev
-*.vaporgithub.pages.dev
 vaporized.help
 *.vaporized.help
 vaporon.top
@@ -30045,8 +29985,6 @@ vpn-sd.ff.avast.com
 *.vpn-sd.ff.avast.com
 vpn-server.xyz
 *.vpn-server.xyz
-vpn-service.us
-*.vpn-service.us
 vpn-services.co.cc
 *.vpn-services.co.cc
 vpn-simple.com
@@ -30869,8 +30807,6 @@ vpsus3.pzhg.me
 *.vpsus3.pzhg.me
 vptskmzra.com
 *.vptskmzra.com
-vpv-pay.ru
-*.vpv-pay.ru
 vpvpay.ru
 *.vpvpay.ru
 vqols.cc
@@ -30903,8 +30839,6 @@ vtcuong.site
 *.vtcuong.site
 vthiawvu.com
 *.vthiawvu.com
-vthrnrwrbtq2n1xpjt5d.online
-*.vthrnrwrbtq2n1xpjt5d.online
 vulturematrix.com
 *.vulturematrix.com
 vundekra.com
@@ -31429,8 +31363,6 @@ wlvpn.com
 *.wlvpn.com
 wmqbjq.cn
 *.wmqbjq.cn
-wnuxuhdj.com
-*.wnuxuhdj.com
 woalongit.synology.me
 *.woalongit.synology.me
 wobti.com
@@ -32811,8 +32743,6 @@ zgvnp.site
 *.zgvnp.site
 zgvnpn.site
 *.zgvnpn.site
-zgvpn.fit
-*.zgvpn.fit
 zgvpn.net
 *.zgvpn.net
 zgvpn.org
@@ -32829,10 +32759,6 @@ zhengkaiyun.top
 *.zhengkaiyun.top
 zhk.13142233.xyz
 *.zhk.13142233.xyz
-zhkflohs.com
-*.zhkflohs.com
-zhknia0azrek.online
-*.zhknia0azrek.online
 zhs-kuailian.com.cn
 *.zhs-kuailian.com.cn
 zhudedafeiji.com
