@@ -10,7 +10,7 @@ Kumpulan racikan *DNS blocklist* gabungan hasil permintaan pengguna & *maintaine
 
 | File Custom | Deskripsi & Komposisi | Domain | Ukuran | Raw URL (Adblock) | Wildcard URL (`personalDNSfilter`) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **`eazylife-mixingcore.txt`** | Penggabungan EazyLife-Core, EazyLife-Security, EazyLife-IsekaiWall<br><sub>*Isi: EazyLife Core, EazyLife Security, EazyLife Isekai Wall*</sub> | 1.043.393 | 21,4 MB | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/custom/eazylife-mixingcore.txt` | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/custom/eazylife-mixingcore.txt` |
+| **`eazylife-mixingcore.txt`** | Penggabungan EazyLife-Core, EazyLife-Security, EazyLife-IsekaiWall<br><sub>*Isi: EazyLife Core, EazyLife Security, EazyLife Isekai Wall*</sub> | 1.048.225 | 21,5 MB | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/custom/eazylife-mixingcore.txt` | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/domains/custom/eazylife-mixingcore.txt` |
 
 ---
 
