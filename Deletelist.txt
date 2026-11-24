@@ -1,0 +1,4 @@
+# WhaleList Deletelist - Catatan Otomatis Domain yang Dihapus Sumber Hulu
+# Format: domain | tanggal_hapus (UTC) | dari_list
+# ------------------------------------------------------------------
+
