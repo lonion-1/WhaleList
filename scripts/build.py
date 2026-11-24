@@ -35,7 +35,6 @@ def hz(nama, file):
 
 
 ABPINDO = ("ABPindo", "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt", "abp")
-#ISEKAI = ("EazyWhale Isekai Wall", "https://raw.githubusercontent.com/lonion-1/EazyWeb/blocker/EazyBlock.txt", "abp")
 PHISHING_ARMY = ("Phishing Army", "https://phishing.army/download/phishing_army_blocklist.txt", "domains")
 URLHAUS = ("URLhaus", "https://urlhaus.abuse.ch/downloads/hostfile/", "hosts")
 STEVENBLACK_SOCIAL = ("StevenBlack Social", "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/social-only/hosts", "hosts")
