@@ -54,7 +54,6 @@ PRESETS = {
         hz("Light", "light.txt"), ABPINDO, hz("Fake", "fake.txt"),
         PHISHING_ARMY, URLHAUS,
         hz("Gambling", "gambling.txt"), hz("NSFW", "nsfw.txt"),
-        ISEKAI,
     ],
     "EazyLife Anti-Bypass": [hz("DoH/VPN/Proxy Bypass", "doh-vpn-proxy-bypass.txt")],
     "EazyLife Max": [
