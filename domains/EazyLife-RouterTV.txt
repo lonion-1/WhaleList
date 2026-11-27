@@ -1,6 +1,6 @@
 # Title: EazyLife Router & Smart TV - Lightweight & Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.26.2123
-# Count: 82796
+# Version: 2026.11.27.0340
+# Count: 82761
 # Sources: HaGeZi Light, ABPindo, HaGeZi Native Samsung, HaGeZi Native LG webOS, HaGeZi Native Xiaomi, HaGeZi Native Roku, HaGeZi Native Amazon
 
 0--d.com
@@ -331,8 +331,6 @@
 *.07e3965bbd.com
 07sketches.com
 *.07sketches.com
-0807.st
-*.0807.st
 08082c0ad5.com
 *.08082c0ad5.com
 0822kiseki.com
@@ -9269,6 +9267,8 @@ ad.daum.net
 *.ad.daum.net
 ad.ddestiny.ru
 *.ad.ddestiny.ru
+ad.ddl.ogq.me
+*.ad.ddl.ogq.me
 ad.ddo.jp
 *.ad.ddo.jp
 ad.de.doubleclick.net
@@ -9835,6 +9835,8 @@ ad.trw.com
 *.ad.trw.com
 ad.tv2.no
 *.ad.tv2.no
+ad.tvblack.com
+*.ad.tvblack.com
 ad.tzockt.beer
 *.ad.tzockt.beer
 ad.ultrashow.me
@@ -14435,6 +14437,8 @@ adserver-api-loadbalancer-492808818.ap-south-1.elb.amazonaws.com
 *.adserver-api-loadbalancer-492808818.ap-south-1.elb.amazonaws.com
 adserver-e7.com
 *.adserver-e7.com
+adserver-elasticl-13l7vy6y7z148-30609925.us-east-1.elb.amazonaws.com
+*.adserver-elasticl-13l7vy6y7z148-30609925.us-east-1.elb.amazonaws.com
 adserver-load-balancer-449180619.us-east-1.elb.amazonaws.com
 *.adserver-load-balancer-449180619.us-east-1.elb.amazonaws.com
 adserver-part-794439753.us-east-1.elb.amazonaws.com
@@ -19381,6 +19385,8 @@ analytics-ebb-del.yinzcam.com
 *.analytics-ebb-del.yinzcam.com
 analytics-egain.com
 *.analytics-egain.com
+analytics-elb-12538257.us-east-1.elb.amazonaws.com
+*.analytics-elb-12538257.us-east-1.elb.amazonaws.com
 analytics-eng.global-data.cf.verkada.com.cdn.cloudflare.net
 *.analytics-eng.global-data.cf.verkada.com.cdn.cloudflare.net
 analytics-enoteca.esselunga.it
@@ -32417,8 +32423,6 @@ asignaciondeproductosyservicios.lovable.app
 *.asignaciondeproductosyservicios.lovable.app
 asiminst.com
 *.asiminst.com
-asjviggppbvjr.space
-*.asjviggppbvjr.space
 askayhotelsuites.com
 *.askayhotelsuites.com
 askdomainad.com
@@ -33339,8 +33343,6 @@ authanalysis.com
 *.authanalysis.com
 authbe.sec.intl.miui.com
 *.authbe.sec.intl.miui.com
-authentication24.shop
-*.authentication24.shop
 authentics.de
 *.authentics.de
 authoritativepaulbasic.com
@@ -35271,8 +35273,6 @@ bcxnqgotcgmld.space
 *.bcxnqgotcgmld.space
 bcxyqtbumynru.website
 *.bcxyqtbumynru.website
-bczyozzodvlit.space
-*.bczyozzodvlit.space
 bd-ad-lgsmartad-com.aws-prd.net
 *.bd-ad-lgsmartad-com.aws-prd.net
 bd-analytics.connect-blu.net
@@ -36693,8 +36693,6 @@ bigdata-scfx-push.kucoin.plus
 *.bigdata-scfx-push.kucoin.plus
 bigdata.ssp.samsung.com
 *.bigdata.ssp.samsung.com
-bigdatafuturedev.buzz
-*.bigdatafuturedev.buzz
 bigdatajsext.com
 *.bigdatajsext.com
 bigdcdimorrzk.space
@@ -37173,8 +37171,6 @@ bktpcross.com
 *.bktpcross.com
 bkvoydbakinlq.online
 *.bkvoydbakinlq.online
-bkxxfwjtsxkia.online
-*.bkxxfwjtsxkia.online
 bkyplumbing.myportfolio.com
 *.bkyplumbing.myportfolio.com
 bl-1.com
@@ -41579,8 +41575,6 @@ carmen.golem.de
 *.carmen.golem.de
 carmen2.golem.de
 *.carmen2.golem.de
-carmine-galosh.shop
-*.carmine-galosh.shop
 carnavalensenada.mx
 *.carnavalensenada.mx
 carnicunsworn.qpon
@@ -42135,8 +42129,6 @@ cbxyhnqnabdlb.site
 *.cbxyhnqnabdlb.site
 cbymppcezjvvf.site
 *.cbymppcezjvvf.site
-cbzmyjfhounss.site
-*.cbzmyjfhounss.site
 cbzxy.com
 *.cbzxy.com
 cc-api-data-stage.adobe.io
@@ -42957,8 +42949,6 @@ cekp9j31krnh4ff2frx4n6ncgbupc7.cyou
 *.cekp9j31krnh4ff2frx4n6ncgbupc7.cyou
 cekrfk.com
 *.cekrfk.com
-celadon-buskin.shop
-*.celadon-buskin.shop
 celcol.jp
 *.celcol.jp
 celebpoker.com
@@ -43079,8 +43069,6 @@ cepesbritons.qpon
 *.cepesbritons.qpon
 cephenbacurycarses.qpon
 *.cephenbacurycarses.qpon
-cepkyvvmteake.site
-*.cepkyvvmteake.site
 ceramalmapachmayweed.cfd
 *.ceramalmapachmayweed.cfd
 cereouslooeys.qpon
@@ -43565,8 +43553,6 @@ checkvim.com
 *.checkvim.com
 cheekybranding.com
 *.cheekybranding.com
-cheekymarket.shop
-*.cheekymarket.shop
 cheekysleepyreproof.com
 *.cheekysleepyreproof.com
 cheerercrackup.cfd
@@ -44173,8 +44159,6 @@ ck28b4tzqbbgw1.cfd
 *.ck28b4tzqbbgw1.cfd
 ck4hkyq3myt6.com
 *.ck4hkyq3myt6.com
-ckbjldzhgicne.site
-*.ckbjldzhgicne.site
 ckglrdomnwddc.online
 *.ckglrdomnwddc.online
 ckhqqureiipcd.space
@@ -44187,8 +44171,6 @@ cklacrho.shop
 *.cklacrho.shop
 ckmglflitxnbn.online
 *.ckmglflitxnbn.online
-ckmoevhdjgmqp.site
-*.ckmoevhdjgmqp.site
 ckojnyfrzwpcs.website
 *.ckojnyfrzwpcs.website
 ckoqzj-cdn-settings.appsflyersdk.com
@@ -47823,8 +47805,6 @@ cpeciadogfoods.com
 *.cpeciadogfoods.com
 cpg-cdn.com
 *.cpg-cdn.com
-cphajtqwblaje.online
-*.cphajtqwblaje.online
 cphcm.com
 *.cphcm.com
 cpidxonrgfwtlkxdeejs.com
@@ -48569,8 +48549,6 @@ csp.yandex.net
 *.csp.yandex.net
 csplog.kwai-pro.com
 *.csplog.kwai-pro.com
-csppololwejdw.online
-*.csppololwejdw.online
 csr.onet.pl
 *.csr.onet.pl
 csscloud.live
@@ -49123,8 +49101,6 @@ cwlgvlyxtupge.site
 *.cwlgvlyxtupge.site
 cwlrlyxjmctws.online
 *.cwlrlyxjmctws.online
-cwmpqjhxixfxc.website
-*.cwmpqjhxixfxc.website
 cwqljsecvr.com
 *.cwqljsecvr.com
 cwsxeyiooubjg.space
@@ -49169,8 +49145,6 @@ cxlcyy.com
 *.cxlcyy.com
 cxmcgbaqjggai.online
 *.cxmcgbaqjggai.online
-cxmqsrqinbtnx.website
-*.cxmqsrqinbtnx.website
 cxnxub-cdn-settings.appsflyersdk.com
 *.cxnxub-cdn-settings.appsflyersdk.com
 cxnxub-conversions.appsflyersdk.com
@@ -51745,8 +51719,6 @@ dealcurrent.com
 *.dealcurrent.com
 dealdotcom.com
 *.dealdotcom.com
-dealhaven.shop
-*.dealhaven.shop
 deals.innocode.no
 *.deals.innocode.no
 dealshamza.cyou
@@ -53199,6 +53171,8 @@ diloe.xyz
 *.diloe.xyz
 diluteeswasherwoeworn.cfd
 *.diluteeswasherwoeworn.cfd
+diluvyvampish.com
+*.diluvyvampish.com
 dimax.one
 *.dimax.one
 dimensions-mappy-com-cddc.at-o.net
@@ -53973,8 +53947,6 @@ dntds.shop
 *.dntds.shop
 dntfctn.com
 *.dntfctn.com
-dnthythskvzho.website
-*.dnthythskvzho.website
 dnvtyawatdnrr.site
 *.dnvtyawatdnrr.site
 dnxrah-cdn-settings.appsflyersdk.com
@@ -55249,6 +55221,8 @@ dualstack.analytics-alb-269776019.us-east-1.elb.amazonaws.com
 *.dualstack.analytics-alb-269776019.us-east-1.elb.amazonaws.com
 dualstack.posthog-prd-alb-2110367584.ap-southeast-1.elb.amazonaws.com
 *.dualstack.posthog-prd-alb-2110367584.ap-southeast-1.elb.amazonaws.com
+dualstack.puhutv-collector-1666236450.eu-west-1.elb.amazonaws.com
+*.dualstack.puhutv-collector-1666236450.eu-west-1.elb.amazonaws.com
 dualstack.splunk-collector-73431122.us-east-1.elb.amazonaws.com
 *.dualstack.splunk-collector-73431122.us-east-1.elb.amazonaws.com
 dualstack.vzw-analytics-elb-640016604.us-west-2.elb.amazonaws.com
@@ -55917,6 +55891,8 @@ e3cdhp-launches.appsflyersdk.com
 *.e3cdhp-launches.appsflyersdk.com
 e3fbosf1tz3d.xyz
 *.e3fbosf1tz3d.xyz
+e3hxc6v45tgx9i1o.cfd
+*.e3hxc6v45tgx9i1o.cfd
 e448bf91d1.com
 *.e448bf91d1.com
 e459.kcci.com
@@ -56787,8 +56763,6 @@ eeouxr-cdn-settings.appsflyersdk.com
 *.eeouxr-cdn-settings.appsflyersdk.com
 eeouxr-conversions.appsflyersdk.com
 *.eeouxr-conversions.appsflyersdk.com
-eetxglvpagynf.online
-*.eetxglvpagynf.online
 eeubane.firebaseapp.com
 *.eeubane.firebaseapp.com
 eeubav-attr.appsflyersdk.com
@@ -57303,8 +57277,6 @@ elgvhc-cdn-settings.appsflyersdk.com
 *.elgvhc-cdn-settings.appsflyersdk.com
 elgvhc-launches.appsflyersdk.com
 *.elgvhc-launches.appsflyersdk.com
-elhmdkynxtmlc.site
-*.elhmdkynxtmlc.site
 elidesevetideinverts.cyou
 *.elidesevetideinverts.cyou
 eliexpress.fr
@@ -58191,8 +58163,6 @@ eqfarzroinvyy.space
 *.eqfarzroinvyy.space
 eqlair-analytics.vercel.app
 *.eqlair-analytics.vercel.app
-eqohinzqkwiuh.website
-*.eqohinzqkwiuh.website
 eqoz31mx818qiil4p7tfg.cfd
 *.eqoz31mx818qiil4p7tfg.cfd
 eqqppcwtwvsmh.site
@@ -60655,6 +60625,8 @@ facebbok.com
 *.facebbok.com
 facebook-appeal.w3spaces.com
 *.facebook-appeal.w3spaces.com
+facebook-theta.vercel.app
+*.facebook-theta.vercel.app
 facebookcenter1001932473852.firebaseapp.com
 *.facebookcenter1001932473852.firebaseapp.com
 facebookinbox-omni-onapp.haravan.com
@@ -62769,8 +62741,6 @@ fnwatzqcpramp.online
 *.fnwatzqcpramp.online
 fnyfeds.com
 *.fnyfeds.com
-fnyulqyamnceb.space
-*.fnyulqyamnceb.space
 fnyxir-cdn-settings.appsflyersdk.com
 *.fnyxir-cdn-settings.appsflyersdk.com
 fnyxir-conversions.appsflyersdk.com
@@ -66357,6 +66327,8 @@ githubassets.net
 *.githubassets.net
 gitlab.devops.adswizz.com
 *.gitlab.devops.adswizz.com
+gitlab.eu1.appsflyer.com
+*.gitlab.eu1.appsflyer.com
 gitoninmegrel.com
 *.gitoninmegrel.com
 givefoodbox.org
@@ -67855,6 +67827,8 @@ greasysquare.com
 *.greasysquare.com
 great-spin.fr
 *.great-spin.fr
+great-value.shop
+*.great-value.shop
 greatamericanland.com
 *.greatamericanland.com
 greatdexchange.com
@@ -68827,8 +68801,6 @@ gummydesigns.com
 *.gummydesigns.com
 gumusokambalaj.com
 *.gumusokambalaj.com
-gumvnjvakljpy.online
-*.gumvnjvakljpy.online
 gumzldikmtrbm.online
 *.gumzldikmtrbm.online
 gunckeaoosver.website
@@ -70501,8 +70473,6 @@ hgicbqx18w5p49l7uxegxmk.cfd
 *.hgicbqx18w5p49l7uxegxmk.cfd
 hgkzl.cn
 *.hgkzl.cn
-hgloczbkkwyto.online
-*.hgloczbkkwyto.online
 hgr1l6hjtjo682iqez4ie.cfd
 *.hgr1l6hjtjo682iqez4ie.cfd
 hgtv.112.2o7.net
@@ -70539,8 +70509,6 @@ hhcjvomohnlpq.site
 *.hhcjvomohnlpq.site
 hhcqjifspiqrd.online
 *.hhcqjifspiqrd.online
-hhdeqkgwmnndd.website
-*.hhdeqkgwmnndd.website
 hheazz-cdn-settings.appsflyersdk.com
 *.hheazz-cdn-settings.appsflyersdk.com
 hheazz-launches.appsflyersdk.com
@@ -71637,6 +71605,8 @@ hpluys-launches.appsflyersdk.com
 *.hpluys-launches.appsflyersdk.com
 hpmstr.com
 *.hpmstr.com
+hpn-collector-2116750166.us-east-1.elb.amazonaws.com
+*.hpn-collector-2116750166.us-east-1.elb.amazonaws.com
 hpojauedaxizv.site
 *.hpojauedaxizv.site
 hppymel.com
@@ -73255,6 +73225,8 @@ id-miuilog.sms.intl.xiaomi.com
 *.id-miuilog.sms.intl.xiaomi.com
 id-msp.newsbreak.com
 *.id-msp.newsbreak.com
+id-mwkgjh9hfg3.rest
+*.id-mwkgjh9hfg3.rest
 id-proof.de
 *.id-proof.de
 id-rdx2-lgtvsdp-com.aws-prd.net
@@ -75109,6 +75081,8 @@ inphonic.com
 *.inphonic.com
 inping.com
 *.inping.com
+inpost-pl.site
+*.inpost-pl.site
 inpp.yukigur.click
 *.inpp.yukigur.click
 inppcdn.com
@@ -75153,6 +75127,8 @@ insideoftech.com
 *.insideoftech.com
 insidercorp.net
 *.insidercorp.net
+insight-compass-atom-adserver-1086676428.ap-northeast-2.elb.amazonaws.com
+*.insight-compass-atom-adserver-1086676428.ap-northeast-2.elb.amazonaws.com
 insight-stats.com
 *.insight-stats.com
 insight.adsrvr.org
@@ -76341,8 +76317,6 @@ iuncrcsimshlk.site
 *.iuncrcsimshlk.site
 iunikbinqlwjp.website
 *.iunikbinqlwjp.website
-iuoiklioploi.weebly.com
-*.iuoiklioploi.weebly.com
 iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com
 *.iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com
 iut-lille.fr
@@ -76921,8 +76895,6 @@ javius.com
 *.javius.com
 javpwyyvcoorg.website
 *.javpwyyvcoorg.website
-javtaku.com
-*.javtaku.com
 jawingsundangrose.cfd
 *.jawingsundangrose.cfd
 jawxtjwcijcif.online
@@ -77377,8 +77349,6 @@ jhtywx-register.appsflyersdk.com
 *.jhtywx-register.appsflyersdk.com
 jhuqoqpfxpnay.site
 *.jhuqoqpfxpnay.site
-jhvinijxjswdm.website
-*.jhvinijxjswdm.website
 ji.trioletfused.com
 *.ji.trioletfused.com
 ji4eeh-launches.appsflyersdk.com
@@ -78257,8 +78227,6 @@ jthajuayablgw.space
 *.jthajuayablgw.space
 jthargdwafkza.online
 *.jthargdwafkza.online
-jtjuuybgohcay.website
-*.jtjuuybgohcay.website
 jtkkccxrsnskg.space
 *.jtkkccxrsnskg.space
 jtmate.com
@@ -80131,8 +80099,6 @@ klkburztpcbna.site
 *.klkburztpcbna.site
 klldabck.com
 *.klldabck.com
-klmldxrouejtg.site
-*.klmldxrouejtg.site
 klmmnd.com
 *.klmmnd.com
 klnyzaflulqrd.space
@@ -80501,8 +80467,6 @@ kostenlose-counter.com
 *.kostenlose-counter.com
 kostprice.com
 *.kostprice.com
-koszyk.sbs
-*.koszyk.sbs
 kotharis.in
 *.kotharis.in
 koubi.jp
@@ -82689,6 +82653,8 @@ ligatus.com
 *.ligatus.com
 ligatus.de
 *.ligatus.de
+light-meaning.pro
+*.light-meaning.pro
 lightbrights2.xyz
 *.lightbrights2.xyz
 lightchain.ai
@@ -83551,6 +83517,8 @@ load.fomo.com
 *.load.fomo.com
 load.s3.amazonaws.com
 *.load.s3.amazonaws.com
+load2snowplow-1159724741.eu-central-1.elb.amazonaws.com
+*.load2snowplow-1159724741.eu-central-1.elb.amazonaws.com
 loadedhearts.com
 *.loadedhearts.com
 loader.fmkorea.com
@@ -85509,8 +85477,6 @@ ltmxbxlhlacvz.space
 *.ltmxbxlhlacvz.space
 ltp96v3f1o77fn.cfd
 *.ltp96v3f1o77fn.cfd
-lttevtdmhafol.website
-*.lttevtdmhafol.website
 ltvlanxgk.com
 *.ltvlanxgk.com
 lu-ad-lgsmartad-com.aws-prd.net
@@ -90283,6 +90249,8 @@ matomo.mdbg.net
 *.matomo.mdbg.net
 matomo.mdjpxw.com
 *.matomo.mdjpxw.com
+matomo.mdjpxw.com.06b85755.cdnhwcpsd13.com
+*.matomo.mdjpxw.com.06b85755.cdnhwcpsd13.com
 matomo.mdpi.com
 *.matomo.mdpi.com
 matomo.mdpi.com.edgekey.net
@@ -92563,10 +92531,6 @@ mautic.com
 *.mautic.com
 mauve-pinkgetawhifftime.com
 *.mauve-pinkgetawhifftime.com
-mauveine-chopine.shop
-*.mauveine-chopine.shop
-mauveine-curragh.shop
-*.mauveine-curragh.shop
 mavexops.com
 *.mavexops.com
 mavexops.net
@@ -93997,6 +93961,10 @@ metrics-capacitor.outsystems.com
 *.metrics-capacitor.outsystems.com
 metrics-capi.iglucruise.com
 *.metrics-capi.iglucruise.com
+metrics-collector-balancer-1484099829.eu-west-1.elb.amazonaws.com
+*.metrics-collector-balancer-1484099829.eu-west-1.elb.amazonaws.com
+metrics-collector-balancer-8941592.us-west-1.elb.amazonaws.com
+*.metrics-collector-balancer-8941592.us-west-1.elb.amazonaws.com
 metrics-collector-default.aprod.scopely.io
 *.metrics-collector-default.aprod.scopely.io
 metrics-collector.invitro.ru
@@ -99893,8 +99861,6 @@ mz.stubspelk.qpon
 *.mz.stubspelk.qpon
 mz.unity3d.com
 *.mz.unity3d.com
-mzdgwgeisucxy.site
-*.mzdgwgeisucxy.site
 mzobzzwvgawbn.space
 *.mzobzzwvgawbn.space
 mzqlan-cdn-settings.appsflyersdk.com
@@ -100623,8 +100589,6 @@ nd66hi-launches.appsflyersdk.com
 *.nd66hi-launches.appsflyersdk.com
 nd66hi-register.appsflyersdk.com
 *.nd66hi-register.appsflyersdk.com
-ndaqxxhxljqei.online
-*.ndaqxxhxljqei.online
 ndcertainlywhen.com
 *.ndcertainlywhen.com
 ndcjyx-attr.appsflyersdk.com
@@ -101089,6 +101053,8 @@ news.mirtesen.ru
 *.news.mirtesen.ru
 news.njbiz.com
 *.news.njbiz.com
+news.occasioneweb.com
+*.news.occasioneweb.com
 news.rin.ru
 *.news.rin.ru
 news.valawyersweekly.com
@@ -101163,8 +101129,6 @@ nextclick.pl
 *.nextclick.pl
 nextdigitalkey.com
 *.nextdigitalkey.com
-nextgen4devtech.buzz
-*.nextgen4devtech.buzz
 nextgenstats.com
 *.nextgenstats.com
 nextierhg.com
@@ -101655,6 +101619,8 @@ nmilyzrhb.com
 *.nmilyzrhb.com
 nmjtuifpbwtsi.site
 *.nmjtuifpbwtsi.site
+nmm-use1-prod-alb-analytics-922763195.us-east-1.elb.amazonaws.com
+*.nmm-use1-prod-alb-analytics-922763195.us-east-1.elb.amazonaws.com
 nmo-ep.nl
 *.nmo-ep.nl
 nmocqlujlilko.site
@@ -101755,8 +101721,6 @@ nntx.ru
 *.nntx.ru
 nnvkh.com
 *.nnvkh.com
-nnwdjfpahulfz.online
-*.nnwdjfpahulfz.online
 no-9f03.web.app
 *.no-9f03.web.app
 no-ad-lgsmartad-com.aws-prd.net
@@ -102065,8 +102029,6 @@ novadw.com
 *.novadw.com
 novaeillapseetonian.cyou
 *.novaeillapseetonian.cyou
-novafuturetechdev.buzz
-*.novafuturetechdev.buzz
 novak24.com
 *.novak24.com
 novanet.vn
@@ -102341,8 +102303,6 @@ ntch6g-launches.appsflyersdk.com
 *.ntch6g-launches.appsflyersdk.com
 ntchvggaalbmv.space
 *.ntchvggaalbmv.space
-ntdc-ngc-gov-pk.weebly.com
-*.ntdc-ngc-gov-pk.weebly.com
 ntent.com
 *.ntent.com
 ntesgsght.com
@@ -103299,8 +103259,6 @@ ocelot.studio
 *.ocelot.studio
 ocgadgets.com
 *.ocgadgets.com
-ochre-scaffold.shop
-*.ochre-scaffold.shop
 ochringptolemy.com
 *.ochringptolemy.com
 ochslumped.cyou
@@ -103577,6 +103535,8 @@ ofdigrnikzqvp.space
 *.ofdigrnikzqvp.space
 ofenundholz.de
 *.ofenundholz.de
+oferta930231.shop
+*.oferta930231.shop
 ofeylq-pia.appsflyersdk.com
 *.ofeylq-pia.appsflyersdk.com
 offaloverapt.com
@@ -107955,8 +107915,6 @@ penuma.com
 *.penuma.com
 penupcodeinekipsey.cyou
 *.penupcodeinekipsey.cyou
-peohfoksclgpx.site
-*.peohfoksclgpx.site
 peonspulsers.com
 *.peonspulsers.com
 people-group.su
@@ -108453,8 +108411,6 @@ phizzle.com
 *.phizzle.com
 phkazakhstan.com
 *.phkazakhstan.com
-phkzraexgflnn.site
-*.phkzraexgflnn.site
 phliechtenstein.com
 *.phliechtenstein.com
 phlithuania.com
@@ -110531,8 +110487,6 @@ plausible.backintimetoday.com
 *.plausible.backintimetoday.com
 plausible.balatromp.com
 *.plausible.balatromp.com
-plausible.balescepat.com
-*.plausible.balescepat.com
 plausible.bitcoinvn.io
 *.plausible.bitcoinvn.io
 plausible.bithost.co
@@ -113157,6 +113111,8 @@ prod-app-analytics-event-gateway.v.aaplimg.com
 *.prod-app-analytics-event-gateway.v.aaplimg.com
 prod-bid.applovin.com
 *.prod-bid.applovin.com
+prod-cg-snowplow-alb-729853759.eu-central-1.elb.amazonaws.com
+*.prod-cg-snowplow-alb-729853759.eu-central-1.elb.amazonaws.com
 prod-collector.bigbasket.com
 *.prod-collector.bigbasket.com
 prod-databridge-external-alb-1023055160.ap-northeast-1.elb.amazonaws.com
@@ -113287,8 +113243,6 @@ prod.webpu.sh
 *.prod.webpu.sh
 prod.yektanet.com
 *.prod.yektanet.com
-prod24.top
-*.prod24.top
 proddedfrantic.cfd
 *.proddedfrantic.cfd
 prodmp.ru
@@ -118493,6 +118447,8 @@ reswearstamper.com
 *.reswearstamper.com
 reswimcaunch.com
 *.reswimcaunch.com
+retag.xyz
+*.retag.xyz
 retagro.com
 *.retagro.com
 retailads.net
@@ -118793,6 +118749,8 @@ rgbaayfdyjzou.online
 *.rgbaayfdyjzou.online
 rgcdcchqcmrka.space
 *.rgcdcchqcmrka.space
+rgea-collector-prod-1144707942.us-west-2.elb.amazonaws.com
+*.rgea-collector-prod-1144707942.us-west-2.elb.amazonaws.com
 rgefifgiyepcz.online
 *.rgefifgiyepcz.online
 rggzaqizlixgs.space
@@ -119097,8 +119055,6 @@ ritrag.com
 *.ritrag.com
 ritsulib-telemetry.ritsukage.com
 *.ritsulib-telemetry.ritsukage.com
-ritualseurope.com
-*.ritualseurope.com
 rituxan.com.102.122.2o7.net
 *.rituxan.com.102.122.2o7.net
 ritz-club.net
@@ -119349,8 +119305,6 @@ rntoughen.com
 *.rntoughen.com
 rnvpommdnuzoc.online
 *.rnvpommdnuzoc.online
-rnxbaalryllfo.online
-*.rnxbaalryllfo.online
 rnypdogp.shop
 *.rnypdogp.shop
 ro-ad-lgsmartad-com.aws-prd.net
@@ -119461,8 +119415,6 @@ rocksresort.com.au
 *.rocksresort.com.au
 rockstarwriter.com
 *.rockstarwriter.com
-rockstarxbet.com
-*.rockstarxbet.com
 rockwool.112.2o7.net
 *.rockwool.112.2o7.net
 rockycollado4403.myportfolio.com
@@ -127909,8 +127861,6 @@ shopthanthoai.com
 *.shopthanthoai.com
 shoptule.com
 *.shoptule.com
-shopvila.shop
-*.shopvila.shop
 shopwithme.biz
 *.shopwithme.biz
 shopyalili.com
@@ -128073,10 +128023,6 @@ sielkbqwplccr.site
 *.sielkbqwplccr.site
 siemsmpmfonft.online
 *.siemsmpmfonft.online
-sienna-gambado.shop
-*.sienna-gambado.shop
-sienna-solleret.shop
-*.sienna-solleret.shop
 sieundihn.de
 *.sieundihn.de
 sievingcarobsinflue.cyou
@@ -129085,8 +129031,6 @@ smartcontext.pl
 *.smartcontext.pl
 smartdatacollective.com
 *.smartdatacollective.com
-smartdev-tech.buzz
-*.smartdev-tech.buzz
 smartembedhandlelokalt.getbagera.no
 *.smartembedhandlelokalt.getbagera.no
 smarterhq.io
@@ -137053,8 +136997,6 @@ static.terratraf.io
 *.static.terratraf.io
 static.tieba.baidu.com
 *.static.tieba.baidu.com
-static.tnkjmec.com
-*.static.tnkjmec.com
 static.tpmn.co.kr
 *.static.tpmn.co.kr
 static.tradetracker.net
@@ -137645,6 +137587,8 @@ stats-001.sitiosimple.com
 *.stats-001.sitiosimple.com
 stats-a.telefonicaservices.com
 *.stats-a.telefonicaservices.com
+stats-analytics-722939043.eu-west-1.elb.amazonaws.com
+*.stats-analytics-722939043.eu-west-1.elb.amazonaws.com
 stats-api-we-01.tange365.com
 *.stats-api-we-01.tange365.com
 stats-api.flockler.app
@@ -139125,8 +139069,6 @@ stwfga-cdn-settings.appsflyersdk.com
 *.stwfga-cdn-settings.appsflyersdk.com
 stwfga-launches.appsflyersdk.com
 *.stwfga-launches.appsflyersdk.com
-stwjnsbnfckka.space
-*.stwjnsbnfckka.space
 stx-match.dotomi.com
 *.stx-match.dotomi.com
 styleaffinity.com
@@ -139429,8 +139371,6 @@ superclix.de
 *.superclix.de
 supercoupon.my.id
 *.supercoupon.my.id
-superdiy.shop
-*.superdiy.shop
 superficialspring.com
 *.superficialspring.com
 superficialsquare.com
@@ -139689,8 +139629,6 @@ svk-native.ru
 *.svk-native.ru
 svk.goatcounter.com
 *.svk.goatcounter.com
-svlyrbscxbwoh.website
-*.svlyrbscxbwoh.website
 svmarketing.destinationtoronto.com
 *.svmarketing.destinationtoronto.com
 svmdwrgl.shop
@@ -139933,8 +139871,6 @@ swsdd.simplywall.st
 *.swsdd.simplywall.st
 swssp.simplywall.st
 *.swssp.simplywall.st
-swswsw.shop
-*.swswsw.shop
 swxna6-cdn-settings.appsflyersdk.com
 *.swxna6-cdn-settings.appsflyersdk.com
 swxna6-conversions.appsflyersdk.com
@@ -141055,6 +140991,8 @@ tag4arm.com
 *.tag4arm.com
 tagbridge.vlp.cz
 *.tagbridge.vlp.cz
+tagcontrol-collector-prod-809047116.us-east-1.elb.amazonaws.com
+*.tagcontrol-collector-prod-809047116.us-east-1.elb.amazonaws.com
 tagcontrol-collector-v2-prod-1517665634.us-east-1.elb.amazonaws.com
 *.tagcontrol-collector-v2-prod-1517665634.us-east-1.elb.amazonaws.com
 tagdeliver.com
@@ -143975,8 +143913,6 @@ terratraf.com
 *.terratraf.com
 terresdemontaigu.matomo.novacity.fr
 *.terresdemontaigu.matomo.novacity.fr
-tervanis.world
-*.tervanis.world
 tescobank-ngt.edge.nc0.co
 *.tescobank-ngt.edge.nc0.co
 tescobank.com.102.122.2o7.net
@@ -144305,8 +144241,6 @@ thasianhyenine.com
 *.thasianhyenine.com
 thasianwearily.cyou
 *.thasianwearily.cyou
-thathislitt.ru
-*.thathislitt.ru
 thatopenly.com
 *.thatopenly.com
 thatsjustgay.com
@@ -144437,6 +144371,8 @@ thefreecamsecret.com
 *.thefreecamsecret.com
 theftsdipyre.com
 *.theftsdipyre.com
+thegeneral.com122.2o7.net
+*.thegeneral.com122.2o7.net
 theglossonline.com
 *.theglossonline.com
 thegnalary.cfd
@@ -146587,6 +146523,8 @@ tpmedia.online
 *.tpmedia.online
 tpmienbihyqtf.space
 *.tpmienbihyqtf.space
+tpnfwr2u3nykwl85kg.cfd
+*.tpnfwr2u3nykwl85kg.cfd
 tporlviwb.com
 *.tporlviwb.com
 tpqzaz-cdn-settings.appsflyersdk.com
@@ -147367,6 +147305,8 @@ tracker-00.qvb.qcloud.com
 *.tracker-00.qvb.qcloud.com
 tracker-1799979901.us-east-1.elb.amazonaws.com
 *.tracker-1799979901.us-east-1.elb.amazonaws.com
+tracker-alb-6342460.eu-west-1.elb.amazonaws.com
+*.tracker-alb-6342460.eu-west-1.elb.amazonaws.com
 tracker-alb-958500657.us-east-1.elb.amazonaws.com
 *.tracker-alb-958500657.us-east-1.elb.amazonaws.com
 tracker-api.my.com
@@ -147401,6 +147341,8 @@ tracker-dot-optimeeze.appspot.com
 *.tracker-dot-optimeeze.appspot.com
 tracker-dot.ortb.net
 *.tracker-dot.ortb.net
+tracker-lb-78950488.ap-southeast-1.elb.amazonaws.com
+*.tracker-lb-78950488.ap-southeast-1.elb.amazonaws.com
 tracker-load-balancer-910132794.us-east-1.elb.amazonaws.com
 *.tracker-load-balancer-910132794.us-east-1.elb.amazonaws.com
 tracker-load-balancer-matomo-1106885468.us-east-1.elb.amazonaws.com
@@ -147421,6 +147363,8 @@ tracker-slcm.ortb.net
 *.tracker-slcm.ortb.net
 tracker-static.gazetadopovo.com.br
 *.tracker-static.gazetadopovo.com.br
+tracker-video-846279855.us-east-1.elb.amazonaws.com
+*.tracker-video-846279855.us-east-1.elb.amazonaws.com
 tracker.24xtra.hu
 *.tracker.24xtra.hu
 tracker.3dissue.com
@@ -147665,6 +147609,8 @@ tracking-nativesdks.mparticle.com
 *.tracking-nativesdks.mparticle.com
 tracking-nc.chamaeleon.de
 *.tracking-nc.chamaeleon.de
+tracking-pacharge-1140449683.us-east-1.elb.amazonaws.com
+*.tracking-pacharge-1140449683.us-east-1.elb.amazonaws.com
 tracking-prod.sprinklr.com
 *.tracking-prod.sprinklr.com
 tracking-production-3e47c89e5c807dd5.elb.us-east-1.amazonaws.com
@@ -149277,8 +149223,8 @@ truevaluepro.com
 *.truevaluepro.com
 truex.com
 *.truex.com
-truly0-qui56.cfd
-*.truly0-qui56.cfd
+truly6-rerum81.cfd
+*.truly6-rerum81.cfd
 trumeauscrived.cyou
 *.trumeauscrived.cyou
 trumerholz-store.shop
@@ -152569,8 +152515,6 @@ uniquepharmaceuticals.com
 *.uniquepharmaceuticals.com
 unirockgestion.com
 *.unirockgestion.com
-unisale.lat
-*.unisale.lat
 unisound.cdnvideo.ru
 *.unisound.cdnvideo.ru
 unisvap.godaddysites.com
@@ -153063,8 +153007,6 @@ urbanemop.com
 *.urbanemop.com
 urbanfungose.com
 *.urbanfungose.com
-urbania.digital
-*.urbania.digital
 urbanlaurel.com
 *.urbanlaurel.com
 urbanmap.org
@@ -153769,8 +153711,6 @@ uxawyas.com
 *.uxawyas.com
 uxbdiplshkupo.online
 *.uxbdiplshkupo.online
-uxczshdkcweix.space
-*.uxczshdkcweix.space
 uxdwaeiceelyu.site
 *.uxdwaeiceelyu.site
 uxee5bmf1k.com
@@ -159503,8 +159443,6 @@ wmgjxk-register.appsflyersdk.com
 *.wmgjxk-register.appsflyersdk.com
 wmgroup.us
 *.wmgroup.us
-wmidgrgmortdc.online
-*.wmidgrgmortdc.online
 wmirk.ru
 *.wmirk.ru
 wmisdulearndev.112.2o7.net
@@ -159689,6 +159627,8 @@ woodsunset.com
 *.woodsunset.com
 woodygrownup.com
 *.woodygrownup.com
+woogloalee.net
+*.woogloalee.net
 woolerslungis.com
 *.woolerslungis.com
 woolierexopt.qpon
@@ -161351,8 +161291,6 @@ xhphatlppluzk.site
 *.xhphatlppluzk.site
 xhpjileqbhzwy.website
 *.xhpjileqbhzwy.website
-xhxwfpwstsyyy.site
-*.xhxwfpwstsyyy.site
 xhyktech.com
 *.xhyktech.com
 xi7mxo.csb.app
@@ -162269,6 +162207,8 @@ xzhzykhlrlisi.website
 *.xzhzykhlrlisi.website
 xzikwwnrymtny.space
 *.xzikwwnrymtny.space
+xzkhpowjz7wty329.cfd
+*.xzkhpowjz7wty329.cfd
 xzknvo-cdn-settings.appsflyersdk.com
 *.xzknvo-cdn-settings.appsflyersdk.com
 xzknvo-conversions.appsflyersdk.com
@@ -162907,8 +162847,6 @@ ygodup-launches.appsflyersdk.com
 *.ygodup-launches.appsflyersdk.com
 ygoprint.goatcounter.com
 *.ygoprint.goatcounter.com
-ygpvwqsytvoee.online
-*.ygpvwqsytvoee.online
 ygtlxefvgdaps.site
 *.ygtlxefvgdaps.site
 ygwfdtm.com
@@ -163255,8 +163193,6 @@ ynpsubtm.com
 *.ynpsubtm.com
 ynulcrxpiawjj.site
 *.ynulcrxpiawjj.site
-ynwulhrmqrgnq.site
-*.ynwulhrmqrgnq.site
 ynylicdrkzbtp.space
 *.ynylicdrkzbtp.space
 yo880.com
@@ -163563,8 +163499,6 @@ ys2e0o-register.appsflyersdk.com
 *.ys2e0o-register.appsflyersdk.com
 ys630.com
 *.ys630.com
-ysadumvcqjihy.website
-*.ysadumvcqjihy.website
 ysaneczt.shop
 *.ysaneczt.shop
 yscorqzbhudtw.space
@@ -163819,8 +163753,6 @@ yxmbmz-launches.appsflyersdk.com
 *.yxmbmz-launches.appsflyersdk.com
 yxppsujpuvdpe.space
 *.yxppsujpuvdpe.space
-yxqscyqyvrnam.space
-*.yxqscyqyvrnam.space
 yxrlvfirqiave.website
 *.yxrlvfirqiave.website
 yxshiybpbfpbi.site
@@ -165551,8 +165483,6 @@ zypenetwork.com
 *.zypenetwork.com
 zyphorbit.at
 *.zyphorbit.at
-zyskmonerixtech.com
-*.zyskmonerixtech.com
 zyvhofzjqlvwb.space
 *.zyvhofzjqlvwb.space
 zyxyfy.com
