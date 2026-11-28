@@ -1,9 +1,9 @@
 ! Title: EazyLife Brand - Vivo Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.21.0229
+! Version: 2026.11.28.0321
 ! Expires: 1 day
-! Total Unique Domains: 302
+! Total Unique Domains: 304
 ! Sources: HaGeZi Native Vivo
 ! --------------------------------------------------
 
@@ -111,6 +111,7 @@
 ||eu-domaincfg.vivoglobal.com^
 ||eu-errup.vivoglobal.com^
 ||eu-monitor-stsdk.vivoglobal.com^
+||eu-nrt-stsdk.vivoglobal.com^
 ||eu-onrt-stsdk.vivoglobal.com^
 ||eu-ort-stsdk.vivoglobal.com^
 ||eu-p.vivoglobal.com^
@@ -248,6 +249,7 @@
 ||ru-pnrt-stsdk.vivoglobal.com^
 ||ru-prt-stsdk.vivoglobal.com^
 ||ru-romsp-unifyconfig.vivoglobal.com^
+||ru-rt-stsdk.vivoglobal.com^
 ||ru-st-exappupgrade.vivoglobal.com^
 ||ru-st-sl.vivoglobal.com^
 ||ru-stsdk.vivoglobal.com^

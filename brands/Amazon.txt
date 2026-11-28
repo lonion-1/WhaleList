@@ -1,9 +1,9 @@
 ! Title: EazyLife Brand - Amazon & Fire TV Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.21.0229
+! Version: 2026.11.28.0321
 ! Expires: 1 day
-! Total Unique Domains: 380
+! Total Unique Domains: 381
 ! Sources: HaGeZi Native Amazon & Fire TV
 ! --------------------------------------------------
 
@@ -285,6 +285,7 @@
 ||sponsored-ads-eu.amazon.pl^
 ||sponsored-ads-eu.amazon.sa^
 ||sponsored-ads-eu.amazon.se^
+||sponsored-ads-eu.jobs.amazon.co.za^
 ||sponsored-ads-euc-1.amazon-adsystem.com^
 ||sponsored-ads-fe.amazon-adsystem.com^
 ||sponsored-ads-na.amazon-adsystem.com^

@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Amazon & Fire TV Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.21.0229
-# Count: 380
+# Version: 2026.11.28.0321
+# Count: 381
 # Sources: HaGeZi Native Amazon & Fire TV
 
 3px.axp.amazon-adsystem.com
@@ -559,6 +559,8 @@ sponsored-ads-eu.amazon.sa
 *.sponsored-ads-eu.amazon.sa
 sponsored-ads-eu.amazon.se
 *.sponsored-ads-eu.amazon.se
+sponsored-ads-eu.jobs.amazon.co.za
+*.sponsored-ads-eu.jobs.amazon.co.za
 sponsored-ads-euc-1.amazon-adsystem.com
 *.sponsored-ads-euc-1.amazon-adsystem.com
 sponsored-ads-fe.amazon-adsystem.com

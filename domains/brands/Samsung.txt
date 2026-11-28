@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Samsung Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.0731
-# Count: 201
+# Version: 2026.11.28.0321
+# Count: 200
 # Sources: HaGeZi Native Samsung
 
 acr-au-prd.samsungcloud.tv
@@ -193,8 +193,6 @@ samsung.telemetry.eyeo.com
 *.samsung.telemetry.eyeo.com
 samsungacr.com
 *.samsungacr.com
-samsungadhub.com
-*.samsungadhub.com
 samsungads.adsmeasurement.com
 *.samsungads.adsmeasurement.com
 samsungads.com

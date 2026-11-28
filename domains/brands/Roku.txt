@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Roku Streaming Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.0731
-# Count: 64
+# Version: 2026.11.28.0321
+# Count: 61
 # Sources: HaGeZi Native Roku Streaming
 
 acr.roku.com
@@ -9,10 +9,6 @@ ad-eng.prod.rpay.int.roku.com
 *.ad-eng.prod.rpay.int.roku.com
 ad-eng.staging.rpay.int.roku.com
 *.ad-eng.staging.rpay.int.roku.com
-ad.qa.ap.int.roku.com
-*.ad.qa.ap.int.roku.com
-ad.usw2.qa.ap.int.roku.com
-*.ad.usw2.qa.ap.int.roku.com
 adeng-identity-prod3.bdp.roku.com
 *.adeng-identity-prod3.bdp.roku.com
 adeng-looker-bi-oneview-prod-1001.bdp.roku.com
@@ -97,8 +93,6 @@ logs.dev.sr.roku.com
 *.logs.dev.sr.roku.com
 logs.prod.ap.int.roku.com
 *.logs.prod.ap.int.roku.com
-logs.qa.ap.int.roku.com
-*.logs.qa.ap.int.roku.com
 logs.roku.com
 *.logs.roku.com
 logs.sr.roku.com

@@ -1,9 +1,9 @@
 ! Title: EazyLife Brand - Samsung Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.0908
+! Version: 2026.11.28.0321
 ! Expires: 1 day
-! Total Unique Domains: 201
+! Total Unique Domains: 200
 ! Sources: HaGeZi Native Samsung
 ! --------------------------------------------------
 
@@ -102,7 +102,6 @@
 ||samsung.ecorebates.com^
 ||samsung.telemetry.eyeo.com^
 ||samsungacr.com^
-||samsungadhub.com^
 ||samsungads.adsmeasurement.com^
 ||samsungads.com^
 ||samsungafrica.demdex.net^

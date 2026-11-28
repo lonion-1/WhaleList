@@ -1,17 +1,15 @@
-! Title: EazyLife Brand - Roku Streaming Telemetry Blocker
+! Title: EazyLife Brand - Roku Streaming Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.1459
+! Version: 2026.11.28.0321
 ! Expires: 1 day
-! Total Unique Domains: 64
-! Sources: HaGeZi Native Roku
+! Total Unique Domains: 61
+! Sources: HaGeZi Native Roku Streaming
 ! --------------------------------------------------
 
 ||acr.roku.com^
 ||ad-eng.prod.rpay.int.roku.com^
 ||ad-eng.staging.rpay.int.roku.com^
-||ad.qa.ap.int.roku.com^
-||ad.usw2.qa.ap.int.roku.com^
 ||adeng-identity-prod3.bdp.roku.com^
 ||adeng-looker-bi-oneview-prod-1001.bdp.roku.com^
 ||adeng-looker-dev-1001.bdp.roku.com^
@@ -54,7 +52,6 @@
 ||item-tracking.dev.sr.roku.com^
 ||logs.dev.sr.roku.com^
 ||logs.prod.ap.int.roku.com^
-||logs.qa.ap.int.roku.com^
 ||logs.roku.com^
 ||logs.sr.roku.com^
 ||pixel.staging.web.roku.com^

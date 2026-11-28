@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Apple Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.21.0229
-# Count: 105
+# Version: 2026.11.28.0321
+# Count: 99
 # Sources: HaGeZi Native Apple
 
 acfeedbackws.icloud.com
@@ -23,8 +23,6 @@ beacon.shazam.com
 *.beacon.shazam.com
 books-analytics-events.apple.com
 *.books-analytics-events.apple.com
-books-analytics-events.news.apple-dns.net
-*.books-analytics-events.news.apple-dns.net
 cdn-xp-ingest-ab.v.aaplimg.com
 *.cdn-xp-ingest-ab.v.aaplimg.com
 cdn-xp-ingest.edge.apple
@@ -59,8 +57,6 @@ fbs.smoot.apple.com
 *.fbs.smoot.apple.com
 feedbackws.fe.apple-dns.cn
 *.feedbackws.fe.apple-dns.cn
-feedbackws.fe.apple-dns.net
-*.feedbackws.fe.apple-dns.net
 feedbackws.fe2.apple-dns.net
 *.feedbackws.fe2.apple-dns.net
 feedbackws.icloud.com
@@ -129,8 +125,6 @@ news-sports-events.apple.com
 *.news-sports-events.apple.com
 notes-analytics-events.apple.com
 *.notes-analytics-events.apple.com
-notes-analytics-events.news.apple-dns.net
-*.notes-analytics-events.news.apple-dns.net
 odin-signals.apple.com
 *.odin-signals.apple.com
 partiality.itunes-apple.com.akadns.net
@@ -159,8 +153,6 @@ prod-event-relay-stocks-api.v.aaplimg.com
 *.prod-event-relay-stocks-api.v.aaplimg.com
 prod-event-relay-weather-api.v.aaplimg.com
 *.prod-event-relay-weather-api.v.aaplimg.com
-prod-event-relay-web-api.v.aaplimg.com
-*.prod-event-relay-web-api.v.aaplimg.com
 prod-iwork-events.v.aaplimg.com
 *.prod-iwork-events.v.aaplimg.com
 prod-news-notification-events.v.aaplimg.com
@@ -195,16 +187,12 @@ smoot-feedback.v.aaplimg.com
 *.smoot-feedback.v.aaplimg.com
 stocks-analytics-events.apple.com
 *.stocks-analytics-events.apple.com
-stocks-analytics-events.news.apple-dns.net
-*.stocks-analytics-events.news.apple-dns.net
 supportmetrics.apple.com
 *.supportmetrics.apple.com
 supportmetrics.v.aaplimg.com
 *.supportmetrics.v.aaplimg.com
 weather-analytics-events.apple.com
 *.weather-analytics-events.apple.com
-weather-analytics-events.news.apple-dns.net
-*.weather-analytics-events.news.apple-dns.net
 xp-cdn.apple.com
 *.xp-cdn.apple.com
 xp.apple.com

@@ -1,9 +1,9 @@
 ! Title: EazyLife Brand - Huawei Native Telemetry Blocker
 ! License: GNU General Public License v3.0 (GPL-3.0)
 ! Maintainer: EazyWhale
-! Version: 2026.11.18.1459
+! Version: 2026.11.28.0321
 ! Expires: 1 day
-! Total Unique Domains: 148
+! Total Unique Domains: 147
 ! Sources: HaGeZi Native Huawei
 ! --------------------------------------------------
 
@@ -109,7 +109,6 @@
 ||log-dre.platform.hihonorcloud.com^
 ||log-drru.platform.hihonorcloud.com^
 ||logbak.hicloud.com^
-||logserver.nzxcloud.cn^
 ||logservice-dra.platform.hicloud.com^
 ||logservice-dre.platform.dbankcloud.cn^
 ||logservice-dre.platform.hicloud.com^

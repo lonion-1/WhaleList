@@ -33,9 +33,9 @@ Gunakan daftar utama ini sebagai fondasi pemblokiran di DNS blocker pilihanmu:
 
 | Daftar | Target Perangkat | Fokus Utama | Domain | Ukuran | Last Update | Tautan Langganan (*Raw URL*) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **EazyLife Core** | HP, Tablet, Laptop | Iklan harian, *pop-up*, pelacak (*trackers*), & iklan lokal Indonesia. | <!-- COUNT:EazyLife-Core.txt -->239.336<!-- /COUNT --> | <!-- SIZE:EazyLife-Core.txt -->5,3 MB<!-- /SIZE --> | ![Core Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-Core.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Core.txt` |
-| **EazyLife Security** | Semua Perangkat | Anti-*phishing*, toko online palsu (*scam*), & penyebar *malware*. | <!-- COUNT:EazyLife-Security.txt -->135.410<!-- /COUNT --> | <!-- SIZE:EazyLife-Security.txt -->3,0 MB<!-- /SIZE --> | ![Security Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-Security.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Security.txt` |
-| **EazyLife Router & TV** | Router & Smart TV | Super ringan untuk RAM terbatas + blokir telemetri & iklan Smart TV. | <!-- COUNT:EazyLife-RouterTV.txt -->83.105<!-- /COUNT --> | <!-- SIZE:EazyLife-RouterTV.txt -->2,0 MB<!-- /SIZE --> | ![RouterTV Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-RouterTV.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-RouterTV.txt` |
+| **EazyLife Core** | HP, Tablet, Laptop | Iklan harian, *pop-up*, pelacak (*trackers*), & iklan lokal Indonesia. | <!-- COUNT:EazyLife-Core.txt -->239.132<!-- /COUNT --> | <!-- SIZE:EazyLife-Core.txt -->5,3 MB<!-- /SIZE --> | ![Core Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-Core.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Core.txt` |
+| **EazyLife Security** | Semua Perangkat | Anti-*phishing*, toko online palsu (*scam*), & penyebar *malware*. | <!-- COUNT:EazyLife-Security.txt -->135.146<!-- /COUNT --> | <!-- SIZE:EazyLife-Security.txt -->3,0 MB<!-- /SIZE --> | ![Security Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-Security.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Security.txt` |
+| **EazyLife Router & TV** | Router & Smart TV | Super ringan untuk RAM terbatas + blokir telemetri & iklan Smart TV. | <!-- COUNT:EazyLife-RouterTV.txt -->82.789<!-- /COUNT --> | <!-- SIZE:EazyLife-RouterTV.txt -->2,0 MB<!-- /SIZE --> | ![RouterTV Update](https://img.shields.io/github/last-commit/lonion-1/WhaleList?path=EazyLife-RouterTV.txt&label=Updated&style=flat) | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-RouterTV.txt` |
 
 ---
 
@@ -45,12 +45,12 @@ Pilih daftar tambahan berikut sesuai kebutuhan spesifik jaringan atau aktivitasm
 
 | Daftar | Target Penggunaan | Fokus Utama | Domain | Ukuran | Tautan Langganan (*Raw URL*) |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **EazyLife Family** | Router Wi-Fi Keluarga | Paket komplet 1-klik: iklan ringan, *scam/malware*, anti-judol, & blokir konten dewasa. | <!-- COUNT:EazyLife-Family.txt -->1.013.058<!-- /COUNT --> | <!-- SIZE:EazyLife-Family.txt -->20,5 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Family.txt` |
-| **EazyLife Anti-Bypass** | Router / AdGuard Home / Pi-hole (Jangan di HP/Browser) | Memblokir server *Encrypted DNS* (DoH), VPN, & proxy publik agar aturan DNS tidak diakali. | <!-- COUNT:EazyLife-AntiBypass.txt -->16.628<!-- /COUNT --> | <!-- SIZE:EazyLife-AntiBypass.txt -->339 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-AntiBypass.txt` |
+| **EazyLife Family** | Router Wi-Fi Keluarga | Paket komplet 1-klik: iklan ringan, *scam/malware*, anti-judol, & blokir konten dewasa. | <!-- COUNT:EazyLife-Family.txt -->1.032.058<!-- /COUNT --> | <!-- SIZE:EazyLife-Family.txt -->20,8 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Family.txt` |
+| **EazyLife Anti-Bypass** | Router / AdGuard Home / Pi-hole (Jangan di HP/Browser) | Memblokir server *Encrypted DNS* (DoH), VPN, & proxy publik agar aturan DNS tidak diakali. | <!-- COUNT:EazyLife-AntiBypass.txt -->16.649<!-- /COUNT --> | <!-- SIZE:EazyLife-AntiBypass.txt -->339 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-AntiBypass.txt` |
 | **EazyLife Max** | *Power User* (Perangkat dengan RAM besar atau Cloud) | Perlindungan agresif (*Pro++* + *Threat Intelligence Feeds*) untuk sapu bersih telemetri & ancaman siber. | <!-- COUNT:EazyLife-Max.txt -->2.312.404<!-- /COUNT --> | <!-- SIZE:EazyLife-Max.txt -->46,6 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Max.txt` |
 | **EazyLife Focus** | Kerja & Belajar | Memblokir media sosial populer untuk mengurangi distraksi (*digital detox*). | <!-- COUNT:EazyLife-Focus.txt -->586<!-- /COUNT --> | <!-- SIZE:EazyLife-Focus.txt -->15 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-Focus.txt` |
-| **EazyLife Isekai Wall** | Semua Perangkat | Pemblokiran khusus situs perjudian (*anti-gambling*). | <!-- COUNT:EazyLife-IsekaiWall.txt -->718.447<!-- /COUNT --> | <!-- SIZE:EazyLife-IsekaiWall.txt -->14,1 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-IsekaiWall.txt` |
-| **EazyLife NSFW** | Semua Perangkat | Pemblokiran khusus konten dewasa (opsional). | <!-- COUNT:EazyLife-NSFW.txt -->80.620<!-- /COUNT --> | <!-- SIZE:EazyLife-NSFW.txt -->1,5 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-NSFW.txt` |
+| **EazyLife Isekai Wall** | Semua Perangkat | Pemblokiran khusus situs perjudian (*anti-gambling*). | <!-- COUNT:EazyLife-IsekaiWall.txt -->718.478<!-- /COUNT --> | <!-- SIZE:EazyLife-IsekaiWall.txt -->14,1 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-IsekaiWall.txt` |
+| **EazyLife NSFW** | Semua Perangkat | Pemblokiran khusus konten dewasa (opsional). | <!-- COUNT:EazyLife-NSFW.txt -->100.128<!-- /COUNT --> | <!-- SIZE:EazyLife-NSFW.txt -->1,8 MB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/EazyLife-NSFW.txt` |
 
 ---
 
@@ -60,16 +60,16 @@ Ingin privasi lebih ketat tanpa membebani perangkat dengan aturan yang tidak rel
 
 | Brand | Ekosistem Perangkat | Domain | Ukuran | Tautan Langganan (*Raw URL*) |
 | :--- | :--- | :--- | :--- | :--- |
-| **Apple** | iPhone, iPad, Mac, Apple TV | <!-- COUNT:brands/Apple.txt -->105<!-- /COUNT --> | <!-- SIZE:brands/Apple.txt -->3 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Apple.txt` |
-| **Windows** | PC/Laptop Windows 10/11 & Office | <!-- COUNT:brands/Windows.txt -->395<!-- /COUNT --> | <!-- SIZE:brands/Windows.txt -->13 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Windows.txt` |
-| **Samsung** | HP/Tablet Galaxy & Tizen Smart TV | <!-- COUNT:brands/Samsung.txt -->201<!-- /COUNT --> | <!-- SIZE:brands/Samsung.txt -->6 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Samsung.txt` |
-| **Xiaomi** | Xiaomi, Redmi, POCO & Mi TV | <!-- COUNT:brands/Xiaomi.txt -->411<!-- /COUNT --> | <!-- SIZE:brands/Xiaomi.txt -->12 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Xiaomi.txt` |
-| **Oppo & Realme** | HP Oppo & Realme | <!-- COUNT:brands/Oppo-Realme.txt -->532<!-- /COUNT --> | <!-- SIZE:brands/Oppo-Realme.txt -->17 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Oppo-Realme.txt` |
-| **Vivo** | HP Vivo & iQOO | <!-- COUNT:brands/Vivo.txt -->302<!-- /COUNT --> | <!-- SIZE:brands/Vivo.txt -->10 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Vivo.txt` |
-| **Huawei** | HP/Tablet Huawei & HarmonyOS | <!-- COUNT:brands/Huawei.txt -->148<!-- /COUNT --> | <!-- SIZE:brands/Huawei.txt -->6 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Huawei.txt` |
-| **Amazon** | Fire TV, Kindle, & Echo | <!-- COUNT:brands/Amazon.txt -->380<!-- /COUNT --> | <!-- SIZE:brands/Amazon.txt -->12 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Amazon.txt` |
+| **Apple** | iPhone, iPad, Mac, Apple TV | <!-- COUNT:brands/Apple.txt -->99<!-- /COUNT --> | <!-- SIZE:brands/Apple.txt -->3 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Apple.txt` |
+| **Windows** | PC/Laptop Windows 10/11 & Office | <!-- COUNT:brands/Windows.txt -->411<!-- /COUNT --> | <!-- SIZE:brands/Windows.txt -->14 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Windows.txt` |
+| **Samsung** | HP/Tablet Galaxy & Tizen Smart TV | <!-- COUNT:brands/Samsung.txt -->200<!-- /COUNT --> | <!-- SIZE:brands/Samsung.txt -->6 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Samsung.txt` |
+| **Xiaomi** | Xiaomi, Redmi, POCO & Mi TV | <!-- COUNT:brands/Xiaomi.txt -->412<!-- /COUNT --> | <!-- SIZE:brands/Xiaomi.txt -->12 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Xiaomi.txt` |
+| **Oppo & Realme** | HP Oppo & Realme | <!-- COUNT:brands/Oppo-Realme.txt -->535<!-- /COUNT --> | <!-- SIZE:brands/Oppo-Realme.txt -->17 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Oppo-Realme.txt` |
+| **Vivo** | HP Vivo & iQOO | <!-- COUNT:brands/Vivo.txt -->304<!-- /COUNT --> | <!-- SIZE:brands/Vivo.txt -->10 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Vivo.txt` |
+| **Huawei** | HP/Tablet Huawei & HarmonyOS | <!-- COUNT:brands/Huawei.txt -->147<!-- /COUNT --> | <!-- SIZE:brands/Huawei.txt -->6 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Huawei.txt` |
+| **Amazon** | Fire TV, Kindle, & Echo | <!-- COUNT:brands/Amazon.txt -->381<!-- /COUNT --> | <!-- SIZE:brands/Amazon.txt -->12 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Amazon.txt` |
 | **LG webOS** | LG Smart TV | <!-- COUNT:brands/LG-webOS.txt -->461<!-- /COUNT --> | <!-- SIZE:brands/LG-webOS.txt -->16 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/LG-webOS.txt` |
-| **Roku** | Perangkat Streaming Roku | <!-- COUNT:brands/Roku.txt -->64<!-- /COUNT --> | <!-- SIZE:brands/Roku.txt -->2 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Roku.txt` |
+| **Roku** | Perangkat Streaming Roku | <!-- COUNT:brands/Roku.txt -->61<!-- /COUNT --> | <!-- SIZE:brands/Roku.txt -->2 KB<!-- /SIZE --> | `https://raw.githubusercontent.com/lonion-1/WhaleList/main/brands/Roku.txt` |
 
 ---
 

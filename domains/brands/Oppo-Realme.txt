@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Oppo & Realme Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.21.0229
-# Count: 532
+# Version: 2026.11.28.0321
+# Count: 535
 # Sources: HaGeZi Native Oppo & Realme
 
 ad-growth-in.heytapmobile.com
@@ -31,6 +31,8 @@ adsfs-sdkconfig.heytapimage.com
 *.adsfs-sdkconfig.heytapimage.com
 adsfs.oppomobile.com
 *.adsfs.oppomobile.com
+adx-ads-fr-heytapmobila-c7870.fr-w01.cngw.heytapmobile.com
+*.adx-ads-fr-heytapmobila-c7870.fr-w01.cngw.heytapmobile.com
 adx-ads-fr.heytapmobile.com
 *.adx-ads-fr.heytapmobile.com
 adx-ads-ru.heytapmobile.com
@@ -49,6 +51,8 @@ adx-op-ru.heytapmobile.com
 *.adx-op-ru.heytapmobile.com
 adx-op-sg.heytapmobile.com
 *.adx-op-sg.heytapmobile.com
+adx-u-fr.heytapmobile.com
+*.adx-u-fr.heytapmobile.com
 adx-u-in-heytapmobile-a-9ae47.in-s01.cngw.heytapmobile.com
 *.adx-u-in-heytapmobile-a-9ae47.in-s01.cngw.heytapmobile.com
 adx-u-in.heytapmobile.com
@@ -119,6 +123,8 @@ browser-api-in.heytapmobile.com
 *.browser-api-in.heytapmobile.com
 browser-api-my.heytapmobile.com
 *.browser-api-my.heytapmobile.com
+browser-api-nz.heytapmobile.com
+*.browser-api-nz.heytapmobile.com
 browser-api-ph.heytapmobile.com
 *.browser-api-ph.heytapmobile.com
 browser-api-ru.heytapmobile.com

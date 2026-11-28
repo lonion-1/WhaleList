@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Huawei Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.19.0731
-# Count: 148
+# Version: 2026.11.28.0321
+# Count: 147
 # Sources: HaGeZi Native Huawei
 
 0001-metrics1-data-hicloud-com.geac.dbankedge.cn
@@ -207,8 +207,6 @@ log-drru.platform.hihonorcloud.com
 *.log-drru.platform.hihonorcloud.com
 logbak.hicloud.com
 *.logbak.hicloud.com
-logserver.nzxcloud.cn
-*.logserver.nzxcloud.cn
 logservice-dra.platform.hicloud.com
 *.logservice-dra.platform.hicloud.com
 logservice-dre.platform.dbankcloud.cn

@@ -1,6 +1,6 @@
 # Title: EazyLife Brand - Vivo Native Telemetry Blocker (personalDNSfilter Wildcard)
-# Version: 2026.11.21.0229
-# Count: 302
+# Version: 2026.11.28.0321
+# Count: 304
 # Sources: HaGeZi Native Vivo
 
 adlog.vivo.com
@@ -211,6 +211,8 @@ eu-errup.vivoglobal.com
 *.eu-errup.vivoglobal.com
 eu-monitor-stsdk.vivoglobal.com
 *.eu-monitor-stsdk.vivoglobal.com
+eu-nrt-stsdk.vivoglobal.com
+*.eu-nrt-stsdk.vivoglobal.com
 eu-onrt-stsdk.vivoglobal.com
 *.eu-onrt-stsdk.vivoglobal.com
 eu-ort-stsdk.vivoglobal.com
@@ -485,6 +487,8 @@ ru-prt-stsdk.vivoglobal.com
 *.ru-prt-stsdk.vivoglobal.com
 ru-romsp-unifyconfig.vivoglobal.com
 *.ru-romsp-unifyconfig.vivoglobal.com
+ru-rt-stsdk.vivoglobal.com
+*.ru-rt-stsdk.vivoglobal.com
 ru-st-exappupgrade.vivoglobal.com
 *.ru-st-exappupgrade.vivoglobal.com
 ru-st-sl.vivoglobal.com
